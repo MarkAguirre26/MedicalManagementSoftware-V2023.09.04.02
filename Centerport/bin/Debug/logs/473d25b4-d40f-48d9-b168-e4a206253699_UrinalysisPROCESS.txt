@@ -1,0 +1,19 @@
+Function Name: UrinalysisPROCESS
+Parameters:
+
+473d25b4-d40f-48d9-b168-e4a206253699
+STRAW
+CLEAR
+1.000
+5.0
+NEGATIVE
+NEGATIVE
+
+
+
+
+
+
+
+
+9/4/2023

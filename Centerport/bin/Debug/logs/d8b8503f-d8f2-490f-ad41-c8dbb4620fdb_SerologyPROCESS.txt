@@ -1,0 +1,11 @@
+Function Name: SerologyPROCESS
+Parameters:
+
+d8b8503f-d8f2-490f-ad41-c8dbb4620fdb
+HEBA B
+WHOLE BLOOD
+NONE REACTIVE
+HEBA B
+WHOLE BLOOD
+
+6/26/2023

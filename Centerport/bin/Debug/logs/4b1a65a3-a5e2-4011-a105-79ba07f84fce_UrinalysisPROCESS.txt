@@ -1,0 +1,19 @@
+Function Name: UrinalysisPROCESS
+Parameters:
+
+4b1a65a3-a5e2-4011-a105-79ba07f84fce
+STRAW
+HAZY
+1.000
+6.0
+TRACE
+TRACE
+
+
+FEW
+FEW
+RARE
+RARE
+RARE
+
+9/4/2023

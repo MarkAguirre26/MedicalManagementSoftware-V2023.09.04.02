@@ -1,0 +1,1728 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MedicalManagementSoftwareDB" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-KIIKPT8\SQLEXPRESS;Initial Catalog=MedicalManagementSoftwareDB;User ID=sa" SettingsObjectName="MedicalManagement.Properties.Settings" SettingsPropertyName="MedicalManagementSoftwareDBConnectionString3" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.t_psychology" Member="t_psychologies">
+    <Type Name="t_psychology">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="type_of_test" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="intelectual_level" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="res_persevering" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="res_obedient" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="res_selfdiscipline" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="res_enthusiastic" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="res_venturesome" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_isolation_boredom" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_noise_vibration_temp" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_reality" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_confident" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_stress" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_relaxed" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="obj_realistic" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="obj_jealousy" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="obj_adaptable" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="obj_practicalminded" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="mot_assertive" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="mot_independent" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="mot_resourceful" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="type_of_test_desc" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="goal_orientation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="recommendation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="rec_reservation_desc" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="rec_not_rec_desc" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="iapa_rel_peer" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="iapa_rel_superior" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="iapa_self_esteem" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="iapa_aggressive_tendencies" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="intel_test" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="intel_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="person_test" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="person_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="other_test" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="other_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ff_eval_details" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="not_rec_details" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="pathologist_license" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="medtech" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="medtech_license" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="fitness_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Lic_Validity_Medtech" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PTR_medTech" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Lic_Validity_Pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PTR_Pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.view_patient" Member="view_patients">
+    <Type Name="view_patient">
+      <Column Name="cn" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="firstname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="middlename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="address_1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="address_2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="district" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="contact_1" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="contact_2" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="marital_status" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="place_of_birth" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="type_of_job" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="employer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="passport_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="seamansbook_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="registration_date" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="nationality" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="religion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="test_data" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="father_name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="father_occupation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="mother_name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="no_of_brothers" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="no_of_sisters" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="birth_order" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="spouse_name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="spouse_occupation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="no_of_children" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="elementary" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="highschool" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="college" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="course" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="highest_level_attended" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="mother_occupation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_work_start" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_work_end" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_company" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_position" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_leave_reason" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_years" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="date_last_updated" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="sirb" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="designation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="country_destination" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Create_Patient_ID" Method="Create_Patient_ID">
+    <ElementType Name="Create_Patient_IDResult">
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.emc_medicalHistory" Method="emc_medicalHistory">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="emc_medicalHistoryResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Allergies" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="AnemiaBleeding" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Asthma" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="BloodProblem" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CancerTumor" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Chickenpox" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Clotting" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Diabetes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DiabetesMellitus" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Epilepsy" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EyeEarDisorders" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="GastritisUlcer" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="GeneticDisorders" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="GermanMeasles" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="HeadachesMigraine" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="HeartDisease" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Hepatitis" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Hernia" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Hypertension" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="KidneyDisease" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="LiverDisease" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Measles" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MentalDisorders" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Musculoskeletal" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NoseThroatDisorders" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Pneumonia" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PsychologicalDisorder" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PTB" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SeizureDisorders" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SexuallyTransmitted" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SkinDisease" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ThyroidDisorders" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Tubercolosis" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TyphoidParatyphoid" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ulcers" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Vertigo" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Other" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PresentSymptoms" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FamilyMedicalHistory" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="OperationsandAccidents" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PersonaSocialHistory" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Smoker" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NoOfPackDay" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AlcoholDrinker" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NoOfYear" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ResultID" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.lab_patient" Method="lab_patient">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="lab_patientResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="latname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="firstname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="middlename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="employer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="type_of_job" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="address_1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="marital_status" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_landBase_Patient" Method="sp_landBase_Patient">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_landBase_PatientResult">
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="firstname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="middlename" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="address_1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="address_2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="city" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="district" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="contact_1" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="contact_2" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="marital_status" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="place_of_birth" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="type_of_job" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="employer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="passport_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="seamansbook_no" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="picture" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" />
+      <Column Name="registration_date" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="nationality" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="religion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="test_data" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="father_name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="father_occupation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="mother_name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="no_of_brothers" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="no_of_sisters" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="birth_order" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="spouse_name" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="spouse_occupation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="no_of_children" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="elementary" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="highschool" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="college" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="course" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="highest_level_attended" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="mother_occupation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_work_start" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_work_end" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_company" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_position" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_leave_reason" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="prev_years" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="date_last_updated" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="sirb" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="designation" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="country_destination" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_backupdata" Method="sp_backupdata">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_CheckExist" Method="sp_CheckExist">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="sp_CheckExistResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Employer" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_CountPatient" Method="sp_CountPatient">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_CountPatientResult">
+      <Column Name="PatientCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_GetEmployer" Method="sp_GetEmployer">
+    <ElementType Name="sp_GetEmployerResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Employer" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getLabResultMain" Method="sp_getLabResultMain">
+    <Parameter Name="cn" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="sp_getLabResultMainResult">
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="reference_no" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_getRadiology_gamosa" Method="sp_getRadiology_gamosa">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="sp_getRadiology_gamosaResult">
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="reference_no" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="findings" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="radiologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="rad_license" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="examination" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="impression" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_insertUrinalysis_gamosa" Method="sp_insertUrinalysis_gamosa">
+    <Parameter Name="resultid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Transparency" Parameter="transparency" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="pH" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SpecificGravity" Parameter="specificGravity" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Sugar" Parameter="sugar" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Albumin" Parameter="albumin" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Bacteria" Parameter="bacteria" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="wbc" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="rbc" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="EpithelialCells" Parameter="epithelialCells" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MucousThreads" Parameter="mucousThreads" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AmorphousUrates" Parameter="amorphousUrates" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Casts" Parameter="casts" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Crystals" Parameter="crystals" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PregnancyTest" Parameter="pregnancyTest" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ResultDate" Parameter="resultDate" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Normal" Parameter="normal" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Findings" Parameter="findings" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_landbase_search" Method="sp_landbase_search">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_landbase_searchResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="patientName" Type="System.String" DbType="VarChar(153)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="recommendation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_LandbaseAddList" Method="sp_LandbaseAddList">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_LandbaseAddListResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="patientName" Type="System.String" DbType="VarChar(153)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_login" Method="sp_login">
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="VarChar(150)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(150)" />
+    <ElementType Name="sp_loginResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fullname" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="UserLevel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remark" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_loginifNotHead" Method="sp_loginifNotHead">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_loginifNotHeadResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fullname" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_moveresult_to_history" Method="sp_moveresult_to_history">
+    <Parameter Name="cn" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Pshycho_Detail" Method="sp_Pshycho_Detail">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Pshycho_DetailResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="type_of_test" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="intelectual_level" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="res_persevering" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="res_obedient" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="res_selfdiscipline" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="res_enthusiastic" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="res_venturesome" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_isolation_boredom" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_noise_vibration_temp" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_reality" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_confident" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_stress" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="emo_relaxed" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="obj_realistic" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="obj_jealousy" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="obj_adaptable" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="obj_practicalminded" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="mot_assertive" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="mot_independent" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="mot_resourceful" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="type_of_test_desc" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="goal_orientation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="recommendation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="rec_reservation_desc" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="rec_not_rec_desc" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="iapa_rel_peer" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="iapa_rel_superior" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="iapa_self_esteem" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="iapa_aggressive_tendencies" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="intel_test" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="intel_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="person_test" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="person_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="other_test" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="other_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ff_eval_details" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="not_rec_details" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="pathologist_license" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="medtech" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="medtech_license" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="fitness_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Lic_Validity_Medtech" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PTR_medTech" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Lic_Validity_Pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PTR_Pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Psycho_CountColumn" Method="sp_Psycho_CountColumn">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Psycho_CountColumnResult">
+      <Column Name="PatientCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Psycho_GenerateID" Method="sp_Psycho_GenerateID">
+    <ElementType Name="sp_Psycho_GenerateIDResult">
+      <Column Name="generated_id" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_psycho_Patient" Method="sp_psycho_Patient">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_psycho_PatientResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PatientName" Type="System.String" DbType="VarChar(153) NOT NULL" CanBeNull="false" />
+      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="employer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Psycho_PutText" Method="sp_Psycho_PutText">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Psycho_PutTextResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="resulttype" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_PsychoCheckPatientifExist" Method="sp_PsychoCheckPatientifExist">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_PsychoCheckPatientifExistResult">
+      <Column Name="PatientCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_PsychoCountPatient" Method="sp_PsychoCountPatient">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_PsychoCountPatientResult">
+      <Column Name="PatientCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_PsychoSearchList" Method="sp_PsychoSearchList">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_PsychoSearchListResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PatientName" Type="System.String" DbType="VarChar(153) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Que_Lab" Method="sp_Que_Lab">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Que_LabResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="resulttype" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Quee_Landabase" Method="sp_Quee_Landabase">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Quee_LandabaseResult">
+      <Column Name="PatientCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_QueeLab_GenerateID" Method="sp_QueeLab_GenerateID">
+    <ElementType Name="sp_QueeLab_GenerateIDResult">
+      <Column Name="generated_id" Type="System.String" DbType="VarChar(17) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_QueeLand_putText" Method="sp_QueeLand_putText">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_QueeLand_putTextResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="resulttype" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_QueeLandbase_GenerateID" Method="sp_QueeLandbase_GenerateID">
+    <ElementType Name="sp_QueeLandbase_GenerateIDResult">
+      <Column Name="generated_id" Type="System.String" DbType="VarChar(17) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_User" Method="sp_User">
+    <ElementType Name="sp_UserResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fullname" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_userLevel" Method="sp_userLevel">
+    <ElementType Name="sp_userLevelResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Xray_Count_Column" Method="sp_Xray_Count_Column">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="TYPE" Parameter="tYPE" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Xray_Count_ColumnResult">
+      <Column Name="PatientCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Xray_GenerateID" Method="sp_Xray_GenerateID">
+    <Parameter Name="TYPE" Parameter="tYPE" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Xray_GenerateIDResult">
+      <Column Name="generated_id" Type="System.String" DbType="VarChar(34) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Xray_Medical" Method="sp_Xray_Medical">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="TYPE" Parameter="tYPE" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Xray_MedicalResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="medtech" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="specimen_no" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="medtech_license" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="pathologist_license" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Xray_Patient" Method="sp_Xray_Patient">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Xray_PatientResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PatientName" Type="System.String" DbType="VarChar(153) NOT NULL" CanBeNull="false" />
+      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="employer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Xray_PutText" Method="sp_Xray_PutText">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="TYPE" Parameter="tYPE" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Xray_PutTextResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="resulttype" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Xray_SearchList" Method="sp_Xray_SearchList">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="TYPE" Parameter="tYPE" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Xray_SearchListResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PatientName" Type="System.String" DbType="VarChar(153)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_XrayAdd" Method="sp_XrayAdd">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_XrayAddResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PatientName" Type="System.String" DbType="VarChar(153)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Select_Patient_pic" Method="Select_Patient_pic">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="Select_Patient_picResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="picture" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Patient_search" Method="Patient_search">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="Patient_searchResult">
+      <Column Name="cn" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(153)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_positions" Method="sp_positions">
+    <ElementType Name="sp_positionsResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Lanbase_ancillary" Method="sp_Lanbase_ancillary">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_Lanbase_ancillaryResult">
+      <Column Name="result_id" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Hematology_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Hematology_finding" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Urinalysis_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Urinalysis_finding" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Fecalysis_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Fecalysis_finding" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ChestXRay_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ChestXRay_finsing" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ECG_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ECG_finsing" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PsychologicalTest_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PsychologicalTest_finding" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HBsAg_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HBsAg_finsing" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PregnancyTest_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PregnancyTest_finding" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BloodType_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BloodType_findings" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="DrugTest_result" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="DrugTest_finding" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="additional_test" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="recommendation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="additional_test2" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Landbase_Recomendation" Method="sp_Landbase_Recomendation">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_Landbase_RecomendationResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="medtech" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="resulttype" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="fitness_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Evaluation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="recommendation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_updateAncillary" Method="sp_updateAncillary">
+    <Parameter Name="result_id" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Hematology_result" Parameter="hematology_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Hematology_finding" Parameter="hematology_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Urinalysis_result" Parameter="urinalysis_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Urinalysis_finding" Parameter="urinalysis_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Fecalysis_result" Parameter="fecalysis_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Fecalysis_finding" Parameter="fecalysis_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ChestXRay_result" Parameter="chestXRay_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ChestXRay_finsing" Parameter="chestXRay_finsing" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ECG_result" Parameter="eCG_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ECG_finsing" Parameter="eCG_finsing" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PsychologicalTest_result" Parameter="psychologicalTest_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PsychologicalTest_finding" Parameter="psychologicalTest_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HBsAg_result" Parameter="hBsAg_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HBsAg_finsing" Parameter="hBsAg_finsing" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PregnancyTest_result" Parameter="pregnancyTest_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PregnancyTest_finding" Parameter="pregnancyTest_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="BloodType_result" Parameter="bloodType_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="BloodType_findings" Parameter="bloodType_findings" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DrugTest_result" Parameter="drugTest_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DrugTest_finding" Parameter="drugTest_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="additional_test" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="remarks" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="recommendation" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="additional_test2" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Landbase_Others" Method="sp_Landbase_Others">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_Landbase_OthersResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SKIN_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SKIN" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="HEAD_NECK_SCALP_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="HEAD_NECK_SCALP" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EYES_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EYES" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PUPILS_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PUPILS" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EARS_EARDRUM_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EARS_EARDRUM" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NOSE_SINUSES_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NOSE_SINUSES" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MOUTH_THROAT_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MOUTH_THROAT" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NECK_LN_THYROID_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NECK_LN_THYROID" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CHEST_BREAST_AXILLA_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CHEST_BREAST_AXILLA" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="LUNGS_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="LUNGS" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="HEART_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="HEART" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ABDOMEN_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ABDOMEN" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="BACK_FLANK_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="BACK_FLANK" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ANUS_RECTUM_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ANUS_RECTUM" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="GU_SYSTEM_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="GU_SYSTEM" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="INGUINALS_GENITALS_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="INGUINALS_GENITALS" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="REFLEXES_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="REFLEXES" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EXTREMITIES_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EXTREMITIES" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DENTAL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DENTAL_TAG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_Landbase_Physical" Method="sp_Landbase_Physical">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_Landbase_PhysicalResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="WEIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BP" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PULSE" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="RESPIRATION" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BODYBUILD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FARODU" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FARODC" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FAROSU" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FAROSC" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEARODJU" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEARODJC" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEAROSJU" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="NEAROSJC" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ISHIHARA_U" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ISHIHARA_C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEARING_AD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEARING_AS" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SPEECH" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="CONVERSATIONAL_AD" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="CONVERSATIONAL_AS" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SATISFACTORY_HEARING" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SATISFACTORY_SIGHT_AID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SATISFACTORY_SIGHT_UNAID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="SATISFACTORY_PSYCHO" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="VISUALAIDS" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="FITFORLOOKOUT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEARINGRIGHT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HEARINGLEFT" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="CLARITYOFSPEECH" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="VISUALAIDSREQUIRED" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BPDIASTOLIC" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="RHYTHM" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="VISUALAIDSWORN" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="COLORVISIONDATETAKEN" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="UNAIDEDHEARINGSATISFACTORY" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="IDENTITYCONFIRMED" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="DentalUpperRight" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DentalUpperLeft" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DentalLowerRight" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DentalLowerLeft" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lmp" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="obScore" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Interval" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Dysmenorrhea" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OralProphylaxis" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Fillings" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Extraction" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="obOther" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FarWgOU" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FarWoOU" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NearOu" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DentalOthers" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_urinalysis_gamosa" Method="sp_urinalysis_gamosa">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_urinalysis_gamosaResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Color" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transparency" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="pH" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SpecificGravity" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Sugar" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Albumin" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Bacteria" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="wbc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="rbc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EpithelialCells" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MucousThreads" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="AmorphousUrates" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Casts" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Crystals" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PregnancyTest" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Normal" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Findings" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_urinalysis_gamosa_lab" Method="sp_urinalysis_gamosa_lab">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_urinalysis_gamosa_labResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Color" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transparency" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="pH" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SpecificGravity" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Sugar" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Albumin" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Bacteria" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="wbc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="rbc" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EpithelialCells" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MucousThreads" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="AmorphousUrates" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Casts" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Crystals" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PregnancyTest" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Normal" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Findings" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_UrinalysisMedical" Method="sp_UrinalysisMedical">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="sp_UrinalysisMedicalResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="medtech" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="pathologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="specimen_no" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="medtech_license" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="pathologist_license" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="repeat_test_requestby" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_hema_gamosa_lab" Method="sp_hema_gamosa_lab">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_hema_gamosa_labResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Hemoglobin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Hematocrit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RBCCount" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WBCCount" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Neutrophils" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Lymphocytes" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Eosonophils" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Monocytes" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Basophils" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Platelet" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Normal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Findings" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Papin" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="aboTyping" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fbs" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rbs" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_insert_hema_gamosa" Method="sp_insert_hema_gamosa">
+    <Parameter Name="Hemoglobin" Parameter="hemoglobin" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Hematocrit" Parameter="hematocrit" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RBCCount" Parameter="rBCCount" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WBCCount" Parameter="wBCCount" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Neutrophils" Parameter="neutrophils" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Lymphocytes" Parameter="lymphocytes" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Eosonophils" Parameter="eosonophils" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Monocytes" Parameter="monocytes" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Basophils" Parameter="basophils" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Platelet" Parameter="platelet" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ResultDate" Parameter="resultDate" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Normal" Parameter="normal" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Findings" Parameter="findings" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="resultid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="aboTyping" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="rh" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="fbs" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="rbs" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_hema_gamosa" Method="sp_hema_gamosa">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_hema_gamosaResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Hemoglobin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Hematocrit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RBCCount" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="WBCCount" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Neutrophils" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Lymphocytes" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Eosonophils" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Monocytes" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Basophils" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Platelet" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Normal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Findings" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Papin" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="aboTyping" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fbs" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="rbs" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Search_patient_add_a" Method="Search_patient_add_a">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="Search_patient_add_aResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PatientName" Type="System.String" DbType="VarChar(153) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_employer" Method="sp_employer">
+    <ElementType Name="sp_employerResult">
+      <Column Name="Employer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_fecalysis_gamosa_lab" Method="sp_fecalysis_gamosa_lab">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_fecalysis_gamosa_labResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="color" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Consistency" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PusCells" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="rbc" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ova" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Normal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Findings" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="other" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="hbsag" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="hbsag_Tag" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="hbsagB" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="hbsagB_Tag" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_fecalysis_gamosa" Method="sp_fecalysis_gamosa">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_fecalysis_gamosaResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="color" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Consistency" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PusCells" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="rbc" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ova" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Normal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Findings" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="other" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="hbsag" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="hbsag_Tag" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="hbsagB" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="hbsagB_Tag" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_listOfPatientSummary" Method="sp_listOfPatientSummary">
+    <Parameter Name="Employer" Parameter="employer" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_listOfPatientSummaryResult">
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Lastname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Firstname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Contact" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="employer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="birthdate" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BP" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BMI_Value" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="BMI_Remark" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="OD_With_o_Glasses" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="OS_With_o_Glasses" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="OD_With_Glasses" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="OS_With_Glasses" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="BloodType_result" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="Hema" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="Urinalysis" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="Fecalysis" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ECG" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="XRAY" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Class" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="Evaluation" Type="System.String" DbType="VarChar(8000)" CanBeNull="true" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="recommendation" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.lab_search" Method="lab_search">
+    <Parameter Name="ID" Parameter="iD" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="lab_searchResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PatientName" Type="System.String" DbType="VarChar(153)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.searchBloodTyping" Method="searchBloodTyping">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="searchBloodTypingResult">
+      <Column Name="RecId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResultId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Papin" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Test1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Specific1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Result1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Test2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Specific2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Result2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="EventDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.searchSerology" Method="searchSerology">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="searchSerologyResult">
+      <Column Name="RecId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResultID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Test1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Specific1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Result1" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Test2" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Specific2" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Result2" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="EventDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.searchChem" Method="searchChem">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="searchChemResult">
+      <Column Name="RecId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResultId" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Papin" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Fbs" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Bun" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UricAcid" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Creatinine" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Cholesterol" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Triglyceride" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Hdl" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ldl" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Vldl" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Sgpt" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Sgot" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Fbs_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Bun_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="UricAcid_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Creatinine_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Cholesterol_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Triglyceride_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Hdl_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ldl_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Vldl_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Sgpt_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Sgot_Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="EventDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.searchFecalysis" Method="searchFecalysis">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="searchFecalysisResult">
+      <Column Name="RecId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResultId" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Papin" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="color" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Consistency" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Whitebloodcell" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Redbloodcell" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Fatglobules" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bacteria" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Findings" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="EventDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.searchHbOneC" Method="searchHbOneC">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="searchHbOneCResult">
+      <Column Name="RecId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResultID" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="HBA1C" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="EventDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_BloodTypingPROCESS" Method="sp_BloodTypingPROCESS">
+    <Parameter Name="ResultId" Parameter="resultId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Test1" Parameter="test1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Specific1" Parameter="specific1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Result1" Parameter="result1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Test2" Parameter="test2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Specific2" Parameter="specific2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Result2" Parameter="result2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ResultDate" Parameter="resultDate" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ClinicalChemistryPROCESS" Method="sp_ClinicalChemistryPROCESS">
+    <Parameter Name="ResultId" Parameter="resultId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Fbs" Parameter="fbs" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Bun" Parameter="bun" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="UricAcid" Parameter="uricAcid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Creatinine" Parameter="creatinine" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Cholesterol" Parameter="cholesterol" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Triglyceride" Parameter="triglyceride" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Hdl" Parameter="hdl" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Ldl" Parameter="ldl" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Vldl" Parameter="vldl" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Sgpt" Parameter="sgpt" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Sgot" Parameter="sgot" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Fbs_Remark" Parameter="fbs_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Bun_Remark" Parameter="bun_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="UricAcid_Remark" Parameter="uricAcid_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Creatinine_Remark" Parameter="creatinine_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Cholesterol_Remark" Parameter="cholesterol_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Triglyceride_Remark" Parameter="triglyceride_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Hdl_Remark" Parameter="hdl_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Ldl_Remark" Parameter="ldl_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Vldl_Remark" Parameter="vldl_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Sgpt_Remark" Parameter="sgpt_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Sgot_Remark" Parameter="sgot_Remark" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ResultDate" Parameter="resultDate" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_FecalysisPROCESS" Method="sp_FecalysisPROCESS">
+    <Parameter Name="ResultId" Parameter="resultId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="color" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Consistency" Parameter="consistency" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Whitebloodcell" Parameter="whitebloodcell" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Redbloodcell" Parameter="redbloodcell" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Fatglobules" Parameter="fatglobules" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Bacteria" Parameter="bacteria" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Findings" Parameter="findings" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ResultDate" Parameter="resultDate" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_HbAOnecPROCESS" Method="sp_HbAOnecPROCESS">
+    <Parameter Name="ResultID" Parameter="resultID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="HBA1C" Parameter="hBA1C" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ResultDate" Parameter="resultDate" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_SerologyPROCESS" Method="sp_SerologyPROCESS">
+    <Parameter Name="ResultID" Parameter="resultID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Test1" Parameter="test1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Specific1" Parameter="specific1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Result1" Parameter="result1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Test2" Parameter="test2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Specific2" Parameter="specific2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Result2" Parameter="result2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ResultDate" Parameter="resultDate" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_HematologyPROCESS" Method="sp_HematologyPROCESS">
+    <Parameter Name="ResultId" Parameter="resultId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Redbloodcells" Parameter="redbloodcells" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Hemoglobin" Parameter="hemoglobin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Hematocrit" Parameter="hematocrit" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Plateletcount" Parameter="plateletcount" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Whitebloodcells" Parameter="whitebloodcells" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Neutrophil" Parameter="neutrophil" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Lymphocyte" Parameter="lymphocyte" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Monocyte" Parameter="monocyte" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Eosinophil" Parameter="eosinophil" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Others" Parameter="others" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Basophil" Parameter="basophil" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ResultDate" Parameter="resultDate" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.searchHematology" Method="searchHematology">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="searchHematologyResult">
+      <Column Name="RecId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254) NOT NULL" CanBeNull="false" />
+      <Column Name="Papin" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Redbloodcells" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Hemoglobin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Hematocrit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Plateletcount" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Whitebloodcells" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Neutrophil" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Lymphocyte" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Monocyte" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Eosinophil" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Basophil" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Other" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="EventDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_UrinalysisPROCESS" Method="sp_UrinalysisPROCESS">
+    <Parameter Name="ResultId" Parameter="resultId" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Color" Parameter="color" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Transparency" Parameter="transparency" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SpecificGravity" Parameter="specificGravity" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="pH" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Glucose" Parameter="glucose" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Protein" Parameter="protein" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="WhiteBloodCells" Parameter="whiteBloodCells" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="RedBloodCells" Parameter="redBloodCells" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="EpithelialCells" Parameter="epithelialCells" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="MucusThread" Parameter="mucusThread" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Bacteria" Parameter="bacteria" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="AmorphousUrates" Parameter="amorphousUrates" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="AmorphousPhospates" Parameter="amorphousPhospates" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Others" Parameter="others" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ResultDate" Parameter="resultDate" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_SearchUrinalysis" Method="sp_SearchUrinalysis">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_SearchUrinalysisResult">
+      <Column Name="RecId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ResultId" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Papin" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Color" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Transparency" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="SpecificGravity" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="pH" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Glucose" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Protein" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="WhiteBloodCells" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="RedBloodCells" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EpithelialCells" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MucusThread" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Bacteria" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="AmorphousUrates" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="AmorphousPhospates" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Others" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="EventDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_SearchLabTestHistory" Method="sp_SearchLabTestHistory">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="sp_SearchLabTestHistoryResult">
+      <Column Name="Test" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="ResultDate" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_XrayProcess" Method="sp_XrayProcess">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="reference_no" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="findings" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="radiologist" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="rad_license" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="examination" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="impression" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="remark" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="result_date" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_Xray_Detail" Method="sp_Xray_Detail">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_Xray_DetailResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="resultid" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="reference_no" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="findings" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="radiologist" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="rad_license" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="examination" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="impression" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="remark" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="result_date" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.TriggerReport" Method="TriggerReport">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ChartLab" Method="sp_ChartLab">
+    <Parameter Name="reportType" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="dateFrom" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="dateTo" Type="System.String" DbType="VarChar(MAX)" />
+    <ElementType Name="sp_ChartLabResult">
+      <Column Name="DateResult" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="Urinalysis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Serology" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hematology" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HBa1c" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecalysis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BloodTyping" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClinicalChemistry" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Chem12" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ultrasound" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CBC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Xray" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_PrintbloodTypingUpdate" Method="sp_PrintbloodTypingUpdate">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_PrintClinicalChemistryUpdate" Method="sp_PrintClinicalChemistryUpdate">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_PrintfecalysisUpdate" Method="sp_PrintfecalysisUpdate">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_PrintHbAOnecUpdate" Method="sp_PrintHbAOnecUpdate">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_PrinthematologyUpdate" Method="sp_PrinthematologyUpdate">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_PrintSerelogyUpdate" Method="sp_PrintSerelogyUpdate">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_PrintUrinalysisUpdate" Method="sp_PrintUrinalysisUpdate">
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_createUser" Method="sp_createUser">
+    <Parameter Name="Fullname" Parameter="fullname" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Username" Parameter="username" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="UserLevel" Parameter="userLevel" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Remark" Parameter="remark" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="sp_createUserResult">
+      <Column Name="" Member="Column1" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.visit" Method="visit">
+    <ElementType Name="visitResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="PatientName" Type="System.String" DbType="VarChar(153) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="trans_date" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="purpose" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_deleteVisit" Method="sp_deleteVisit">
+    <Parameter Name="cn" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_RegisterNewPatient" Method="sp_RegisterNewPatient">
+    <Parameter Name="papin" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="lastname" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="firstname" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="middlename" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="address_1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="address_2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="city" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="district" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="contact_1" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="contact_2" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="position" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="marital_status" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="gender" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="birthdate" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="place_of_birth" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="type_of_job" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="employer" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="passport_no" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="seamansbook_no" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="registration_date" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="remarks" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="nationality" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="religion" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="test_data" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="father_name" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="father_occupation" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="mother_name" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="no_of_brothers" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="no_of_sisters" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="birth_order" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="spouse_name" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="spouse_occupation" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="no_of_children" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="elementary" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="highschool" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="college" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="course" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="highest_level_attended" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="mother_occupation" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="prev_work_start" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="prev_work_end" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="prev_company" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="prev_position" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="prev_leave_reason" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="prev_years" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="date_last_updated" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="sirb" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="designation" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="country_destination" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="sp_RegisterNewPatientResult">
+      <Column Name="" Member="Column1" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_InsertVisit" Method="sp_InsertVisit">
+    <Parameter Name="trkid" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="papin" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="pxtype" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="trans_date" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="diagnosis" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="purpose" Type="System.String" DbType="VarChar(200)" />
+    <ElementType Name="sp_InsertVisitResult">
+      <Column Name="" Member="Column1" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_visitReport" Method="sp_visitReport">
+    <ElementType Name="sp_visitReportResult">
+      <Column Name="cn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="papin" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PatientName" Type="System.String" DbType="VarChar(153) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="pxtype" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="trans_date" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="diagnosis" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getDaysOfTheMonth" Method="getDaysOfTheMonth">
+    <Parameter Name="m" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="y" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="getDaysOfTheMonthResult">
+      <Column Name="Day" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_ChartReport" Method="sp_ChartReport">
+    <Parameter Name="m" Type="System.Int32" DbType="Int" />
+    <Parameter Name="wn" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_ChartReportResult">
+      <Column Name="DateResult" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" />
+      <Column Name="Urinalysis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Serology" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hematology" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HBa1c" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecalysis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BloodTyping" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClinicalChemistry" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ultrasound" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CBC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Xray" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_updateIsPrinted" Method="sp_updateIsPrinted">
+    <Parameter Name="t" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ChartDelay" Method="sp_ChartDelay">
+    <Parameter Name="reportType" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="m" Type="System.Int32" DbType="Int" />
+    <Parameter Name="wn" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="sp_ChartDelayResult">
+      <Column Name="DateResult" Type="System.String" DbType="NVarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="Count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_ChartDelayMonthly" Method="sp_ChartDelayMonthly">
+    <Parameter Name="reportType" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="y" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_ChartDelayMonthlyResult">
+      <Column Name="YearMonth" Type="System.String" DbType="NVarChar(43) NOT NULL" CanBeNull="false" />
+      <Column Name="Count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_ChartReportMonthly" Method="sp_ChartReportMonthly">
+    <Parameter Name="y" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_ChartReportMonthlyResult">
+      <Column Name="YearMonth" Type="System.String" DbType="NVarChar(43) NOT NULL" CanBeNull="false" />
+      <Column Name="Urinalysis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Serology" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Hematology" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HBa1c" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecalysis" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BloodTyping" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClinicalChemistry" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ultrasound" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CBC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Xray" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_PatientByGender" Method="sp_PatientByGender">
+    <ElementType Name="sp_PatientByGenderResult">
+      <Column Name="Male" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Female" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_PatientByGroup" Method="sp_PatientByGroup">
+    <ElementType Name="sp_PatientByGroupResult">
+      <Column Name="Senior" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Adult" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Teenager" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Child" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_MostAvailedLaboratoryTestForTheMonth" Method="sp_MostAvailedLaboratoryTestForTheMonth">
+    <ElementType Name="sp_MostAvailedLaboratoryTestForTheMonthResult">
+      <Column Name="[No.]" Member="No_" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="LabTest" Type="System.String" DbType="VarChar(17) NOT NULL" CanBeNull="false" />
+      <Column Name="Count" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.LabtestTurnaroundTime" Method="LabtestTurnaroundTime">
+    <ElementType Name="LabtestTurnaroundTimeResult">
+      <Column Name="RecID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LabTest" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Target" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+      <Column Name="Average" Type="System.String" DbType="VarChar(254)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_LaboratoryTestTurnAroundTime" Method="sp_LaboratoryTestTurnAroundTime">
+    <ElementType Name="sp_LaboratoryTestTurnAroundTimeResult">
+      <Column Name="Test" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="DayDiff" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="d" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_MedicalExaminationProcess" Method="sp_MedicalExaminationProcess">
+    <Parameter Name="ResultID" Parameter="resultID" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Papin" Parameter="papin" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="resulttype" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="result_date" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="pathologist" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="status" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="fitness_date" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="valid_until" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="remarksMain" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="recommendation" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="repeat_test_requestby" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="specimen_no" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="medtech" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="medtech_license" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="pathologist_license" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="reference_no" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="restriction" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="basic_doh_exam" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="add_lab_tests" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="flag_medlab_req" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="deck_srvc_flag" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="engine_srvc_flag" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="catering_srvc_flag" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="other_srvc_flag" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Evaluation" Parameter="evaluation" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Allergies" Parameter="allergies" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="AnemiaBleeding" Parameter="anemiaBleeding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Asthma" Parameter="asthma" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="BloodProblem" Parameter="bloodProblem" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="CancerTumor" Parameter="cancerTumor" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Chickenpox" Parameter="chickenpox" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Clotting" Parameter="clotting" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Diabetes" Parameter="diabetes" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DiabetesMellitus" Parameter="diabetesMellitus" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Epilepsy" Parameter="epilepsy" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="EyeEarDisorders" Parameter="eyeEarDisorders" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="GastritisUlcer" Parameter="gastritisUlcer" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="GeneticDisorders" Parameter="geneticDisorders" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="GermanMeasles" Parameter="germanMeasles" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HeadachesMigraine" Parameter="headachesMigraine" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HeartDisease" Parameter="heartDisease" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Hepatitis" Parameter="hepatitis" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Hernia" Parameter="hernia" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Hypertension" Parameter="hypertension" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="KidneyDisease" Parameter="kidneyDisease" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="LiverDisease" Parameter="liverDisease" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Measles" Parameter="measles" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="MentalDisorders" Parameter="mentalDisorders" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Musculoskeletal" Parameter="musculoskeletal" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NoseThroatDisorders" Parameter="noseThroatDisorders" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Pneumonia" Parameter="pneumonia" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PsychologicalDisorder" Parameter="psychologicalDisorder" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PTB" Parameter="pTB" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SeizureDisorders" Parameter="seizureDisorders" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SexuallyTransmitted" Parameter="sexuallyTransmitted" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SkinDisease" Parameter="skinDisease" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ThyroidDisorders" Parameter="thyroidDisorders" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Tubercolosis" Parameter="tubercolosis" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="TyphoidParatyphoid" Parameter="typhoidParatyphoid" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Ulcers" Parameter="ulcers" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Vertigo" Parameter="vertigo" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Other" Parameter="other" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PresentSymptoms" Parameter="presentSymptoms" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="FamilyMedicalHistory" Parameter="familyMedicalHistory" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="OperationsandAccidents" Parameter="operationsandAccidents" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PersonaSocialHistory" Parameter="personaSocialHistory" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Smoker" Parameter="smoker" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NoOfPackDay" Parameter="noOfPackDay" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="AlcoholDrinker" Parameter="alcoholDrinker" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NoOfYear" Parameter="noOfYear" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HEIGHT" Parameter="hEIGHT" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="WEIGHT" Parameter="wEIGHT" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="BP" Parameter="bP" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PULSE" Parameter="pULSE" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="RESPIRATION" Parameter="rESPIRATION" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="BODYBUILD" Parameter="bODYBUILD" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="FARODU" Parameter="fARODU" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="FARODC" Parameter="fARODC" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="FAROSU" Parameter="fAROSU" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="FAROSC" Parameter="fAROSC" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NEARODJU" Parameter="nEARODJU" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NEARODJC" Parameter="nEARODJC" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NEAROSJU" Parameter="nEAROSJU" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NEAROSJC" Parameter="nEAROSJC" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ISHIHARA_U" Parameter="iSHIHARA_U" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ISHIHARA_C" Parameter="iSHIHARA_C" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HEARING_AD" Parameter="hEARING_AD" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HEARING_AS" Parameter="hEARING_AS" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SPEECH" Parameter="sPEECH" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="CONVERSATIONAL_AD" Parameter="cONVERSATIONAL_AD" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="CONVERSATIONAL_AS" Parameter="cONVERSATIONAL_AS" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SATISFACTORY_HEARING" Parameter="sATISFACTORY_HEARING" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SATISFACTORY_SIGHT_AID" Parameter="sATISFACTORY_SIGHT_AID" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SATISFACTORY_SIGHT_UNAID" Parameter="sATISFACTORY_SIGHT_UNAID" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SATISFACTORY_PSYCHO" Parameter="sATISFACTORY_PSYCHO" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="VISUALAIDS" Parameter="vISUALAIDS" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="FITFORLOOKOUT" Parameter="fITFORLOOKOUT" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HEARINGRIGHT" Parameter="hEARINGRIGHT" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HEARINGLEFT" Parameter="hEARINGLEFT" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="CLARITYOFSPEECH" Parameter="cLARITYOFSPEECH" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="VISUALAIDSREQUIRED" Parameter="vISUALAIDSREQUIRED" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="BPDIASTOLIC" Parameter="bPDIASTOLIC" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="RHYTHM" Parameter="rHYTHM" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="VISUALAIDSWORN" Parameter="vISUALAIDSWORN" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="COLORVISIONDATETAKEN" Parameter="cOLORVISIONDATETAKEN" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="UNAIDEDHEARINGSATISFACTORY" Parameter="uNAIDEDHEARINGSATISFACTORY" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="IDENTITYCONFIRMED" Parameter="iDENTITYCONFIRMED" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DentalUpperRight" Parameter="dentalUpperRight" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DentalUpperLeft" Parameter="dentalUpperLeft" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DentalLowerRight" Parameter="dentalLowerRight" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DentalLowerLeft" Parameter="dentalLowerLeft" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="lmp" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="obScore" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Interval" Parameter="interval" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Duration" Parameter="duration" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Dysmenorrhea" Parameter="dysmenorrhea" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="OralProphylaxis" Parameter="oralProphylaxis" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Fillings" Parameter="fillings" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Extraction" Parameter="extraction" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="obOther" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="FarWgOU" Parameter="farWgOU" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="FarWoOU" Parameter="farWoOU" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NearOu" Parameter="nearOu" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Hematology_result" Parameter="hematology_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Hematology_finding" Parameter="hematology_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Urinalysis_result" Parameter="urinalysis_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Urinalysis_finding" Parameter="urinalysis_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Fecalysis_result" Parameter="fecalysis_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Fecalysis_finding" Parameter="fecalysis_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ChestXRay_result" Parameter="chestXRay_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ChestXRay_finsing" Parameter="chestXRay_finsing" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ECG_result" Parameter="eCG_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ECG_finsing" Parameter="eCG_finsing" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PsychologicalTest_result" Parameter="psychologicalTest_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PsychologicalTest_finding" Parameter="psychologicalTest_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HBsAg_result" Parameter="hBsAg_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HBsAg_finsing" Parameter="hBsAg_finsing" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PregnancyTest_result" Parameter="pregnancyTest_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PregnancyTest_finding" Parameter="pregnancyTest_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="BloodType_result" Parameter="bloodType_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="BloodType_findings" Parameter="bloodType_findings" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DrugTest_result" Parameter="drugTest_result" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DrugTest_finding" Parameter="drugTest_finding" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SKIN_TAG" Parameter="sKIN_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SKIN" Parameter="sKIN" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HEAD_NECK_SCALP_TAG" Parameter="hEAD_NECK_SCALP_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HEAD_NECK_SCALP" Parameter="hEAD_NECK_SCALP" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="EYES_TAG" Parameter="eYES_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="EYES" Parameter="eYES" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PUPILS_TAG" Parameter="pUPILS_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PUPILS" Parameter="pUPILS" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="EARS_EARDRUM_TAG" Parameter="eARS_EARDRUM_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="EARS_EARDRUM" Parameter="eARS_EARDRUM" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NOSE_SINUSES_TAG" Parameter="nOSE_SINUSES_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NOSE_SINUSES" Parameter="nOSE_SINUSES" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="MOUTH_THROAT_TAG" Parameter="mOUTH_THROAT_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="MOUTH_THROAT" Parameter="mOUTH_THROAT" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NECK_LN_THYROID_TAG" Parameter="nECK_LN_THYROID_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="NECK_LN_THYROID" Parameter="nECK_LN_THYROID" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="CHEST_BREAST_AXILLA_TAG" Parameter="cHEST_BREAST_AXILLA_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="CHEST_BREAST_AXILLA" Parameter="cHEST_BREAST_AXILLA" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="LUNGS_TAG" Parameter="lUNGS_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="LUNGS" Parameter="lUNGS" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HEART_TAG" Parameter="hEART_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="HEART" Parameter="hEART" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ABDOMEN_TAG" Parameter="aBDOMEN_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ABDOMEN" Parameter="aBDOMEN" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="BACK_FLANK_TAG" Parameter="bACK_FLANK_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="BACK_FLANK" Parameter="bACK_FLANK" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ANUS_RECTUM_TAG" Parameter="aNUS_RECTUM_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ANUS_RECTUM" Parameter="aNUS_RECTUM" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="GU_SYSTEM_TAG" Parameter="gU_SYSTEM_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="GU_SYSTEM" Parameter="gU_SYSTEM" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="INGUINALS_GENITALS_TAG" Parameter="iNGUINALS_GENITALS_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="INGUINALS_GENITALS" Parameter="iNGUINALS_GENITALS" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="REFLEXES_TAG" Parameter="rEFLEXES_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="REFLEXES" Parameter="rEFLEXES" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="EXTREMITIES_TAG" Parameter="eXTREMITIES_TAG" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="EXTREMITIES" Parameter="eXTREMITIES" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="DentalOthers" Parameter="dentalOthers" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

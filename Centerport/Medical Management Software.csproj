@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BF054DF-133E-4907-8883-31FBC3AA26E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MedicalManagement</RootNamespace>
+    <AssemblyName>SmartGuys Community Health Care Inc</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ShouldCreateLogs>True</ShouldCreateLogs>
+    <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
+    <UpdateAssemblyVersion>True</UpdateAssemblyVersion>
+    <UpdateAssemblyFileVersion>True</UpdateAssemblyFileVersion>
+    <UpdateAssemblyInfoVersion>True</UpdateAssemblyInfoVersion>
+    <AssemblyVersionSettings>YearStamp.MonthStamp.DayStamp.Increment</AssemblyVersionSettings>
+    <AssemblyFileVersionSettings>YearStamp.MonthStamp.DayStamp.Increment</AssemblyFileVersionSettings>
+    <AssemblyInfoVersionSettings>YearStamp.MonthStamp.DayStamp.Increment</AssemblyInfoVersionSettings>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>2</UpdateInterval>
+    <UpdateIntervalUnits>Hours</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_circle_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1D6B9469E8753D6B932FE461237ECD7110940236</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Centerport_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet">
+      <HintPath>C:\Users\Asus\Downloads\Compressed\GemsBox Excel\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet.WinFormsUtilities">
+      <HintPath>C:\Users\Asus\Downloads\Compressed\GemsBox Excel\GemBox.Spreadsheet.WinFormsUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Myowncontrol\MetroUI\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.SqlServer.Types.11.0.2\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture">
+      <HintPath>..\..\..\..\..\Downloads\EasyWebCam\DLL for Add Reference\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Bool.cs" />
+    <Compile Include="Class\ClassSql.cs" />
+    <Compile Include="Class\ComboBoxItem.cs" />
+    <Compile Include="Class\Datas.cs" />
+    <Compile Include="Class\DateSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\DateSelection.Designer.cs">
+      <DependentUpon>DateSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\DaysOfTheMonth.cs" />
+    <Compile Include="Class\employer_model.cs" />
+    <Compile Include="Class\EncodeString.cs" />
+    <Compile Include="Class\Helper.cs" />
+    <Compile Include="Class\HIV_Model.cs" />
+    <Compile Include="Class\labSearch_Model.cs" />
+    <Compile Include="Class\LandBaseAdd_Model.cs" />
+    <Compile Include="Class\landbaseSearckList_Model.cs" />
+    <Compile Include="Class\ListboxItem.cs" />
+    <Compile Include="Class\Login_model.cs" />
+    <Compile Include="Class\MyClass.cs" />
+    <Compile Include="Class\OverlayShadow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\PatientSearchList_Model.cs" />
+    <Compile Include="Class\Psychology_Model.cs" />
+    <Compile Include="Class\QueueSearchList_Model.cs" />
+    <Compile Include="Class\Repeat_hema_Model.cs" />
+    <Compile Include="Class\Reporting.cs" />
+    <Compile Include="Class\Seabase_SearchList_Model.cs" />
+    <Compile Include="Class\Seafarer_SearchList_MLC.cs" />
+    <Compile Include="Class\Summary.cs" />
+    <Compile Include="Class\TemplatePath.cs" />
+    <Compile Include="Class\Tool.cs" />
+    <Compile Include="Class\Ultrasound_SearchList_Model.cs" />
+    <Compile Include="Class\user_model.cs" />
+    <Compile Include="Class\variables.cs" />
+    <Compile Include="Class\visitModel.cs" />
+    <Compile Include="Class\Visit_Add_Model.cs" />
+    <Compile Include="Class\WebCam.cs" />
+    <Compile Include="Class\Wizard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Class\Xray_Model.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EndProcess.cs" />
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLaboratoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLaboratoryReport.Designer.cs">
+      <DependentUpon>FrmLaboratoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLapPrints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLapPrints.Designer.cs">
+      <DependentUpon>FrmLapPrints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_emailaddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_emailaddress.Designer.cs">
+      <DependentUpon>frm_emailaddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_employer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_employer.Designer.cs">
+      <DependentUpon>frm_employer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Instance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Instance.Designer.cs">
+      <DependentUpon>frm_Instance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NewPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NewPatient.Designer.cs">
+      <DependentUpon>frm_NewPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_about.Designer.cs">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_camera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_camera.Designer.cs">
+      <DependentUpon>frm_camera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lab.Designer.cs">
+      <DependentUpon>frm_lab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MedicalExamination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MedicalExamination.Designer.cs">
+      <DependentUpon>frm_MedicalExamination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_addPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_addPatient.Designer.cs">
+      <DependentUpon>frm_addPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_NormalValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_NormalValues.Designer.cs">
+      <DependentUpon>frm_NormalValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_patient_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_patient_Info.Designer.cs">
+      <DependentUpon>frm_patient_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_patientInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_patientInfo.Designer.cs">
+      <DependentUpon>frm_patientInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_search_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_search_Patient.Designer.cs">
+      <DependentUpon>frm_search_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Psych_Evaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Psych_Evaluation.Designer.cs">
+      <DependentUpon>frm_Psych_Evaluation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_search_Lab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_search_Lab.Designer.cs">
+      <DependentUpon>frm_search_Lab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_search_Psych_Eval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_search_Psych_Eval.Designer.cs">
+      <DependentUpon>frm_search_Psych_Eval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_server.Designer.cs">
+      <DependentUpon>frm_server.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_summary.Designer.cs">
+      <DependentUpon>frm_summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_user.Designer.cs">
+      <DependentUpon>frm_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_xray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_xray.Designer.cs">
+      <DependentUpon>frm_xray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_search_Patient_Queuing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_search_Patient_Queuing.Designer.cs">
+      <DependentUpon>frm_search_Patient_Queuing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_visit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_visit.Designer.cs">
+      <DependentUpon>frm_visit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_VisitDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_VisitDetail.Designer.cs">
+      <DependentUpon>frm_VisitDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ini.cs" />
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyInter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <None Include="ClassDiagram1.cd" />
+    <EmbeddedResource Include="Class\DateSelection.resx">
+      <DependentUpon>DateSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLaboratoryReport.resx">
+      <DependentUpon>FrmLaboratoryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLapPrints.resx">
+      <DependentUpon>FrmLapPrints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_emailaddress.resx">
+      <DependentUpon>frm_emailaddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_employer.resx">
+      <DependentUpon>frm_employer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Instance.resx">
+      <DependentUpon>frm_Instance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NewPatient.resx">
+      <DependentUpon>frm_NewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_about.resx">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_addPatient.resx">
+      <DependentUpon>frm_addPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_camera.resx">
+      <DependentUpon>frm_camera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_lab.resx">
+      <DependentUpon>frm_lab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MedicalExamination.resx">
+      <DependentUpon>frm_MedicalExamination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_NormalValues.resx">
+      <DependentUpon>frm_NormalValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_patient_Info.resx">
+      <DependentUpon>frm_patient_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_patientInfo.resx">
+      <DependentUpon>frm_patientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_search_Patient.resx">
+      <DependentUpon>frm_search_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Psych_Evaluation.resx">
+      <DependentUpon>frm_Psych_Evaluation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_search_Lab.resx">
+      <DependentUpon>frm_search_Lab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_search_Psych_Eval.resx">
+      <DependentUpon>frm_search_Psych_Eval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_server.resx">
+      <DependentUpon>frm_server.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_summary.resx">
+      <DependentUpon>frm_summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_user.resx">
+      <DependentUpon>frm_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_xray.resx">
+      <DependentUpon>frm_xray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_search_Patient_Queuing.resx">
+      <DependentUpon>frm_search_Patient_Queuing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_visit.resx">
+      <DependentUpon>frm_visit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_VisitDetail.resx">
+      <DependentUpon>frm_VisitDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Que.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Que%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HIV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\land worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patients.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psychology.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seaman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ultrasound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-ray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnonymousPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_32x29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32x29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_2_32x29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32x29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_32x29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\msvcr100.dll">
+      <Link>SqlServerTypes\x64\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x64\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\msvcr100.dll">
+      <Link>SqlServerTypes\x86\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\document_print_preview.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\releasing.png" />
+    <None Include="Resources\logo1.png" />
+    <Content Include="logo_circle_icon.ico" />
+    <Content Include="mmsicon.ico" />
+    <None Include="Resources\Spinner.gif" />
+    <None Include="Resources\server options.png" />
+    <None Include="Resources\serveroptions.png" />
+    <None Include="Resources\ecg.png" />
+    <None Include="Resources\Restart_.png" />
+    <None Include="Resources\gamosa.png" />
+    <None Include="Resources\collect.png" />
+    <None Include="Resources\logo_circle.png" />
+    <None Include="Resources\Screenshot_3.png" />
+    <None Include="Resources\lab1.png" />
+    <None Include="Resources\report.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <None Include="Resources\lab_others.png" />
+    <None Include="Resources\centerport_logo_resize.png" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\print1.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\save1.png" />
+    <None Include="Resources\delete1.png" />
+    <None Include="Resources\edit1.png" />
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

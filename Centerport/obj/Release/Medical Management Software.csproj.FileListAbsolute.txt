@@ -1,0 +1,33 @@
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\bin\Release\Medical Management Software.exe.config
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.Class.DateSelection.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_emailaddress.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_employer.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_Instance.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_login.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_NewPatient.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_about.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_addPatient.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_camera.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_lab.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_MedicalExamination.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_NormalValues.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_patient_Info.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_patientInfo.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_search_Patient.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_Psych_Evaluation.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_search_MedicalExamination.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_search_Lab.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_search_Psych_Eval.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_search_xray.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_server.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_summary.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_user.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_xray.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_search_Patient_Queuing.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_visit.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.frm_VisitDetail.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.Loading.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.Main.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\MedicalManagement.Properties.Resources.resources
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\Medical Management Software.csproj.GenerateResource.Cache
+E:\DeveloperProjects\SGS\MedicalManagementSoftware V4.0.0.4\System8212018\Centerport\obj\Release\Medical Management Software.exe.licenses
