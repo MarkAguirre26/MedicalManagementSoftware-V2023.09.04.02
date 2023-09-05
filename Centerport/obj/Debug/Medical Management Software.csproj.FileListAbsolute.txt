@@ -2862,3 +2862,64 @@ D:\Files\Devs\SGS\Snartguys-System\Centerport\obj\Debug\SmartGuys Community Heal
 D:\Files\Devs\SGS\Snartguys-System\Centerport\obj\Debug\SmartGuys Community Health Care Inc.TrustInfo.xml
 D:\Files\Devs\SGS\Snartguys-System\Centerport\obj\Debug\SmartGuys Community Health Care Inc.exe.manifest
 D:\Files\Devs\SGS\Snartguys-System\Centerport\obj\Debug\SmartGuys Community Health Care Inc.application
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\SmartGuys Community Health Care Inc.exe.config
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\SmartGuys Community Health Care Inc.exe
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\SmartGuys Community Health Care Inc.pdb
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\SqlServerTypes\x64\msvcr100.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\SqlServerTypes\x64\SqlServerSpatial110.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\SqlServerTypes\x86\msvcr100.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\SqlServerTypes\x86\SqlServerSpatial110.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\SmartGuys Community Health Care Inc.exe.manifest
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\SmartGuys Community Health Care Inc.application
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\SmartGuys Community Health Care Inc.exe
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\SmartGuys Community Health Care Inc.pdb
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\EntityFramework.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\EPPlus.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\Microsoft.VisualBasic.dll
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\EntityFramework.xml
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\bin\Debug\EPPlus.xml
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\Medical Management Software.csprojResolveAssemblyReference.cache
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.Class.DateSelection.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frmDashboard.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.FrmLaboratoryReport.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.FrmLapPrints.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.FrmReport.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_emailaddress.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_employer.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_Instance.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_login.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_NewPatient.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_about.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_addPatient.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_camera.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_lab.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_MedicalExamination.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_NormalValues.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_patient_Info.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_patientInfo.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_search_Patient.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_Psych_Evaluation.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_search_Lab.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_search_Psych_Eval.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_server.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_summary.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_user.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_xray.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_search_Patient_Queuing.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_visit.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.frm_VisitDetail.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.Loading.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.Main.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.Properties.Resources.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\Medical Management Software.csproj.GenerateResource.Cache
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\SmartGuys Community Health Care Inc.exe.licenses
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\SmartGuys Community Health Care Inc.TrustInfo.xml
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\SmartGuys Community Health Care Inc.exe.manifest
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\SmartGuys Community Health Care Inc.application

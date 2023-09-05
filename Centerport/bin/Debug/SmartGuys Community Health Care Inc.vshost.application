@@ -8,7 +8,7 @@
         <expiration maximumAge="2" unit="hours" />
       </update>
     </subscription>
-    <deploymentProvider codebase="file:///D:/Files/Devs/SGS/Snartguys-System/Centerport/publish/SmartGuys%20Community%20Health%20Care%20Inc.application" />
+    <deploymentProvider codebase="file:///D:/Files/Devs/SGS/MedicalManagementSoftware-V2023.09.04.02/Centerport/publish/SmartGuys%20Community%20Health%20Care%20Inc.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
@@ -21,7 +21,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CKs+REsgQXf5+lK0TWP5cekWQc8oA1QMiQl66XkXs94=</dsig:DigestValue>
+        <dsig:DigestValue>yfSai7RhMcZo72SLMCMaRabpXOrrCCigqOw58UsAW/A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

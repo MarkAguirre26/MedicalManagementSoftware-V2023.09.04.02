@@ -28,7 +28,7 @@ namespace MedicalManagement
             //{
             //    return new Version(FileVersionInfo.GetVersionInfo(Assembly.GetCallingAssembly().Location).ProductVersion).ToString();
             //}
-            return "2023.09.04.1";
+            return "2023.09.04.2";
         }
 
 

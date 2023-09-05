@@ -92,7 +92,7 @@ namespace MedicalManagement
                     break;
                 }
             }
-           
+           //
 
 
             this.Text = Properties.Settings.Default.SystemName + " " +Tool.version();
@@ -107,9 +107,9 @@ namespace MedicalManagement
             //OpenConnection();
             new frm_login(this).ShowDialog();
 
-            frmDashboard f = new frmDashboard();
-            f.MdiParent = this;
-            f.Show();
+            //frmDashboard f = new frmDashboard();
+            //f.MdiParent = this;
+            //f.Show();
 
 
         }

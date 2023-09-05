@@ -1,0 +1,19 @@
+Function Name: UrinalysisPROCESS
+Parameters:
+
+989fc81f-f710-4a38-9f18-a9a954ee8d19
+YELLOW
+HAZY
+1.000
+6.5
+TRACE
+3+
+
+
+
+
+
+
+
+
+9/5/2023
