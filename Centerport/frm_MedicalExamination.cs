@@ -693,7 +693,8 @@ namespace MedicalManagement
                                      "P48",
                                      "R49",
                                      "D35",
-                                     "S73"
+                                     "S73",
+                                     "S72"
                                     
 },
                     WorkSheetValue);
@@ -708,7 +709,7 @@ namespace MedicalManagement
 
         }
 
-
+        //
 
 
         public void Search()
@@ -1759,18 +1760,27 @@ namespace MedicalManagement
 
 
                 Datas.HEPA_B = "-";
+                Datas.HEPA_A = "-";
 
-                if (item.Test1.Equals("HEBA B"))
+                if (item.Test1.Equals("HEPA B"))
                 {
                     Datas.HEPA_B = item.Result1;
                 }
+                else if (item.Test1.Equals("HEPA A"))
+                {
+                    Datas.HEPA_A = item.Result1;
+                }
 
                
-                if (item.Test2.Equals("HEBA B"))
+                if (item.Test2.Equals("HEPA B"))
                 {
                     Datas.HEPA_B = item.Result2;
                 }
-
+                else if (item.Test2.Equals("HEPA A"))
+                {
+                    Datas.HEPA_A = item.Result1;
+                }
+               
 
 
             }

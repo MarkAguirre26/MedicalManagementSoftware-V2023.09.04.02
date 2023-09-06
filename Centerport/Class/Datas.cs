@@ -131,6 +131,7 @@ namespace MedicalManagement.Class
         public static string PHY_EXAM_OTHER;
         public static string WEIGHT_LBS;
         public static string HEPA_B;
+        public static string HEPA_A;
 
         public static string classificationA;
         public static string EvaluationClassOnly;

@@ -27,7 +27,7 @@ namespace MedicalManagement
             fmain.isfromLogin = true;
             Application.Exit();
         }
-        
+        //
         private void frm_login_Load(object sender, EventArgs e)
         {
             Ini.IniFile ini = new Ini.IniFile(ClassSql.MMS_Path);
