@@ -14,14 +14,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="SmartGuys Community Health Care Inc.exe.manifest" size="20415">
+    <dependentAssembly dependencyType="install" codebase="SmartGuys Community Health Care Inc.exe.manifest" size="26658">
       <assemblyIdentity name="SmartGuys Community Health Care Inc.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>h0lA723aHeI857Q5ggOPyjWZrWtYEDGEX2b854ldCk4=</dsig:DigestValue>
+        <dsig:DigestValue>ki+ZSUQIrf4hfTLqx+/1m/Y1dyv1wbt4lMPRnaW4emI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

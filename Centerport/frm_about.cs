@@ -25,11 +25,6 @@ namespace MedicalManagement
             //
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Process.Start("http://hsgsoftware.com/");
-        }
-
         private void cmd_ok_Click(object sender, EventArgs e)
         {
             this.Close();

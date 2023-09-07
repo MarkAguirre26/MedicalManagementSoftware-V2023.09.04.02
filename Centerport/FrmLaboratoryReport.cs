@@ -1,4 +1,6 @@
-﻿using MedicalManagement.Class;
+﻿using Ini;
+using MedicalManagement.Class;
+using MedicalManagement.Print;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +27,7 @@ namespace MedicalManagement
         private static string EVENT_SAVE = "Save";
         private static string EVENT_UPDATE = "Update";
         public List<laboratory_search> labsearch = new List<laboratory_search>();
+        private string Address, Contact;
 
         public static bool NewLabReport;
         public FrmLaboratoryReport(Main maiin)
@@ -36,6 +39,12 @@ namespace MedicalManagement
         private void FrmLaboratoryReport_Load(object sender, EventArgs e)
         {
             Availability(false);
+
+            IniFile ini = new IniFile(ClassSql.MMS_Path);
+            Address = ini.IniReadValue("COMPANY", "Address");
+            Contact = ini.IniReadValue("COMPANY", "Contact");
+
+
         }
 
         private void textBoxNumberOnly_KeyPress(object sender, KeyPressEventArgs e)
@@ -140,23 +149,23 @@ namespace MedicalManagement
             //
         }
 
-   public void WriteParametersToFile(string functionName, params object[] parameters)
-{
-
-    string fileName = "logs/"+Papin+"_"+functionName+".txt";
-
-    
-    using (StreamWriter writer = new StreamWriter(fileName))
-    {
-        writer.WriteLine("Function Name: "+functionName);
-        writer.WriteLine("Parameters:");
-        
-        foreach (object parameter in parameters)
+        public void WriteParametersToFile(string functionName, params object[] parameters)
         {
-            writer.WriteLine(parameter.ToString());
+
+            string fileName = "logs/" + Papin + "_" + functionName + ".txt";
+
+
+            using (StreamWriter writer = new StreamWriter(fileName))
+            {
+                writer.WriteLine("Function Name: " + functionName);
+                writer.WriteLine("Parameters:");
+
+                foreach (object parameter in parameters)
+                {
+                    writer.WriteLine(parameter.ToString());
+                }
+            }
         }
-    }
-}
 
         void UrinalysisPROCESS()
         {
@@ -288,9 +297,9 @@ namespace MedicalManagement
                 txtName.Text = i.latname.ToString() + ", " + i.firstname.ToString() + " " + i.middlename.ToString();
                 txtAgency.Text = i.employer ?? "-";
 
-           
 
-                gender.Text = i.gender.ToString() ?? "-";
+
+                txtAgeSex.Text = i.gender.ToString() ?? "-";
 
 
 
@@ -323,124 +332,124 @@ namespace MedicalManagement
 
 
 
-    
+
 
 
 
         public void Availability(bool bl)
         {
-         
+
 
             //URINALYSIS
-           
-                cboColor.Enabled = bl;
-                cboTransparent.Enabled = bl;
-                cboSpecificGravity.Enabled = bl;
-                cboPh.Enabled = bl;
-                cboGlucose.Enabled = bl;
-                cboProtein.Enabled = bl;
-                txtWhiteBloodCells.Enabled = bl;
-                txtRedBloodCells.Enabled = bl;
-                cboEpi.Enabled = bl;
-                cboMucus.Enabled = bl;
-                cbobacteria.Enabled = bl;
-                cboUrate.Enabled = bl;
-                cboPhospate.Enabled = bl;
-                txtOthers.Enabled = bl;
+
+            cboColor.Enabled = bl;
+            cboTransparent.Enabled = bl;
+            cboSpecificGravity.Enabled = bl;
+            cboPh.Enabled = bl;
+            cboGlucose.Enabled = bl;
+            cboProtein.Enabled = bl;
+            txtWhiteBloodCells.Enabled = bl;
+            txtRedBloodCells.Enabled = bl;
+            cboEpi.Enabled = bl;
+            cboMucus.Enabled = bl;
+            cbobacteria.Enabled = bl;
+            cboUrate.Enabled = bl;
+            cboPhospate.Enabled = bl;
+            txtOthers.Enabled = bl;
 
 
-                //tabControl1.TabPages.Insert(1, tabPageUrinalysis);
-                //tabControl1.TabPages.Remove(tabPageSerology);
-                //tabControl1.TabPages.Remove(tabPageHematology);
-                //tabControl1.TabPages.Remove(tabPageHbOneC);
-                //tabControl1.TabPages.Remove(tabPageFecalysis);
-                //tabControl1.TabPages.Remove(tabPageBloodTyping);
-                //tabControl1.TabPages.Remove(tabPageChem);
+            //tabControl1.TabPages.Insert(1, tabPageUrinalysis);
+            //tabControl1.TabPages.Remove(tabPageSerology);
+            //tabControl1.TabPages.Remove(tabPageHematology);
+            //tabControl1.TabPages.Remove(tabPageHbOneC);
+            //tabControl1.TabPages.Remove(tabPageFecalysis);
+            //tabControl1.TabPages.Remove(tabPageBloodTyping);
+            //tabControl1.TabPages.Remove(tabPageChem);
 
 
-                cboTest1.Enabled = bl;
-                cboSpecific1.Enabled = bl;
-                cboTest2.Enabled = bl;
-                cboSpecific2.Enabled = bl;
-                cboResult1.Enabled = bl;
-                cboResult2.Enabled = bl;
+            cboTest1.Enabled = bl;
+            cboSpecific1.Enabled = bl;
+            cboTest2.Enabled = bl;
+            cboSpecific2.Enabled = bl;
+            cboResult1.Enabled = bl;
+            cboResult2.Enabled = bl;
 
-                //tabControl1.TabPages.Remove(tabPageUrinalysis);
-                //tabControl1.TabPages.Insert(1,tabPageSerology);
-                //tabControl1.TabPages.Remove(tabPageHematology);
-                //tabControl1.TabPages.Remove(tabPageHbOneC);
-                //tabControl1.TabPages.Remove(tabPageFecalysis);
-                //tabControl1.TabPages.Remove(tabPageBloodTyping);
-                //tabControl1.TabPages.Remove(tabPageChem);
+            //tabControl1.TabPages.Remove(tabPageUrinalysis);
+            //tabControl1.TabPages.Insert(1,tabPageSerology);
+            //tabControl1.TabPages.Remove(tabPageHematology);
+            //tabControl1.TabPages.Remove(tabPageHbOneC);
+            //tabControl1.TabPages.Remove(tabPageFecalysis);
+            //tabControl1.TabPages.Remove(tabPageBloodTyping);
+            //tabControl1.TabPages.Remove(tabPageChem);
 
 
-           
-                txtHemaRedBloodCells.Enabled = bl;
-                txtHemoglobin.Enabled = bl;
-                txtHematocrit.Enabled = bl;
-                txtPlateletCount.Enabled = bl;
-                txtHemaWhiteBloodCells.Enabled = bl;
-                txtNuetrophil.Enabled = bl;
-                txtLymphonyte.Enabled = bl;
-                txtMonocyte.Enabled = bl;
-                txtEosinophil.Enabled = bl;
-                txtBasoPhil.Enabled = bl;
-                txtOtherHema.Enabled = bl;
-            
-                txtHbAcResult.Enabled = bl;
-           
-                cboColorFecalysis.Enabled = bl;
-                cboCONSISTENCYFecalysis.Enabled = bl;
-                txtWhiteBloodCellFecalysis.Enabled = bl;
-                txtRedBloodCellsFecalysis.Enabled = bl;
-                txtFatFecalysis.Enabled = bl;
-                txtBacteriaFecalysis.Enabled = bl;
-                rbOvaParasite.Enabled = bl;
-                rbNoOVaParasite.Enabled = bl;
-          
-                cboBloodTypingTest1.Enabled = bl;
-                cboBloodTypingSpecific1.Enabled = bl;
-                cboBloodTypingTest2.Enabled = bl;
-                cboBloodTypingSpecific2.Enabled = bl;
-                cboBloodTypingResult1.Enabled = bl;
-                cboBloodTypingResult2.Enabled = bl;
-            
-                txtFbs.Enabled = bl;
-                txtBun.Enabled = bl;
-                txtUricAcid.Enabled = bl;
-                txtCreatinine.Enabled = bl;
-                txtCholesterol.Enabled = bl;
-                txtTriglyceride.Enabled = bl;
-                txtHdl.Enabled = bl;
-                txtLdl.Enabled = bl;
-                txtVldl.Enabled = bl;
-                txtSgpt.Enabled = bl;
-                txtSgot.Enabled = bl;
-                txtFbsRemark.Enabled = bl;
-                txtBunRemark.Enabled = bl;
-                txtUricAcidRemark.Enabled = bl;
-                txtCreatinineRemark.Enabled = bl;
-                txtCholesterolRemark.Enabled = bl;
-                txtTriglycerideRemark.Enabled = bl;
-                txtHdlRemark.Enabled = bl;
-                txtLdlRemark.Enabled = bl;
-                txtVldlRemark.Enabled = bl;
-                txtSgptRemark.Enabled = bl;
-                txtSgotRemark.Enabled = bl;
-            
+
+            txtHemaRedBloodCells.Enabled = bl;
+            txtHemoglobin.Enabled = bl;
+            txtHematocrit.Enabled = bl;
+            txtPlateletCount.Enabled = bl;
+            txtHemaWhiteBloodCells.Enabled = bl;
+            txtNuetrophil.Enabled = bl;
+            txtLymphonyte.Enabled = bl;
+            txtMonocyte.Enabled = bl;
+            txtEosinophil.Enabled = bl;
+            txtBasoPhil.Enabled = bl;
+            txtOtherHema.Enabled = bl;
+
+            txtHbAcResult.Enabled = bl;
+
+            cboColorFecalysis.Enabled = bl;
+            cboCONSISTENCYFecalysis.Enabled = bl;
+            txtWhiteBloodCellFecalysis.Enabled = bl;
+            txtRedBloodCellsFecalysis.Enabled = bl;
+            txtFatFecalysis.Enabled = bl;
+            txtBacteriaFecalysis.Enabled = bl;
+            rbOvaParasite.Enabled = bl;
+            rbNoOVaParasite.Enabled = bl;
+
+            cboBloodTypingTest1.Enabled = bl;
+            cboBloodTypingSpecific1.Enabled = bl;
+            cboBloodTypingTest2.Enabled = bl;
+            cboBloodTypingSpecific2.Enabled = bl;
+            cboBloodTypingResult1.Enabled = bl;
+            cboBloodTypingResult2.Enabled = bl;
+
+            txtFbs.Enabled = bl;
+            txtBun.Enabled = bl;
+            txtUricAcid.Enabled = bl;
+            txtCreatinine.Enabled = bl;
+            txtCholesterol.Enabled = bl;
+            txtTriglyceride.Enabled = bl;
+            txtHdl.Enabled = bl;
+            txtLdl.Enabled = bl;
+            txtVldl.Enabled = bl;
+            txtSgpt.Enabled = bl;
+            txtSgot.Enabled = bl;
+            txtFbsRemark.Enabled = bl;
+            txtBunRemark.Enabled = bl;
+            txtUricAcidRemark.Enabled = bl;
+            txtCreatinineRemark.Enabled = bl;
+            txtCholesterolRemark.Enabled = bl;
+            txtTriglycerideRemark.Enabled = bl;
+            txtHdlRemark.Enabled = bl;
+            txtLdlRemark.Enabled = bl;
+            txtVldlRemark.Enabled = bl;
+            txtSgptRemark.Enabled = bl;
+            txtSgotRemark.Enabled = bl;
+
 
 
         }
 
         public void ClearAll()
         {
-          
+
             Console.WriteLine("CLear All");
 
         }
 
 
-     
+
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //if (fmain.ts_edit_lab.Enabled == false)
@@ -469,6 +478,47 @@ namespace MedicalManagement
 
 
         }
+
+        public void PrintReportUsingCrystalReport()
+        {
+
+
+            PrintLaboratory print = new PrintLaboratory();
+            print.urinalysisModel = prepareTheUrinalysisReportData();
+
+            print.Show();
+
+        }
+
+        private UrinalysisModel prepareTheUrinalysisReportData()
+        {
+
+
+            UrinalysisModel u = new UrinalysisModel();
+            u.Name = txtName.Text;
+            u.Company = txtAgency.Text;
+            u.Date = dt_urinalysis.Text;
+            u.AgeSex = txtAgeSex.Text;
+            u.HeaderAddress = Address;
+            u.HeaderContact = Contact;
+            u.Color = cboColor.Text;
+            u.Transparency = cboTransparent.Text;
+            u.SpecificGravity = cboSpecificGravity.Text;
+            u.pH = cboPh.Text;
+            u.Glucose = cboGlucose.Text;
+            u.Protein = cboProtein.Text;
+            u.WhiteBloodCells = txtWhiteBloodCells.Text;
+            u.RedBloodCells = txtRedBloodCells.Text;
+            u.EpithelialCells = cboEpi.Text;
+            u.MucusThreads = cboMucus.Text;
+            u.Bacteria = cbobacteria.Text;
+            u.AmorphousUrates = cboUrate.Text;
+            u.AmorphousPhosphates = cboPhospate.Text;
+            u.Other = txtOthers.Text;
+            return u;
+        }
+
+
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -677,7 +727,7 @@ namespace MedicalManagement
             ClinicalChemistryPROCESS();
             BloodTypingPROCESS();
 
-            
+
             Availability(false);
 
 
@@ -711,37 +761,37 @@ namespace MedicalManagement
 
             if (tabControl1.SelectedTab == tabPageUrinalysis)
             {
-                
 
-             
+
+
 
 
             }
             else if (tabControl1.SelectedTab == tabPageSerology)
             {
-               
+
 
 
 
             }
             else if (tabControl1.SelectedTab == tabPageHematology)
             {
-              
+
             }
             else if (tabControl1.SelectedTab == tabPageHbOneC)
             {
-                
+
             }
             else if (tabControl1.SelectedTab == tabPageFecalysis)
             {
-               
+
             }
             else if (tabControl1.SelectedTab == tabPageBloodTyping)
             {
             }
             else if (tabControl1.SelectedTab == tabPageChem)
             {
-             
+
             }
 
 
@@ -767,19 +817,22 @@ namespace MedicalManagement
 
         public void Print()
         {
-            FrmLapPrints f = new FrmLapPrints();
-            f.Name = txtName.Text;
-            f.Company = txtAgency.Text;
-            f.AgeSex = gender.Text;
-            f.ResultDate_Urinalysis = dt_urinalysis.Text;
-            f.ResultDate_Serology = dt_serology.Text;
-            f.ResultDate_Hematolgy = dt_hematology.Text;
-            f.ResultDate_hba1c = dt_hba.Text;
-            f.ResultDate_Fecalysis = dt_fecalysis.Text;
-            f.ResultDate_BloodTyping = dt_BloodTyping.Text;
-            f.ResultDate_ClinicalChem = dt_BloodTyping.Text;
-            f.Tag = Papin;
-            f.ShowDialog();
+            //FrmLapPrints f = new FrmLapPrints();
+            //f.Name = txtName.Text;
+            //f.Company = txtAgency.Text;
+            //f.AgeSex = gender.Text;
+            //f.ResultDate_Urinalysis = dt_urinalysis.Text;
+            //f.ResultDate_Serology = dt_serology.Text;
+            //f.ResultDate_Hematolgy = dt_hematology.Text;
+            //f.ResultDate_hba1c = dt_hba.Text;
+            //f.ResultDate_Fecalysis = dt_fecalysis.Text;
+            //f.ResultDate_BloodTyping = dt_BloodTyping.Text;
+            //f.ResultDate_ClinicalChem = dt_BloodTyping.Text;
+            //f.Tag = Papin;
+            //f.ShowDialog();
+
+            PrintReportUsingCrystalReport();
+            
         }
 
         public void Search()
@@ -832,7 +885,7 @@ namespace MedicalManagement
                 if (fmain.ts_search_labReport.Enabled == true)
                 {
                     fmain.Search_Lab("LAB");
-                 
+
                 }
             }
             else if (e.KeyCode == Keys.F4)

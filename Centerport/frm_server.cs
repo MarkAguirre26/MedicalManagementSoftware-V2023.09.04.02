@@ -53,10 +53,7 @@ namespace MedicalManagement
             txt_userID.Text = ini.IniReadValue("CONNECTIONSTRING", "ID");
             txt_Password.Text = ini.IniReadValue("CONNECTIONSTRING", "Password");
 
-            //txt_Server.Text =   Properties.Settings.Default.Server;
-            //txt_database.Text =  Properties.Settings.Default.Database;
-            //txt_userID.Text =   Properties.Settings.Default.UID;
-            //txt_Password.Text = Properties.Settings.Default.Password;
+            
 
 
         }

@@ -82,6 +82,10 @@
     <ManifestKeyFile>Centerport_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
@@ -89,6 +93,7 @@
     <Reference Include="EPPlus">
       <HintPath>..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
     </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="GemBox.Spreadsheet">
       <HintPath>C:\Users\Asus\Downloads\Compressed\GemsBox Excel\GemBox.Spreadsheet.dll</HintPath>
     </Reference>
@@ -390,6 +395,20 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="MyInter.cs" />
+    <Compile Include="Print\Extras.cs" />
+    <Compile Include="Print\PrintLaboratory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\PrintLaboratory.Designer.cs">
+      <DependentUpon>PrintLaboratory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\Urinalysis.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Urinalysis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Print\UrinalysisModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -483,6 +502,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\PrintLaboratory.resx">
+      <DependentUpon>PrintLaboratory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Urinalysis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Urinalysis.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Main.resx">
