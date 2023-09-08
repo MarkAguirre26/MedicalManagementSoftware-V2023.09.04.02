@@ -339,6 +339,7 @@
             this.label28 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.txtPapin = new System.Windows.Forms.TextBox();
             this.overlayShadow1 = new MedicalManagement.Class.OverlayShadow();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -371,6 +372,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtPapin);
             this.panel1.Controls.Add(this.cbCurrentDate);
             this.panel1.Controls.Add(this.txt_result_date);
             this.panel1.Controls.Add(this.label144);
@@ -3827,6 +3829,17 @@
             this.backgroundWorker2.WorkerSupportsCancellation = true;
             this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
             // 
+            // txtPapin
+            // 
+            this.txtPapin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPapin.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPapin.Location = new System.Drawing.Point(281, 26);
+            this.txtPapin.Name = "txtPapin";
+            this.txtPapin.Size = new System.Drawing.Size(406, 20);
+            this.txtPapin.TabIndex = 85;
+            this.txtPapin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPapin.Visible = false;
+            // 
             // overlayShadow1
             // 
             this.overlayShadow1.Location = new System.Drawing.Point(-2, 10);
@@ -4209,5 +4222,6 @@
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.CheckBox cbCurrentDate;
+        public System.Windows.Forms.TextBox txtPapin;
     }
 }

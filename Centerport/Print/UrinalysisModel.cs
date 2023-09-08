@@ -13,10 +13,8 @@ namespace MedicalManagement.Print
         public string Company { get; set; }
         public string Date { get; set; }
         public string AgeSex { get; set; }
-
-
-
-        public string HeaderAddress { get; set; }
+       
+       public string HeaderAddress { get; set; }
         public string HeaderContact { get; set; }
         public string Color { get; set; }
         public string Transparency { get; set; }

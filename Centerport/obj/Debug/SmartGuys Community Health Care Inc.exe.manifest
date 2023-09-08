@@ -340,14 +340,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SmartGuys Community Health Care Inc.exe" size="2894336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SmartGuys Community Health Care Inc.exe" size="3136000">
       <assemblyIdentity name="SmartGuys Community Health Care Inc" version="2018.2.4.134" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ocj+9Dlk0QJPv6zukSUqo1o1U1EGtQDjrfW8kNHov+U=</dsig:DigestValue>
+        <dsig:DigestValue>sewAVT1EERvmX1MnF7wxEG4vAgQd39ReLYiIhgDh8jA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

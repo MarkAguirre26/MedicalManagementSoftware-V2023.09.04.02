@@ -174,11 +174,13 @@ namespace MedicalManagement
                 {
                     this.Close();
                     Cursor.Current = Cursors.WaitCursor;
-                    (Application.OpenForms["frm_MedicalExamination"] as frm_MedicalExamination).Papin = this.dg_result.SelectedRows[0].Cells[2].Value.ToString();
 
 
 
                     (Application.OpenForms["frm_MedicalExamination"] as frm_MedicalExamination).ClearAll();
+
+                    (Application.OpenForms["frm_MedicalExamination"] as frm_MedicalExamination).txtPapin.Text = this.dg_result.SelectedRows[0].Cells[2].Value.ToString();
+
                     (Application.OpenForms["frm_MedicalExamination"] as frm_MedicalExamination).searchAll();
 
 

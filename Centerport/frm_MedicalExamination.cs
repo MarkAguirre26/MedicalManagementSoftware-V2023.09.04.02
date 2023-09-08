@@ -19,7 +19,7 @@ namespace MedicalManagement
     {
         Main fmain; public static string Action; public static bool Count;
 
-        public string Papin = "";
+        //public string Papin = "";
         private string rb_Allergies = "-";
         private string rb_AnemiaBleeding = "-";
         private string rb_Asthma = "-";
@@ -209,7 +209,7 @@ namespace MedicalManagement
 
         public void searchAll()
         {
-            ClearAll();
+            //ClearAll();
             Search_Patient();
             Search_MedicalHistory();
             Search_PhyExam();
@@ -254,28 +254,7 @@ namespace MedicalManagement
             Tool.ClearFields(groupBox3);
             Tool.ClearFields(panel1);
             Tool.ClearFields(panel4);
-
-            //cb_allergies.Checked = true;
-            //cb_asthma.Checked = true;
-            //cb_chickenpox.Checked = true;
-            //cb_deabetes.Checked = true;
-            //cb_epilepsey.Checked = true;
-            //cb_germanmeasles.Checked = true;
-            //cb_measles.Checked = true;
-            //cb_cancer.Checked = true;
-            //cb_hernia.Checked = true;
-            //cb_kedney.Checked = true;
-            //cb_ThyroidDisorder.Checked = true;
-            //cb_gastritis.Checked = true;
-            //cb_blood.Checked = true;
-            //cb_anemia.Checked = true;
-            //cb_heartDeseas.Checked = true;
-            //cb_hepa.Checked = true;
-            //cb_hypertension.Checked = true;
-            //cb_Ulcer.Checked = true;
-            //cb_ptb.Checked = true;
-            //cb_vertigo.Checked = true;
-            //cb_psychological.Checked = true;
+                    
 
 
 
@@ -409,8 +388,8 @@ namespace MedicalManagement
 
 
                 }
-        
-                db.sp_MedicalExaminationProcess("-", Papin, "EMC", txt_result_date.Text, "", "PENDING", txt_result_date.Text, "-", txt_remark.Text, txt_recomendation.Text, "", "-", "", txt_AttendingDentist.Text, "", "", "-", "", "", "", "", "", "", "", cbo_evaluation.Text,
+
+                db.sp_MedicalExaminationProcess("-", txtPapin.Text, "EMC", txt_result_date.Text, "", "PENDING", txt_result_date.Text, "-", txt_remark.Text, txt_recomendation.Text, "", "-", "", txt_AttendingDentist.Text, "", "", "-", "", "", "", "", "", "", "", cbo_evaluation.Text,
                      rb_Allergies, rb_AnemiaBleeding, rb_Asthma, rb_BloodProblem, rb_CancerTumor, rb_Chickenpox, rb_Clotting, rb_Diabetes, rb_DiabetesMellitus, rb_Epilepsy, rb_EyeEarDisorders, rb_GastritisUlcer, rb_GeneticDisorders, rb_GermanMeasles, rb_HeadachesMigraine, rb_HeartDisease, rb_Hepatitis, rb_Hernia, rb_Hypertension, rb_KidneyDisease, rb_LiverDisease, rb_Measles, rb_MentalDisorders, rb_Musculoskeletal, rb_NoseThroatDisorders, rb_Pneumonia, rb_PsychologicalDisorder, rb_PTB, rb_SeizureDisorders, rb_SexuallyTransmitted, rb_SkinDisease, rb_ThyroidDisorders, rb_Tubercolosis, rb_TyphoidParatyphoid, rb_Ulcers, rb_Vertigo, txt_medhistory_other.Text, txt_PresentSymptoms.Text, txt_medication.Text, txt_OperationsandAccidents.Text, txt_allergies.Text, rb_Smoker, txt_noofpackday.Text, rb_AlcoholDrinker, txtdrinknoofyear.Text,
                      txt_height.Text, txt_weight.Text, txt_bpsystolic.Text + "/" + txt_bp_diastolic.Text, txt_pulse.Text, txt_respiation.Text, txt_bmi_val.Text + "/" + txt_bodyBuilt.Text, txt_far_od.Text, txt_od_c.Text, txt_os_u.Text, txt_os_c.Text, txt_near_od.Text, txt_near_os.Text, "", "", ISHIHARA_UCRUD, "", "", "", "", txt_conversational.Text, "", "", "", "", "", "", "", "", "", "", "", txt_bp_diastolic.Text, "", "", "", "", "", xtxt_dentalUpperRight.Text, xtxt_dentalUpperLeft.Text, xtxt_dentalLowerRight.Text, xtxt_dentalLowerLeft.Text, txt_lmp.Text, txt_obScore.Text, txt_interval.Text, txt_duration.Text, txt_Dysmenorrhea.Text, txt_oral.Text, txt_filling.Text, txt_extraction.Text, txt_otherPhysicalExam.Text, txt_w_gras_ou.Text, txt_wo_glas_ou.Text, txt_near_ou.Text, txt_hematology_result.Text, txt_hematology_findings.Text, txt_urinalysis_result.Text, txt_urinalysis_finding.Text, txt_fecalysis_result.Text, txt_fecalysis_finding.Text, txt_xray_result.Text, txt_xray_finding.Text, txt_xray_ecg_result.Text, txt_xray_ecg_finding.Text, txt_psychology_result.Text, txt_psychology_finding.Text, txt_hbsag_result.Text, txt_hbsag_finding.Text, txt_pregnancy_result.Text, txt_pregnancy_finding.Text, txt_bloodType_result.Text, txt_bloodType_finding.Text, txt_drugtest_resut.Text, txt_drugtest_finding.Text, cb_skin_.ToString(), x_skin.Text, cb_neck_.ToString(), x_neck.Text, cb_eyes_.ToString(), x_eyes.Text, "", "", cb_ears_.ToString(), x_ears.Text, cb_nose_.ToString(), x_nose.Text, cb_mought_.ToString(), x_mouth.Text, "", "", cb_breast_.ToString(), x_breast.Text, cb_lungs_.ToString(), x_lungs.Text, cb_heart_.ToString(), x_heart.Text, cb_abdomen_.ToString(), x_abdomen.Text, cb_back_.ToString(), x_back.Text, cb_anus_.ToString(), x_anus.Text, "", "", cb_inguinals_.ToString(), x_inguinals.Text, "", "", cb_extremeties_.ToString(), x_extremeties.Text,txt_detalOthers.Text);
 
@@ -511,9 +490,9 @@ namespace MedicalManagement
                 Search_Hema();
                 Search_Fecalysis();
 
-                Search_Radiology(Papin, "XRAY");
-                Search_Radiology(Papin, "ECG");
-                Search_Radiology(Papin, "UTZ");
+                Search_Radiology(txtPapin.Text, "XRAY");
+                Search_Radiology(txtPapin.Text, "ECG");
+                Search_Radiology(txtPapin.Text, "UTZ");
 
                 Search_MedicalHistory();
                 Search_PhyExam();
@@ -721,262 +700,6 @@ namespace MedicalManagement
 
 
 
-
-        //public void Update_MedHistory()
-        //{
-        //    try
-        //    {
-        //        if (cb_allergies.Checked == true) { rb_Allergies = "Y"; } else { rb_Allergies = "N"; }
-        //        if (cb_anemia.Checked == true) { rb_AnemiaBleeding = "Y"; } else { rb_AnemiaBleeding = "N"; }
-        //        if (cb_asthma.Checked == true) { rb_Asthma = "Y"; } else { rb_Asthma = "N"; }
-        //        if (cb_blood.Checked == true) { rb_BloodProblem = "Y"; } else { rb_BloodProblem = "N"; }
-        //        if (cb_cancer.Checked == true) { rb_CancerTumor = "Y"; } else { rb_CancerTumor = "N"; }
-        //        if (cb_chickenpox.Checked == true) { rb_Chickenpox = "Y"; } else { rb_Chickenpox = "N"; }
-        //        //if (cb_clotting.Checked == true) { rb_Clotting = "Y"; } else { rb_Clotting = "N"; }
-        //        // if (cb_deabetes.Checked == true) { rb_Diabetes = "Y"; } else { rb_Diabetes = "N"; }
-        //        if (cb_deabetes.Checked == true) { rb_DiabetesMellitus = "Y"; } else { rb_DiabetesMellitus = "N"; }
-        //        if (cb_epilepsey.Checked == true) { rb_Epilepsy = "Y"; } else { rb_Epilepsy = "N"; }
-        //        //if (cb_eyeear.Checked == true) { rb_EyeEarDisorders = "Y"; } else { rb_EyeEarDisorders = "N"; }
-        //        if (cb_gastritis.Checked == true) { rb_GastritisUlcer = "Y"; } else { rb_GastritisUlcer = "N"; }
-        //        //if (cb_genetic.Checked == true) { rb_GeneticDisorders = "Y"; } else { rb_GeneticDisorders = "N"; }
-        //        if (cb_germanmeasles.Checked == true) { rb_GermanMeasles = "Y"; } else { rb_GermanMeasles = "N"; }
-        //        //if (cb_head.Checked == true) { rb_HeadachesMigraine = "Y"; } else { rb_HeadachesMigraine = "N"; }
-        //        if (cb_heartDeseas.Checked == true) { rb_HeartDisease = "Y"; } else { rb_HeartDisease = "N"; }
-        //        if (cb_hepa.Checked == true) { rb_Hepatitis = "Y"; } else { rb_Hepatitis = "N"; }
-        //        if (cb_hernia.Checked == true) { rb_Hernia = "Y"; } else { rb_Hernia = "N"; }
-        //        if (cb_hypertension.Checked == true) { rb_Hypertension = "Y"; } else { rb_Hypertension = "N"; }
-        //        if (cb_kedney.Checked == true) { rb_KidneyDisease = "Y"; } else { rb_KidneyDisease = "N"; }
-        //        //if (cb_liver.Checked == true) { rb_LiverDisease = "Y"; } else { rb_LiverDisease = "N"; }
-        //        if (cb_measles.Checked == true) { rb_Measles = "Y"; } else { rb_Measles = "N"; }
-        //        //if (cb_mental.Checked == true) { rb_MentalDisorders = "Y"; } else { rb_MentalDisorders = "N"; }
-        //        //if (cb_muscu.Checked == true) { rb_Musculoskeletal = "Y"; } else { rb_Musculoskeletal = "N"; }
-        //        if (cb_nose.Checked == true) { rb_NoseThroatDisorders = "Y"; } else { rb_NoseThroatDisorders = "N"; }
-        //        //if (cb_Pneumonia.Checked == true) { rb_Pneumonia = "Y"; } else { rb_Pneumonia = "N"; }
-        //        if (cb_psychological.Checked == true) { rb_PsychologicalDisorder = "Y"; } else { rb_PsychologicalDisorder = "N"; }
-        //        if (cb_ptb.Checked == true) { rb_PTB = "Y"; } else { rb_PTB = "N"; }
-        //        //if (cb_Seizure.Checked == true) { rb_SeizureDisorders = "Y"; } else { rb_SeizureDisorders = "N"; }
-        //        //if (cb_Sexually_Y.Checked == true) { rb_SexuallyTransmitted = "Y"; } else { rb_SexuallyTransmitted = "N"; }
-        //        //if (cb_ski.Checked == true) { rb_SkinDisease = "Y"; } else { rb_SkinDisease = "N"; }
-        //        if (cb_ThyroidDisorder.Checked == true) { rb_ThyroidDisorders = "Y"; } else { rb_ThyroidDisorders = "N"; }
-        //        //if (cb_Tubercolosis_Y.Checked == true) { rb_Tubercolosis = "Y"; } else { rb_Tubercolosis = "N"; }
-        //        //if (cb_Typhoid_Y.Checked == true) { rb_TyphoidParatyphoid = "Y"; } else { rb_TyphoidParatyphoid = "N"; }
-        //        if (cb_Ulcer.Checked == true) { rb_Ulcers = "Y"; } else { rb_Ulcers = "N"; }
-        //        if (cb_vertigo.Checked == true) { rb_Vertigo = "Y"; } else { rb_Vertigo = "N"; }
-        //        if (Cb_smoker.Checked == true) { rb_Smoker = "Y"; } else { rb_Smoker = "N"; }
-        //        if (cb_drinker.Checked == true) { rb_AlcoholDrinker = "Y"; } else { rb_AlcoholDrinker = "N"; }
-
-        //        if (cb_ishihara_u.Checked == true) { ISHIHARA_U_ = "1"; } else if (cb_ishihara_u.Checked == false) { ISHIHARA_U_ = "0"; } else { ISHIHARA_U_ = "-"; }
-
-        //        if (cb_skin.Checked == true) { cb_skin_ = "1"; } else { cb_skin_ = "0"; }
-        //        if (cb_neck.Checked == true) { cb_neck_ = "1"; } else { cb_neck_ = "0"; }
-        //        if (cb_eyes.Checked == true) { cb_eyes_ = "1"; } else { cb_eyes_ = "0"; }
-        //        if (cb_pupils.Checked == true) { cb_pupils_ = "1"; } else { cb_pupils_ = "0"; }
-        //        if (cb_ears.Checked == true) { cb_ears_ = "1"; } else { cb_ears_ = "0"; }
-        //        if (cb_nose.Checked == true) { cb_nose_ = "1"; } else { cb_nose_ = "0"; }
-        //        if (cb_mought.Checked == true) { cb_mought_ = "1"; } else { cb_mought_ = "0"; }
-        //        //if (cb_thyroid.Checked == true) { cb_thyroid_ = "1"; } else { cb_thyroid_ = "0"; }
-        //        if (cb_breast.Checked == true) { cb_breast_ = "1"; } else { cb_breast_ = "0"; }
-        //        if (cb_lungs.Checked == true) { cb_lungs_ = "1"; } else { cb_lungs_ = "0"; }
-        //        if (cb_heart.Checked == true) { cb_heart_ = "1"; } else { cb_heart_ = "0"; }
-        //        if (cb_abdomen.Checked == true) { cb_abdomen_ = "1"; } else { cb_abdomen_ = "0"; }
-        //        if (cb_back.Checked == true) { cb_back_ = "1"; } else { cb_back_ = "0"; }
-        //        //if (cb_anus.Checked == true) { cb_anus_ = "1"; } else { cb_anus_ = "0"; }
-        //        //if (cb_gu.Checked == true) { cb_gu_ = "1"; } else { cb_gu_ = "0"; }
-        //        if (cb_inguinals.Checked == true) { cb_inguinals_ = "1"; } else { cb_inguinals_ = "0"; }
-        //        //if (cb_reflexes.Checked == true) { cb_reflexes_ = "1"; } else { cb_reflexes_ = "0"; }
-        //        if (cb_extremeties.Checked == true) { cb_extremeties_ = "1"; } else { cb_extremeties_ = "0"; }
-
-
-
-
-
-
-
-        //        string ISHIHARA_UCRUD = "";
-        //        if (cb_ishihara_u.Checked == true)
-        //        {
-        //            ISHIHARA_UCRUD = "1";
-        //        }
-        //        else if (cb_ishihar_c.Checked == true)
-        //        {
-        //            ISHIHARA_UCRUD = "0";
-
-
-        //        }
-
-
-
-
-
-
-
-        //        db.ExecuteCommand("UPDATE t_med_history_gamosa SET Allergies={0}, AnemiaBleeding={1}, Asthma={2}, BloodProblem={3}, CancerTumor={4}, Chickenpox={5}, Clotting={6}, Diabetes={7}, DiabetesMellitus={8}, Epilepsy={9},  EyeEarDisorders={10}, GastritisUlcer={11}, GeneticDisorders={12}, GermanMeasles={13}, HeadachesMigraine={14}, HeartDisease={15}, Hepatitis={16}, Hernia={17}, Hypertension={18}, KidneyDisease={19}, LiverDisease={20}, Measles={21}, MentalDisorders={22}, Musculoskeletal={23}, NoseThroatDisorders={24}, Pneumonia={25}, PsychologicalDisorder={26}, PTB={27}, SeizureDisorders={28}, SexuallyTransmitted={29}, SkinDisease={30}, ThyroidDisorders={31}, Tubercolosis={32}, TyphoidParatyphoid={33}, Ulcers={34}, Vertigo={35},         Other={36},                         PresentSymptoms={37},        FamilyMedicalHistory={38}, OperationsandAccidents={39},        PersonaSocialHistory={40}, Smoker={41}, NoOfPackDay={42},        AlcoholDrinker={43}, NoOfYear={44} WHERE (ResultID={45})", rb_Allergies, rb_AnemiaBleeding, rb_Asthma, rb_BloodProblem, rb_CancerTumor, rb_Chickenpox, rb_Clotting, rb_Diabetes, rb_DiabetesMellitus, rb_Epilepsy, rb_EyeEarDisorders, rb_GastritisUlcer, rb_GeneticDisorders, rb_GermanMeasles, rb_HeadachesMigraine, rb_HeartDisease, rb_Hepatitis, rb_Hernia, rb_Hypertension, rb_KidneyDisease, rb_LiverDisease, rb_Measles, rb_MentalDisorders, rb_Musculoskeletal, rb_NoseThroatDisorders, rb_Pneumonia, rb_PsychologicalDisorder, rb_PTB, rb_SeizureDisorders, rb_SexuallyTransmitted, rb_SkinDisease, rb_ThyroidDisorders, rb_Tubercolosis, rb_TyphoidParatyphoid, rb_Ulcers, rb_Vertigo, txt_medhistory_other.Text, txt_PresentSymptoms.Text, txt_medication.Text, txt_OperationsandAccidents.Text, txt_allergies.Text, rb_Smoker, txt_noofpackday.Text, rb_AlcoholDrinker, txtdrinknoofyear.Text, "-");
-
-        //        //Bricx Edit BodyBuilt index 30
-        //        db.ExecuteCommand("UPDATE t_phy_exam SET HEIGHT={0},    WEIGHT={1},  BP={2}, PULSE={3},        RESPIRATION={4},          FARODU={5},        FARODC={6},       FAROSU={7},      FAROSC={8},    NEARODJU={9},         NEARODJC={10},       ISHIHARA_U={11},               CONVERSATIONAL_AD={12},            BPDIASTOLIC={13},       DentalUpperRight={14},        DentalUpperLeft={15},        DentalLowerRight={16}    ,DentalLowerLeft={17},         lmp={18},      obScore={19},     Interval={20},     Duration={21},     Dysmenorrhea={22},      OralProphylaxis={23},Fillings={24},     Extraction={25},      FarWgOU={26}           ,FarWoOU={27},         NearOu={28},DentalOthers={29}, BODYBUILD={30},obOther={31}  WHERE (resultid={32})", txt_height.Text, txt_weight.Text, txt_bpsystolic.Text + "/" + txt_bp_diastolic.Text, txt_pulse.Text, txt_respiation.Text, txt_far_od.Text, txt_od_c.Text, txt_os_u.Text, txt_os_c.Text, txt_near_od.Text, txt_near_os.Text, ISHIHARA_UCRUD, txt_conversational.Text, txt_bp_diastolic.Text, xtxt_dentalUpperRight.Text, xtxt_dentalUpperLeft.Text, xtxt_dentalLowerRight.Text, xtxt_dentalLowerLeft.Text, txt_lmp.Text, txt_obScore.Text, txt_interval.Text, txt_duration.Text, txt_Dysmenorrhea.Text, txt_oral.Text, txt_filling.Text, txt_extraction.Text, txt_w_gras_ou.Text, txt_wo_gras_ou.Text, txt_near_ou.Text, txt_detalOthers.Text, txt_bmi_val.Text + "/" + txt_bodyBuilt.Text, txt_otherPhysicalExam.Text, "-");
-        //        db.sp_updateAncillary("-", txt_hematology_result.Text, txt_hematology_findings.Text, txt_urinalysis_result.Text, txt_urinalysis_finding.Text, txt_fecalysis_result.Text, txt_fecalysis_finding.Text, txt_xray_result.Text, txt_xray_finding.Text, txt_xray_ecg_result.Text, txt_xray_ecg_finding.Text, txt_psychology_result.Text, txt_psychology_finding.Text, txt_hbsag_result.Text, txt_hbsag_finding.Text, txt_pregnancy_result.Text, txt_pregnancy_finding.Text, txt_bloodType_result.Text, txt_bloodType_finding.Text, txt_drugtest_resut.Text, txt_drugtest_finding.Text, "", "", "", "");
-        //        db.ExecuteCommand("UPDATE t_result_main SET remarks={0}, recommendation={1}, Evaluation={2},result_date={3},fitness_date={4},medtech={5} WHERE (resultid={6})", txt_remark.Text, txt_recomendation.Text, cbo_evaluation.Text, txt_result_date.Text, txt_result_date.Text, txt_AttendingDentist.Text, "");
-        //        db.ExecuteCommand("UPDATE t_others SET  SKIN_TAG = {0},         SKIN = {1},    HEAD_NECK_SCALP_TAG = {2}, HEAD_NECK_SCALP ={3}, EYES_TAG =     {4}, EYES = {5}, PUPILS_TAG = {6},      PUPILS ={7},    EARS_EARDRUM_TAG = {8}, EARS_EARDRUM = {9}, NOSE_SINUSES_TAG = {10}, NOSE_SINUSES = {11}, MOUTH_THROAT_TAG = {12},    MOUTH_THROAT = {13}, NECK_LN_THYROID_TAG = {14}, NECK_LN_THYROID = {15},     CHEST_BREAST_AXILLA_TAG = {16}, CHEST_BREAST_AXILLA = {17}, LUNGS_TAG = {18},                   LUNGS = {19},        HEART_TAG = {20},  HEART = {21},     ABDOMEN_TAG = {22},     ABDOMEN = {23}, BACK_FLANK_TAG = {24}, BACK_FLANK = {25}, ANUS_RECTUM_TAG = {26}, ANUS_RECTUM = {27}, GU_SYSTEM_TAG = {28}, GU_SYSTEM = {29}, INGUINALS_GENITALS_TAG = {30},    INGUINALS_GENITALS = {31}, REFLEXES_TAG = {32}, REFLEXES = {33}, EXTREMITIES_TAG = {34},             EXTREMITIES = {35}, DENTAL = {36}, DENTAL_TAG = {37} WHERE (resultid = {38})", cb_skin_.ToString(), x_skin.Text, cb_neck_.ToString(), x_neck.Text, cb_eyes_.ToString(), x_eyes.Text, cb_pupils_.ToString(), x_pupils.Text, cb_ears_.ToString(), x_ears.Text, cb_nose_.ToString(), x_nose.Text, cb_mought_.ToString(), x_mouth.Text, "", "", cb_breast_.ToString(), x_breast.Text, cb_lungs_.ToString(), x_lungs.Text, cb_heart_.ToString(), x_heart.Text, cb_abdomen_.ToString(), x_abdomen.Text, cb_back_.ToString(), x_back.Text, "", "", "", "", cb_inguinals_.ToString(), x_inguinals.Text, "", "", cb_extremeties_.ToString(), x_extremeties.Text, "", "", "");
-
-
-        //        newLandbase = true;
-        //        Availability(false);
-
-
-
-        //        Search_MedicalHistory();
-        //        Search_PhyExam();
-        //        Search_others();
-        //        search_Ancillary();
-        //        search_Recomendation();
-
-
-
-        //        fmain.ts_add_land.Enabled = true; fmain.ts_edit_land.Enabled = true; fmain.ts_delete_land.Enabled = false; fmain.ts_save_land.Enabled = false; fmain.ts_cancel_land.Enabled = false; fmain.ts_search_land.Enabled = true; fmain.ts_print_land.Enabled = true;
-
-
-
-
-
-
-
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //    }
-
-
-
-        //}
-
-
-        //void insert()
-        //{
-
-        //    try
-        //    {
-
-
-
-        //        if (cb_allergies.Checked == true) { rb_Allergies = "Y"; } else { rb_Allergies = "N"; }
-        //        if (cb_anemia.Checked == true) { rb_AnemiaBleeding = "Y"; } else { rb_AnemiaBleeding = "N"; }
-        //        if (cb_asthma.Checked == true) { rb_Asthma = "Y"; } else { rb_Asthma = "N"; }
-        //        if (cb_blood.Checked == true) { rb_BloodProblem = "Y"; } else { rb_BloodProblem = "N"; }
-        //        if (cb_cancer.Checked == true) { rb_CancerTumor = "Y"; } else { rb_CancerTumor = "N"; }
-        //        if (cb_chickenpox.Checked == true) { rb_Chickenpox = "Y"; } else { rb_Chickenpox = "N"; }
-        //        //if (cb_clotting.Checked == true) { rb_Clotting = "Y"; } else { rb_Clotting = "N"; }
-        //        // if (cb_deabetes.Checked == true) { rb_Diabetes = "Y"; } else { rb_Diabetes = "N"; }
-        //        if (cb_deabetes.Checked == true) { rb_DiabetesMellitus = "Y"; } else { rb_DiabetesMellitus = "N"; }
-        //        if (cb_epilepsey.Checked == true) { rb_Epilepsy = "Y"; } else { rb_Epilepsy = "N"; }
-        //        //if (cb_eyeear.Checked == true) { rb_EyeEarDisorders = "Y"; } else { rb_EyeEarDisorders = "N"; }
-        //        if (cb_gastritis.Checked == true) { rb_GastritisUlcer = "Y"; } else { rb_GastritisUlcer = "N"; }
-        //        //if (cb_genetic.Checked == true) { rb_GeneticDisorders = "Y"; } else { rb_GeneticDisorders = "N"; }
-        //        if (cb_germanmeasles.Checked == true) { rb_GermanMeasles = "Y"; } else { rb_GermanMeasles = "N"; }
-        //        //if (cb_head.Checked == true) { rb_HeadachesMigraine = "Y"; } else { rb_HeadachesMigraine = "N"; }
-        //        if (cb_heartDeseas.Checked == true) { rb_HeartDisease = "Y"; } else { rb_HeartDisease = "N"; }
-        //        if (cb_hepa.Checked == true) { rb_Hepatitis = "Y"; } else { rb_Hepatitis = "N"; }
-        //        if (cb_hernia.Checked == true) { rb_Hernia = "Y"; } else { rb_Hernia = "N"; }
-        //        if (cb_hypertension.Checked == true) { rb_Hypertension = "Y"; } else { rb_Hypertension = "N"; }
-        //        if (cb_kedney.Checked == true) { rb_KidneyDisease = "Y"; } else { rb_KidneyDisease = "N"; }
-        //        //if (cb_liver.Checked == true) { rb_LiverDisease = "Y"; } else { rb_LiverDisease = "N"; }
-        //        if (cb_measles.Checked == true) { rb_Measles = "Y"; } else { rb_Measles = "N"; }
-        //        //if (cb_mental.Checked == true) { rb_MentalDisorders = "Y"; } else { rb_MentalDisorders = "N"; }
-        //        //if (cb_muscu.Checked == true) { rb_Musculoskeletal = "Y"; } else { rb_Musculoskeletal = "N"; }
-        //        if (cb_nose.Checked == true) { rb_NoseThroatDisorders = "Y"; } else { rb_NoseThroatDisorders = "N"; }
-        //        //if (cb_Pneumonia.Checked == true) { rb_Pneumonia = "Y"; } else { rb_Pneumonia = "N"; }
-        //        if (cb_psychological.Checked == true) { rb_PsychologicalDisorder = "Y"; } else { rb_PsychologicalDisorder = "N"; }
-        //        if (cb_ptb.Checked == true) { rb_PTB = "Y"; } else { rb_PTB = "N"; }
-        //        //if (cb_Seizure.Checked == true) { rb_SeizureDisorders = "Y"; } else { rb_SeizureDisorders = "N"; }
-        //        //if (cb_Sexually_Y.Checked == true) { rb_SexuallyTransmitted = "Y"; } else { rb_SexuallyTransmitted = "N"; }
-        //        //if (cb_ski.Checked == true) { rb_SkinDisease = "Y"; } else { rb_SkinDisease = "N"; }
-        //        if (cb_ThyroidDisorder.Checked == true) { rb_ThyroidDisorders = "Y"; } else { rb_ThyroidDisorders = "N"; }
-        //        //if (cb_Tubercolosis_Y.Checked == true) { rb_Tubercolosis = "Y"; } else { rb_Tubercolosis = "N"; }
-        //        //if (cb_Typhoid_Y.Checked == true) { rb_TyphoidParatyphoid = "Y"; } else { rb_TyphoidParatyphoid = "N"; }
-        //        if (cb_Ulcer.Checked == true) { rb_Ulcers = "Y"; } else { rb_Ulcers = "N"; }
-        //        if (cb_vertigo.Checked == true) { rb_Vertigo = "Y"; } else { rb_Vertigo = "N"; }
-        //        if (Cb_smoker.Checked == true) { rb_Smoker = "Y"; } else { rb_Smoker = "N"; }
-        //        if (cb_drinker.Checked == true) { rb_AlcoholDrinker = "Y"; } else { rb_AlcoholDrinker = "N"; }
-
-        //        if (cb_ishihara_u.Checked == true) { ISHIHARA_U_ = "1"; } else if (cb_ishihara_u.Checked == false) { ISHIHARA_U_ = "0"; } else { ISHIHARA_U_ = "-"; }
-
-        //        if (cb_skin.Checked == true) { cb_skin_ = "1"; } else { cb_skin_ = "0"; }
-        //        if (cb_neck.Checked == true) { cb_neck_ = "1"; } else { cb_neck_ = "0"; }
-        //        if (cb_eyes.Checked == true) { cb_eyes_ = "1"; } else { cb_eyes_ = "0"; }
-        //        if (cb_pupils.Checked == true) { cb_pupils_ = "1"; } else { cb_pupils_ = "0"; }
-        //        if (cb_ears.Checked == true) { cb_ears_ = "1"; } else { cb_ears_ = "0"; }
-        //        if (cb_nose.Checked == true) { cb_nose_ = "1"; } else { cb_nose_ = "0"; }
-        //        if (cb_mought.Checked == true) { cb_mought_ = "1"; } else { cb_mought_ = "0"; }
-        //        //if (cb_thyroid.Checked == true) { cb_thyroid_ = "1"; } else { cb_thyroid_ = "0"; }
-        //        if (cb_breast.Checked == true) { cb_breast_ = "1"; } else { cb_breast_ = "0"; }
-        //        if (cb_lungs.Checked == true) { cb_lungs_ = "1"; } else { cb_lungs_ = "0"; }
-        //        if (cb_heart.Checked == true) { cb_heart_ = "1"; } else { cb_heart_ = "0"; }
-        //        if (cb_abdomen.Checked == true) { cb_abdomen_ = "1"; } else { cb_abdomen_ = "0"; }
-        //        if (cb_back.Checked == true) { cb_back_ = "1"; } else { cb_back_ = "0"; }
-        //        //if (cb_anus.Checked == true) { cb_anus_ = "1"; } else { cb_anus_ = "0"; }
-        //        //if (cb_gu.Checked == true) { cb_gu_ = "1"; } else { cb_gu_ = "0"; }
-        //        if (cb_inguinals.Checked == true) { cb_inguinals_ = "1"; } else { cb_inguinals_ = "0"; }
-        //        //if (cb_reflexes.Checked == true) { cb_reflexes_ = "1"; } else { cb_reflexes_ = "0"; }
-        //        if (cb_extremeties.Checked == true) { cb_extremeties_ = "1"; } else { cb_extremeties_ = "0"; }
-
-
-
-        //        //LabID.Clear();
-        //        //var i = db.sp_QueeLandbase_GenerateID().FirstOrDefault();
-        //        //"-" = i.generated_id;
-
-
-        //        string ISHIHARA_UCRUD = "";
-        //        if (cb_ishihara_u.Checked == true)
-        //        {
-        //            ISHIHARA_UCRUD = "1";
-        //        }
-        //        else if (cb_ishihar_c.Checked == true)
-        //        {
-        //            ISHIHARA_UCRUD = "0";
-
-
-        //        }
-
-
-
-
-        //        //db.ExecuteCommand("INSERT INTO t_result_main (resultid, resulttype, papin, result_date, pathologist, status, fitness_date, valid_until, remarks, recommendation, repeat_test_requestby, specimen_no, medtech, medtech_license, pathologist_license, reference_no, restriction, basic_doh_exam, add_lab_tests, flag_medlab_req, deck_srvc_flag, engine_srvc_flag, catering_srvc_flag, other_srvc_flag,Evaluation) VALUES ( {0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24})", "-", "EMC", Papin, txt_result_date.Text, "", "PENDING", txt_result_date.Text, "", txt_remark.Text, txt_recomendation.Text, "", "", txt_AttendingDentist.Text, "", "", "-", "", "", "", "", "", "", "", "", cbo_evaluation.Text);
-
-        //        //db.ExecuteCommand("INSERT INTO t_med_history_gamosa (Allergies, AnemiaBleeding, Asthma, BloodProblem, CancerTumor, Chickenpox, Clotting, Diabetes, DiabetesMellitus, Epilepsy, EyeEarDisorders, GastritisUlcer, GeneticDisorders, GermanMeasles, HeadachesMigraine, HeartDisease, Hepatitis, Hernia, Hypertension, KidneyDisease, LiverDisease, Measles, MentalDisorders, Musculoskeletal, NoseThroatDisorders, Pneumonia, PsychologicalDisorder, PTB, SeizureDisorders, SexuallyTransmitted, SkinDisease, ThyroidDisorders, Tubercolosis, TyphoidParatyphoid, Ulcers, Vertigo, Other, PresentSymptoms, FamilyMedicalHistory, OperationsandAccidents, PersonaSocialHistory, Smoker, NoOfPackDay, AlcoholDrinker, NoOfYear, ResultID,Papin) VALUES({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28},{29},{30},{31},{32},{33},{34},{35},{36},{37},{38},{39},{40},{41},{42},{43},{44},{45},{46})", rb_Allergies, rb_AnemiaBleeding, rb_Asthma, rb_BloodProblem, rb_CancerTumor, rb_Chickenpox, rb_Clotting, rb_Diabetes, rb_DiabetesMellitus, rb_Epilepsy, rb_EyeEarDisorders, rb_GastritisUlcer, rb_GeneticDisorders, rb_GermanMeasles, rb_HeadachesMigraine, rb_HeartDisease, rb_Hepatitis, rb_Hernia, rb_Hypertension, rb_KidneyDisease, rb_LiverDisease, rb_Measles, rb_MentalDisorders, rb_Musculoskeletal, rb_NoseThroatDisorders, rb_Pneumonia, rb_PsychologicalDisorder, rb_PTB, rb_SeizureDisorders, rb_SexuallyTransmitted, rb_SkinDisease, rb_ThyroidDisorders, rb_Tubercolosis, rb_TyphoidParatyphoid, rb_Ulcers, rb_Vertigo, txt_medhistory_other.Text, txt_PresentSymptoms.Text, txt_medication.Text, txt_OperationsandAccidents.Text, txt_allergies.Text, rb_Smoker, txt_noofpackday.Text, rb_AlcoholDrinker, txtdrinknoofyear.Text, "-",Papin);
-
-        //        //// Bricx Edit Mode BODYBUILT
-        //        //db.ExecuteCommand("INSERT INTO t_phy_exam (resultid, HEIGHT, WEIGHT, BP, PULSE, RESPIRATION, BODYBUILD, FARODU, FARODC, FAROSU, FAROSC, NEARODJU, NEARODJC, NEAROSJU, NEAROSJC, ISHIHARA_U, ISHIHARA_C, HEARING_AD, HEARING_AS, SPEECH, CONVERSATIONAL_AD, CONVERSATIONAL_AS,SATISFACTORY_HEARING, SATISFACTORY_SIGHT_AID, SATISFACTORY_SIGHT_UNAID, SATISFACTORY_PSYCHO, VISUALAIDS, FITFORLOOKOUT, HEARINGRIGHT, HEARINGLEFT, CLARITYOFSPEECH, VISUALAIDSREQUIRED, BPDIASTOLIC, RHYTHM, VISUALAIDSWORN, COLORVISIONDATETAKEN, UNAIDEDHEARINGSATISFACTORY, IDENTITYCONFIRMED, DentalUpperRight, DentalUpperLeft, DentalLowerRight, DentalLowerLeft, lmp, obScore, Interval, Duration, Dysmenorrhea, OralProphylaxis, Fillings, Extraction, obOther,FarWgOU,FarWoOU,NearOu,Papin) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28},{29},{30},{31},{32},{33},{34},{35},{36},{37},{38},{39},{40},{41},{42},{43},{44},{45},{46},{47},{48},{49},{50},{51},{52},{53},{54})", "-", txt_height.Text, txt_weight.Text, txt_bpsystolic.Text + "/" + txt_bp_diastolic.Text, txt_pulse.Text, txt_respiation.Text, txt_bmi_val.Text + "/" + txt_bodyBuilt.Text, txt_far_od.Text, txt_od_c.Text, txt_os_u.Text, txt_os_c.Text, txt_near_od.Text, txt_near_os.Text, "", "", ISHIHARA_UCRUD, "", "", "", "", txt_conversational.Text, "", "", "", "", "", "", "", "", "", "", "", txt_bp_diastolic.Text, "", "", "", "", "", xtxt_dentalUpperRight.Text, xtxt_dentalUpperLeft.Text, xtxt_dentalLowerRight.Text, xtxt_dentalLowerLeft.Text, txt_lmp.Text, txt_obScore.Text, txt_interval.Text, txt_duration.Text, txt_Dysmenorrhea.Text, txt_oral.Text, txt_filling.Text, txt_extraction.Text, txt_otherPhysicalExam.Text, txt_w_gras_ou.Text, txt_wo_gras_ou.Text, txt_near_od.Text,Papin);
-
-        //        //db.ExecuteCommand("INSERT INTO t_ancillary (result_id,    Hematology_result,        Hematology_finding,            Urinalysis_result,          Urinalysis_finding,             Fecalysis_result,      Fecalysis_finding,            ChestXRay_result,     ChestXRay_finsing,   ECG_result,              ECG_finsing,                PsychologicalTest_result,   PsychologicalTest_finding,   HBsAg_result,          HBsAg_finsing,        PregnancyTest_result,        PregnancyTest_finding,      BloodType_result,          BloodType_findings,          DrugTest_result,           DrugTest_finding,Papin)  VALUES ({0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8},{9}, {10}, {11}, {12},{13}, {14}, {15}, {16}, {17}, {18}, {19}, {20},{21})", "-", txt_hematology_result.Text, txt_hematology_findings.Text, txt_urinalysis_result.Text, txt_urinalysis_finding.Text, txt_fecalysis_result.Text, txt_fecalysis_finding.Text, txt_xray_result.Text, txt_xray_finding.Text, txt_xray_ecg_result.Text, txt_xray_ecg_finding.Text, txt_psychology_result.Text, txt_psychology_finding.Text, txt_hbsag_result.Text, txt_hbsag_finding.Text, txt_pregnancy_result.Text, txt_pregnancy_finding.Text, txt_bloodType_result.Text, txt_bloodType_finding.Text, txt_drugtest_resut.Text, txt_drugtest_finding.Text,Papin);
-
-        //        //db.ExecuteCommand("INSERT INTO t_others (resultid, SKIN_TAG, SKIN, HEAD_NECK_SCALP_TAG, HEAD_NECK_SCALP, EYES_TAG, EYES, PUPILS_TAG, PUPILS, EARS_EARDRUM_TAG, EARS_EARDRUM, NOSE_SINUSES_TAG, NOSE_SINUSES, MOUTH_THROAT_TAG, MOUTH_THROAT, NECK_LN_THYROID_TAG, NECK_LN_THYROID, CHEST_BREAST_AXILLA_TAG, CHEST_BREAST_AXILLA, LUNGS_TAG, LUNGS, HEART_TAG, HEART, ABDOMEN_TAG, ABDOMEN, BACK_FLANK_TAG, BACK_FLANK, ANUS_RECTUM_TAG, ANUS_RECTUM, GU_SYSTEM_TAG, GU_SYSTEM, INGUINALS_GENITALS_TAG, INGUINALS_GENITALS, REFLEXES_TAG, REFLEXES, EXTREMITIES_TAG, EXTREMITIES,Papin) VALUES ({0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28},{29},{30},{31},{32},{33},{34},{35},{36},{37} )", "-", cb_skin_.ToString(), x_skin.Text, cb_neck_.ToString(), x_neck.Text, cb_eyes_.ToString(), x_eyes.Text, cb_pupils_.ToString(), x_pupils.Text, cb_ears_.ToString(), x_ears.Text, cb_nose_.ToString(), x_nose.Text, cb_mought_.ToString(), x_mouth.Text, "", "", cb_breast_.ToString(), x_breast.Text, cb_lungs_.ToString(), x_lungs.Text, cb_heart_.ToString(), x_heart.Text, cb_abdomen_.ToString(), x_abdomen.Text, cb_back_.ToString(), x_back.Text, "", "", "", "", cb_inguinals_.ToString(), x_inguinals.Text, "", "", cb_extremeties_.ToString(), x_extremeties.Text,Papin);
-
-
-        //        db.sp_MedicalExaminationProcess("-", Papin,"EMC", Papin, txt_result_date.Text, "", "PENDING", txt_result_date.Text, "", txt_remark.Text, txt_recomendation.Text, "", "", txt_AttendingDentist.Text, "", "", "-", "", "", "", "", "", "", "", cbo_evaluation.Text,
-        //             rb_Allergies, rb_AnemiaBleeding, rb_Asthma, rb_BloodProblem, rb_CancerTumor, rb_Chickenpox, rb_Clotting, rb_Diabetes, rb_DiabetesMellitus, rb_Epilepsy, rb_EyeEarDisorders, rb_GastritisUlcer, rb_GeneticDisorders, rb_GermanMeasles, rb_HeadachesMigraine, rb_HeartDisease, rb_Hepatitis, rb_Hernia, rb_Hypertension, rb_KidneyDisease, rb_LiverDisease, rb_Measles, rb_MentalDisorders, rb_Musculoskeletal, rb_NoseThroatDisorders, rb_Pneumonia, rb_PsychologicalDisorder, rb_PTB, rb_SeizureDisorders, rb_SexuallyTransmitted, rb_SkinDisease, rb_ThyroidDisorders, rb_Tubercolosis, rb_TyphoidParatyphoid, rb_Ulcers, rb_Vertigo, txt_medhistory_other.Text, txt_PresentSymptoms.Text, txt_medication.Text, txt_OperationsandAccidents.Text, txt_allergies.Text, rb_Smoker, txt_noofpackday.Text, rb_AlcoholDrinker, txtdrinknoofyear.Text,
-        //             txt_height.Text,txt_weight.Text,txt_bpsystolic.Text + "/" + txt_bp_diastolic.Text, txt_pulse.Text,txt_respiation.Text, txt_bmi_val.Text + "/" + txt_bodyBuilt.Text, txt_far_od.Text,txt_od_c.Text,txt_os_u.Text, txt_os_c.Text, txt_near_od.Text,txt_near_os.Text, "", "",ISHIHARA_UCRUD, "", "", "", "", txt_conversational.Text, "", "", "", "", "", "", "", "", "", "", "", txt_bp_diastolic.Text, "", "", "", "", "", xtxt_dentalUpperRight.Text, xtxt_dentalUpperLeft.Text, xtxt_dentalLowerRight.Text, xtxt_dentalLowerLeft.Text, txt_lmp.Text, txt_obScore.Text, txt_interval.Text, txt_duration.Text, txt_Dysmenorrhea.Text, txt_oral.Text, txt_filling.Text, txt_extraction.Text, txt_otherPhysicalExam.Text, txt_w_gras_ou.Text, txt_wo_gras_ou.Text, txt_near_od.Text,txt_hematology_result.Text, txt_hematology_findings.Text, txt_urinalysis_result.Text, txt_urinalysis_finding.Text, txt_fecalysis_result.Text, txt_fecalysis_finding.Text, txt_xray_result.Text, txt_xray_finding.Text, txt_xray_ecg_result.Text, txt_xray_ecg_finding.Text, txt_psychology_result.Text, txt_psychology_finding.Text, txt_hbsag_result.Text, txt_hbsag_finding.Text, txt_pregnancy_result.Text, txt_pregnancy_finding.Text, txt_bloodType_result.Text, txt_bloodType_finding.Text, txt_drugtest_resut.Text, txt_drugtest_finding.Text, cb_skin_.ToString(), x_skin.Text, cb_neck_.ToString(), x_neck.Text, cb_eyes_.ToString(), x_eyes.Text, cb_pupils_.ToString(), x_pupils.Text, cb_ears_.ToString(), x_ears.Text, cb_nose_.ToString(), x_nose.Text, cb_mought_.ToString(), x_mouth.Text, "", "", cb_breast_.ToString(), x_breast.Text, cb_lungs_.ToString(), x_lungs.Text, cb_heart_.ToString(), x_heart.Text, cb_abdomen_.ToString(), x_abdomen.Text, cb_back_.ToString(), x_back.Text, "", "", "", "", cb_inguinals_.ToString(), x_inguinals.Text, "", "", cb_extremeties_.ToString(), x_extremeties.Text);
-
-        //        Availability(false);
-
-        //        fmain.ts_add_land.Enabled = true; fmain.ts_edit_land.Enabled = true; fmain.ts_delete_land.Enabled = false; fmain.ts_save_land.Enabled = false; fmain.ts_cancel_land.Enabled = false; fmain.ts_search_land.Enabled = true; fmain.ts_print_land.Enabled = true;
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //    }
-
-
-
-
-
-        //}
-
-
         private void frm_MedicalExamination_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
@@ -1038,17 +761,25 @@ namespace MedicalManagement
                 }
 
             }
+            else if (e.KeyCode == Keys.F1 && e.Modifiers == Keys.Control)
+            {
+                txtPapin.Visible = true;
+            }
+            else if (e.KeyCode == Keys.F2 && e.Modifiers == Keys.Control)
+            {
+                txtPapin.Visible = false;
+            }
         }
 
 
 
-        public void Search_Patient()
+        public void Search_Patient( )
         {
             try
             {
 
                 //
-                var i = db.sp_landBase_Patient(Papin).FirstOrDefault();
+                var i = db.sp_landBase_Patient(txtPapin.Text).FirstOrDefault();
 
                 if (i != null)
                 {
@@ -1141,7 +872,7 @@ namespace MedicalManagement
             {
 
                 DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
-                var i = db.emc_medicalHistory(Papin).FirstOrDefault();
+                var i = db.emc_medicalHistory(txtPapin.Text).FirstOrDefault();
                 if (i != null)
                 {
 
@@ -1314,7 +1045,7 @@ namespace MedicalManagement
             try
             {
 
-                var i = db.sp_Landbase_Physical(Papin).FirstOrDefault();
+                var i = db.sp_Landbase_Physical(txtPapin.Text).FirstOrDefault();
                 if (i != null)
                 {
 
@@ -1513,7 +1244,7 @@ namespace MedicalManagement
             try
             {
 
-                var i = db.sp_Landbase_Others(Papin).FirstOrDefault();
+                var i = db.sp_Landbase_Others(txtPapin.Text).FirstOrDefault();
                 if (i != null)
                 {
 
@@ -1652,7 +1383,7 @@ namespace MedicalManagement
             {
 
 
-                var i = db.sp_Lanbase_ancillary(Papin).FirstOrDefault();
+                var i = db.sp_Lanbase_ancillary(txtPapin.Text).FirstOrDefault();
 
                 if (i != null)
                 {
@@ -1711,7 +1442,7 @@ namespace MedicalManagement
         void searchBloodTyping()
         {
             DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
-            var item = db.searchBloodTyping(Papin).FirstOrDefault();
+            var item = db.searchBloodTyping(txtPapin.Text).FirstOrDefault();
             if (item != null)
             {
 
@@ -1743,7 +1474,7 @@ namespace MedicalManagement
         void searchSerology()
         {
             DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
-            var item = db.searchSerology(Papin).FirstOrDefault();
+            var item = db.searchSerology(txtPapin.Text).FirstOrDefault();
             if (item != null)
             {
               
@@ -1795,7 +1526,7 @@ namespace MedicalManagement
             {
 
                 DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
-                var i = db.searchHematology(Papin).FirstOrDefault();
+                var i = db.searchHematology(txtPapin.Text).FirstOrDefault();
                 if (i != null)
                 {
                     
@@ -1832,7 +1563,7 @@ namespace MedicalManagement
             {
 
                 DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
-                var i = db.sp_SearchUrinalysis(Papin).FirstOrDefault();
+                var i = db.sp_SearchUrinalysis(txtPapin.Text).FirstOrDefault();
                 if (i != null)
                 {
 
@@ -1872,7 +1603,7 @@ namespace MedicalManagement
 
 
                 DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
-                var i = db.searchFecalysis(Papin).FirstOrDefault();
+                var i = db.searchFecalysis(txtPapin.Text).FirstOrDefault();
                 if (i != null)
                 {
 
@@ -1953,7 +1684,7 @@ namespace MedicalManagement
             {
 
 
-                var i = db.sp_Landbase_Recomendation(Papin).FirstOrDefault();
+                var i = db.sp_Landbase_Recomendation(txtPapin.Text).FirstOrDefault();
                 if (i != null)
                 {
 

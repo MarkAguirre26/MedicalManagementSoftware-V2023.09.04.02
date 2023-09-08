@@ -396,12 +396,26 @@
     </Compile>
     <Compile Include="MyInter.cs" />
     <Compile Include="Print\Extras.cs" />
+    <Compile Include="Print\HematologyModel.cs" />
+    <Compile Include="Print\HematologyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HematologyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\PrintLaboratory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Print\PrintLaboratory.Designer.cs">
       <DependentUpon>PrintLaboratory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Print\Serology.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Serology.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Print\SerologyModel.cs" />
     <Compile Include="Print\Urinalysis.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -503,8 +517,16 @@
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Print\HematologyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>HematologyReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Print\PrintLaboratory.resx">
       <DependentUpon>PrintLaboratory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\Serology.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Serology.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Print\Urinalysis.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

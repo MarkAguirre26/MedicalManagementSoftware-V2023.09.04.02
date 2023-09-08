@@ -30,21 +30,21 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.ReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.ReportViewer2 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.ReportViewer3 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.ReportViewer4 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.ReportViewer5 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.ReportViewer6 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.ReportViewer7 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.cmdPrint = new System.Windows.Forms.Button();
             this.cmdCancel = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.ReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReportViewer2 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReportViewer3 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReportViewer4 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReportViewer5 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReportViewer6 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReportViewer7 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -72,6 +72,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(922, 435);
             this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // tabPage1
             // 
@@ -83,95 +84,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Urinalysis";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.ReportViewer2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(914, 409);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Serology";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // cmdPrint
-            // 
-            this.cmdPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdPrint.Location = new System.Drawing.Point(695, 441);
-            this.cmdPrint.Name = "cmdPrint";
-            this.cmdPrint.Size = new System.Drawing.Size(102, 32);
-            this.cmdPrint.TabIndex = 1;
-            this.cmdPrint.Text = "Print";
-            this.cmdPrint.UseVisualStyleBackColor = true;
-            this.cmdPrint.Click += new System.EventHandler(this.cmdPrint_Click);
-            // 
-            // cmdCancel
-            // 
-            this.cmdCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cmdCancel.Location = new System.Drawing.Point(813, 441);
-            this.cmdCancel.Name = "cmdCancel";
-            this.cmdCancel.Size = new System.Drawing.Size(102, 32);
-            this.cmdCancel.TabIndex = 2;
-            this.cmdCancel.Text = "Cancel";
-            this.cmdCancel.UseVisualStyleBackColor = true;
-            this.cmdCancel.Click += new System.EventHandler(this.cmdCancel_Click);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.ReportViewer3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(914, 409);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Hematology";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.ReportViewer4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(914, 409);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Hba1c";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.ReportViewer5);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(914, 409);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Fecalysis";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.ReportViewer6);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(914, 409);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Blood Typing";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.ReportViewer7);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(914, 409);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Chem 10";
-            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // ReportViewer1
             // 
@@ -200,6 +112,17 @@
             this.ReportViewer1.TabStop = false;
             this.ReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.ReportViewer2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(914, 409);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Serology";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // ReportViewer2
             // 
             this.ReportViewer2.ActiveViewIndex = -1;
@@ -215,6 +138,17 @@
             this.ReportViewer2.Size = new System.Drawing.Size(908, 403);
             this.ReportViewer2.TabIndex = 1;
             this.ReportViewer2.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.ReportViewer3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(914, 409);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Hematology";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // ReportViewer3
             // 
@@ -232,6 +166,17 @@
             this.ReportViewer3.TabIndex = 1;
             this.ReportViewer3.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.ReportViewer4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(914, 409);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Hba1c";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // ReportViewer4
             // 
             this.ReportViewer4.ActiveViewIndex = -1;
@@ -247,6 +192,17 @@
             this.ReportViewer4.Size = new System.Drawing.Size(908, 403);
             this.ReportViewer4.TabIndex = 1;
             this.ReportViewer4.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.ReportViewer5);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(914, 409);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Fecalysis";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // ReportViewer5
             // 
@@ -264,6 +220,17 @@
             this.ReportViewer5.TabIndex = 1;
             this.ReportViewer5.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.ReportViewer6);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(914, 409);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Blood Typing";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // ReportViewer6
             // 
             this.ReportViewer6.ActiveViewIndex = -1;
@@ -280,6 +247,17 @@
             this.ReportViewer6.TabIndex = 1;
             this.ReportViewer6.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.ReportViewer7);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(914, 409);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Chem 10";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
             // ReportViewer7
             // 
             this.ReportViewer7.ActiveViewIndex = -1;
@@ -294,6 +272,29 @@
             this.ReportViewer7.Size = new System.Drawing.Size(908, 403);
             this.ReportViewer7.TabIndex = 1;
             this.ReportViewer7.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            // 
+            // cmdPrint
+            // 
+            this.cmdPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdPrint.Location = new System.Drawing.Point(695, 441);
+            this.cmdPrint.Name = "cmdPrint";
+            this.cmdPrint.Size = new System.Drawing.Size(102, 32);
+            this.cmdPrint.TabIndex = 1;
+            this.cmdPrint.Text = "Print";
+            this.cmdPrint.UseVisualStyleBackColor = true;
+            this.cmdPrint.Click += new System.EventHandler(this.cmdPrint_Click);
+            // 
+            // cmdCancel
+            // 
+            this.cmdCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmdCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cmdCancel.Location = new System.Drawing.Point(813, 441);
+            this.cmdCancel.Name = "cmdCancel";
+            this.cmdCancel.Size = new System.Drawing.Size(102, 32);
+            this.cmdCancel.TabIndex = 2;
+            this.cmdCancel.Text = "Cancel";
+            this.cmdCancel.UseVisualStyleBackColor = true;
+            this.cmdCancel.Click += new System.EventHandler(this.cmdCancel_Click);
             // 
             // PrintLaboratory
             // 

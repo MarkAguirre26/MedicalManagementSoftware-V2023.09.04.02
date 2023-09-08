@@ -992,7 +992,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.14458F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.85542F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 377F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 380F));
             this.tableLayoutPanel3.Controls.Add(this.label23, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.label24, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.cboTest1, 0, 1);
@@ -1019,7 +1019,7 @@
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(3, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(124, 30);
+            this.label23.Size = new System.Drawing.Size(122, 30);
             this.label23.TabIndex = 26;
             this.label23.Text = "TEST";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1028,9 +1028,9 @@
             // 
             this.label24.Dock = System.Windows.Forms.DockStyle.Top;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(154, 0);
+            this.label24.Location = new System.Drawing.Point(151, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(372, 30);
+            this.label24.Size = new System.Drawing.Size(375, 30);
             this.label24.TabIndex = 27;
             this.label24.Text = "RESULT";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1050,7 +1050,7 @@
             "RH TYPE"});
             this.cboTest1.Location = new System.Drawing.Point(3, 33);
             this.cboTest1.Name = "cboTest1";
-            this.cboTest1.Size = new System.Drawing.Size(124, 21);
+            this.cboTest1.Size = new System.Drawing.Size(122, 21);
             this.cboTest1.TabIndex = 1;
             // 
             // cboSpecific1
@@ -1063,7 +1063,7 @@
             "WHOLE BLOOD"});
             this.cboSpecific1.Location = new System.Drawing.Point(3, 60);
             this.cboSpecific1.Name = "cboSpecific1";
-            this.cboSpecific1.Size = new System.Drawing.Size(124, 21);
+            this.cboSpecific1.Size = new System.Drawing.Size(122, 21);
             this.cboSpecific1.TabIndex = 2;
             // 
             // cboTest2
@@ -1081,7 +1081,7 @@
             "RH TYPE"});
             this.cboTest2.Location = new System.Drawing.Point(3, 96);
             this.cboTest2.Name = "cboTest2";
-            this.cboTest2.Size = new System.Drawing.Size(124, 21);
+            this.cboTest2.Size = new System.Drawing.Size(122, 21);
             this.cboTest2.TabIndex = 3;
             // 
             // cboResult2
@@ -1096,7 +1096,7 @@
             "\"B\"",
             "\"O\"",
             "\"AB\""});
-            this.cboResult2.Location = new System.Drawing.Point(154, 96);
+            this.cboResult2.Location = new System.Drawing.Point(151, 96);
             this.cboResult2.Name = "cboResult2";
             this.cboResult2.Size = new System.Drawing.Size(249, 21);
             this.cboResult2.TabIndex = 6;
@@ -1111,7 +1111,7 @@
             "WHOLE BLOOD"});
             this.cboSpecific2.Location = new System.Drawing.Point(3, 123);
             this.cboSpecific2.Name = "cboSpecific2";
-            this.cboSpecific2.Size = new System.Drawing.Size(124, 21);
+            this.cboSpecific2.Size = new System.Drawing.Size(122, 21);
             this.cboSpecific2.TabIndex = 4;
             // 
             // cboResult1
@@ -1126,7 +1126,7 @@
             "\"B\"",
             "\"O\"",
             "\"AB\""});
-            this.cboResult1.Location = new System.Drawing.Point(154, 33);
+            this.cboResult1.Location = new System.Drawing.Point(151, 33);
             this.cboResult1.Name = "cboResult1";
             this.cboResult1.Size = new System.Drawing.Size(246, 21);
             this.cboResult1.TabIndex = 5;
@@ -1222,7 +1222,7 @@
             this.tableLayoutPanel7.ColumnCount = 3;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.8835F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.1165F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 502F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 505F));
             this.tableLayoutPanel7.Controls.Add(this.label126, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.label55, 2, 0);
             this.tableLayoutPanel7.Controls.Add(this.label53, 0, 13);
@@ -1285,7 +1285,7 @@
             this.label126.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label126.Location = new System.Drawing.Point(3, 0);
             this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(182, 30);
+            this.label126.Size = new System.Drawing.Size(180, 30);
             this.label126.TabIndex = 65;
             this.label126.Text = "TEST";
             this.label126.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1294,9 +1294,9 @@
             // 
             this.label55.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(351, 0);
+            this.label55.Location = new System.Drawing.Point(348, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(497, 30);
+            this.label55.Size = new System.Drawing.Size(500, 30);
             this.label55.TabIndex = 65;
             this.label55.Text = "NORMAL VALUE (S.I. UNIT)";
             this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1307,7 +1307,7 @@
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.Location = new System.Drawing.Point(3, 316);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(182, 20);
+            this.label53.Size = new System.Drawing.Size(180, 20);
             this.label53.TabIndex = 62;
             this.label53.Text = "OTHERS:";
             this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1316,16 +1316,16 @@
             // 
             this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(191, 0);
+            this.label54.Location = new System.Drawing.Point(189, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(154, 30);
+            this.label54.Size = new System.Drawing.Size(153, 30);
             this.label54.TabIndex = 64;
             this.label54.Text = "                 RESULT";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label52
             // 
-            this.label52.Location = new System.Drawing.Point(351, 290);
+            this.label52.Location = new System.Drawing.Point(348, 290);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(85, 26);
             this.label52.TabIndex = 61;
@@ -1334,16 +1334,16 @@
             // 
             // txtHemaWhiteBloodCells
             // 
-            this.txtHemaWhiteBloodCells.Location = new System.Drawing.Point(191, 150);
+            this.txtHemaWhiteBloodCells.Location = new System.Drawing.Point(189, 150);
             this.txtHemaWhiteBloodCells.Name = "txtHemaWhiteBloodCells";
-            this.txtHemaWhiteBloodCells.Size = new System.Drawing.Size(154, 20);
+            this.txtHemaWhiteBloodCells.Size = new System.Drawing.Size(153, 20);
             this.txtHemaWhiteBloodCells.TabIndex = 5;
             this.txtHemaWhiteBloodCells.TextChanged += new System.EventHandler(this.txtHemaWhiteBloodCells_TextChanged);
             this.txtHemaWhiteBloodCells.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberOnly_KeyPress);
             // 
             // label51
             // 
-            this.label51.Location = new System.Drawing.Point(351, 264);
+            this.label51.Location = new System.Drawing.Point(348, 264);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(85, 26);
             this.label51.TabIndex = 60;
@@ -1352,16 +1352,16 @@
             // 
             // txtPlateletCount
             // 
-            this.txtPlateletCount.Location = new System.Drawing.Point(191, 124);
+            this.txtPlateletCount.Location = new System.Drawing.Point(189, 124);
             this.txtPlateletCount.Name = "txtPlateletCount";
-            this.txtPlateletCount.Size = new System.Drawing.Size(154, 20);
+            this.txtPlateletCount.Size = new System.Drawing.Size(153, 20);
             this.txtPlateletCount.TabIndex = 4;
             this.txtPlateletCount.TextChanged += new System.EventHandler(this.txtPlateletCount_TextChanged);
             this.txtPlateletCount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberOnly_KeyPress);
             // 
             // label50
             // 
-            this.label50.Location = new System.Drawing.Point(351, 238);
+            this.label50.Location = new System.Drawing.Point(348, 238);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(85, 26);
             this.label50.TabIndex = 59;
@@ -1370,16 +1370,16 @@
             // 
             // txtHematocrit
             // 
-            this.txtHematocrit.Location = new System.Drawing.Point(191, 98);
+            this.txtHematocrit.Location = new System.Drawing.Point(189, 98);
             this.txtHematocrit.Name = "txtHematocrit";
-            this.txtHematocrit.Size = new System.Drawing.Size(154, 20);
+            this.txtHematocrit.Size = new System.Drawing.Size(153, 20);
             this.txtHematocrit.TabIndex = 3;
             this.txtHematocrit.TextChanged += new System.EventHandler(this.txtHematocrit_TextChanged);
             this.txtHematocrit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberOnly_KeyPress);
             // 
             // label49
             // 
-            this.label49.Location = new System.Drawing.Point(351, 212);
+            this.label49.Location = new System.Drawing.Point(348, 212);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(85, 26);
             this.label49.TabIndex = 58;
@@ -1388,16 +1388,16 @@
             // 
             // txtHemoglobin
             // 
-            this.txtHemoglobin.Location = new System.Drawing.Point(191, 72);
+            this.txtHemoglobin.Location = new System.Drawing.Point(189, 72);
             this.txtHemoglobin.Name = "txtHemoglobin";
-            this.txtHemoglobin.Size = new System.Drawing.Size(154, 20);
+            this.txtHemoglobin.Size = new System.Drawing.Size(153, 20);
             this.txtHemoglobin.TabIndex = 2;
             this.txtHemoglobin.TextChanged += new System.EventHandler(this.txtHemoglobin_TextChanged);
             this.txtHemoglobin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberOnly_KeyPress);
             // 
             // label48
             // 
-            this.label48.Location = new System.Drawing.Point(351, 186);
+            this.label48.Location = new System.Drawing.Point(348, 186);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(85, 26);
             this.label48.TabIndex = 57;
@@ -1406,18 +1406,18 @@
             // 
             // txtHemaRedBloodCells
             // 
-            this.txtHemaRedBloodCells.Location = new System.Drawing.Point(191, 46);
+            this.txtHemaRedBloodCells.Location = new System.Drawing.Point(189, 46);
             this.txtHemaRedBloodCells.Name = "txtHemaRedBloodCells";
-            this.txtHemaRedBloodCells.Size = new System.Drawing.Size(154, 20);
+            this.txtHemaRedBloodCells.Size = new System.Drawing.Size(153, 20);
             this.txtHemaRedBloodCells.TabIndex = 1;
             this.txtHemaRedBloodCells.TextChanged += new System.EventHandler(this.txtHemaRedBloodCells_TextChanged);
             this.txtHemaRedBloodCells.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberOnly_KeyPress);
             // 
             // txtBasoPhil
             // 
-            this.txtBasoPhil.Location = new System.Drawing.Point(191, 293);
+            this.txtBasoPhil.Location = new System.Drawing.Point(189, 293);
             this.txtBasoPhil.Name = "txtBasoPhil";
-            this.txtBasoPhil.Size = new System.Drawing.Size(154, 20);
+            this.txtBasoPhil.Size = new System.Drawing.Size(153, 20);
             this.txtBasoPhil.TabIndex = 10;
             this.txtBasoPhil.TextChanged += new System.EventHandler(this.txtBasoPhil_TextChanged);
             this.txtBasoPhil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberOnly_KeyPress);
@@ -1428,23 +1428,23 @@
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(3, 30);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(182, 13);
+            this.label33.Size = new System.Drawing.Size(180, 13);
             this.label33.TabIndex = 30;
             this.label33.Text = "COMPLETE BLOOD COUNT";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtEosinophil
             // 
-            this.txtEosinophil.Location = new System.Drawing.Point(191, 267);
+            this.txtEosinophil.Location = new System.Drawing.Point(189, 267);
             this.txtEosinophil.Name = "txtEosinophil";
-            this.txtEosinophil.Size = new System.Drawing.Size(154, 20);
+            this.txtEosinophil.Size = new System.Drawing.Size(153, 20);
             this.txtEosinophil.TabIndex = 9;
             this.txtEosinophil.TextChanged += new System.EventHandler(this.txtEosinophil_TextChanged);
             this.txtEosinophil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberOnly_KeyPress);
             // 
             // label47
             // 
-            this.label47.Location = new System.Drawing.Point(351, 147);
+            this.label47.Location = new System.Drawing.Point(348, 147);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(85, 26);
             this.label47.TabIndex = 55;
@@ -1453,16 +1453,16 @@
             // 
             // txtMonocyte
             // 
-            this.txtMonocyte.Location = new System.Drawing.Point(191, 241);
+            this.txtMonocyte.Location = new System.Drawing.Point(189, 241);
             this.txtMonocyte.Name = "txtMonocyte";
-            this.txtMonocyte.Size = new System.Drawing.Size(154, 20);
+            this.txtMonocyte.Size = new System.Drawing.Size(153, 20);
             this.txtMonocyte.TabIndex = 8;
             this.txtMonocyte.TextChanged += new System.EventHandler(this.txtMonocyte_TextChanged);
             this.txtMonocyte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberOnly_KeyPress);
             // 
             // label46
             // 
-            this.label46.Location = new System.Drawing.Point(351, 121);
+            this.label46.Location = new System.Drawing.Point(348, 121);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(101, 26);
             this.label46.TabIndex = 54;
@@ -1471,9 +1471,9 @@
             // 
             // txtLymphonyte
             // 
-            this.txtLymphonyte.Location = new System.Drawing.Point(191, 215);
+            this.txtLymphonyte.Location = new System.Drawing.Point(189, 215);
             this.txtLymphonyte.Name = "txtLymphonyte";
-            this.txtLymphonyte.Size = new System.Drawing.Size(154, 20);
+            this.txtLymphonyte.Size = new System.Drawing.Size(153, 20);
             this.txtLymphonyte.TabIndex = 7;
             this.txtLymphonyte.TextChanged += new System.EventHandler(this.txtLymphonyte_TextChanged);
             this.txtLymphonyte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberOnly_KeyPress);
@@ -1481,7 +1481,7 @@
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(351, 95);
+            this.label45.Location = new System.Drawing.Point(348, 95);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(67, 26);
             this.label45.TabIndex = 53;
@@ -1490,9 +1490,9 @@
             // 
             // txtNuetrophil
             // 
-            this.txtNuetrophil.Location = new System.Drawing.Point(191, 189);
+            this.txtNuetrophil.Location = new System.Drawing.Point(189, 189);
             this.txtNuetrophil.Name = "txtNuetrophil";
-            this.txtNuetrophil.Size = new System.Drawing.Size(154, 20);
+            this.txtNuetrophil.Size = new System.Drawing.Size(153, 20);
             this.txtNuetrophil.TabIndex = 6;
             this.txtNuetrophil.TextChanged += new System.EventHandler(this.txtNuetrophil_TextChanged);
             this.txtNuetrophil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumberOnly_KeyPress);
@@ -1500,7 +1500,7 @@
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(351, 69);
+            this.label44.Location = new System.Drawing.Point(348, 69);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(78, 26);
             this.label44.TabIndex = 52;
@@ -1513,7 +1513,7 @@
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.Location = new System.Drawing.Point(3, 290);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(182, 26);
+            this.label41.Size = new System.Drawing.Size(180, 26);
             this.label41.TabIndex = 40;
             this.label41.Text = "BASOPHIL";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1524,7 +1524,7 @@
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.Location = new System.Drawing.Point(3, 264);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(182, 26);
+            this.label40.Size = new System.Drawing.Size(180, 26);
             this.label40.TabIndex = 39;
             this.label40.Text = "EOSINOPHIL";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1535,7 +1535,7 @@
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.Location = new System.Drawing.Point(3, 238);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(182, 26);
+            this.label39.Size = new System.Drawing.Size(180, 26);
             this.label39.TabIndex = 38;
             this.label39.Text = "MONOCYTE";
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1546,7 +1546,7 @@
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.Location = new System.Drawing.Point(3, 212);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(182, 26);
+            this.label38.Size = new System.Drawing.Size(180, 26);
             this.label38.TabIndex = 37;
             this.label38.Text = "LYMPHOCYTE";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1557,7 +1557,7 @@
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.Location = new System.Drawing.Point(3, 186);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(182, 26);
+            this.label37.Size = new System.Drawing.Size(180, 26);
             this.label37.TabIndex = 36;
             this.label37.Text = "NEUTROPHIL";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1568,7 +1568,7 @@
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label42.Location = new System.Drawing.Point(3, 173);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(182, 13);
+            this.label42.Size = new System.Drawing.Size(180, 13);
             this.label42.TabIndex = 41;
             this.label42.Text = "COMPLETE BLOOD COUNT";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1576,7 +1576,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(351, 43);
+            this.label43.Location = new System.Drawing.Point(348, 43);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(92, 26);
             this.label43.TabIndex = 51;
@@ -1589,7 +1589,7 @@
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(3, 43);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(182, 26);
+            this.label31.Size = new System.Drawing.Size(180, 26);
             this.label31.TabIndex = 31;
             this.label31.Text = "RED BLOOD CELLS\t";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1600,7 +1600,7 @@
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(3, 69);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(182, 26);
+            this.label32.Size = new System.Drawing.Size(180, 26);
             this.label32.TabIndex = 32;
             this.label32.Text = "HEMOGLOBIN";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1611,7 +1611,7 @@
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(3, 95);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(182, 26);
+            this.label34.Size = new System.Drawing.Size(180, 26);
             this.label34.TabIndex = 33;
             this.label34.Text = "HEMATOCRIT";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1622,7 +1622,7 @@
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(3, 121);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(182, 26);
+            this.label35.Size = new System.Drawing.Size(180, 26);
             this.label35.TabIndex = 34;
             this.label35.Text = "PLATELET COUNT";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -1633,7 +1633,7 @@
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.Location = new System.Drawing.Point(3, 147);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(182, 26);
+            this.label36.Size = new System.Drawing.Size(180, 26);
             this.label36.TabIndex = 35;
             this.label36.Text = "WHITE BLOOD CELLS";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -2305,7 +2305,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.14458F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.85542F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 374F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 377F));
             this.tableLayoutPanel4.Controls.Add(this.label8, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label121, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.cboBloodTypingTest1, 0, 1);
@@ -2332,7 +2332,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(3, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 30);
+            this.label8.Size = new System.Drawing.Size(124, 30);
             this.label8.TabIndex = 26;
             this.label8.Text = "TEST";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2341,9 +2341,9 @@
             // 
             this.label121.Dock = System.Windows.Forms.DockStyle.Top;
             this.label121.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label121.Location = new System.Drawing.Point(157, 0);
+            this.label121.Location = new System.Drawing.Point(154, 0);
             this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(369, 30);
+            this.label121.Size = new System.Drawing.Size(372, 30);
             this.label121.TabIndex = 27;
             this.label121.Text = "RESULT";
             this.label121.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2361,7 +2361,7 @@
             "RH TYPE"});
             this.cboBloodTypingTest1.Location = new System.Drawing.Point(3, 33);
             this.cboBloodTypingTest1.Name = "cboBloodTypingTest1";
-            this.cboBloodTypingTest1.Size = new System.Drawing.Size(127, 21);
+            this.cboBloodTypingTest1.Size = new System.Drawing.Size(124, 21);
             this.cboBloodTypingTest1.TabIndex = 1;
             // 
             // cboBloodTypingSpecific1
@@ -2374,7 +2374,7 @@
             "WHOLE BLOOD"});
             this.cboBloodTypingSpecific1.Location = new System.Drawing.Point(3, 60);
             this.cboBloodTypingSpecific1.Name = "cboBloodTypingSpecific1";
-            this.cboBloodTypingSpecific1.Size = new System.Drawing.Size(127, 21);
+            this.cboBloodTypingSpecific1.Size = new System.Drawing.Size(124, 21);
             this.cboBloodTypingSpecific1.TabIndex = 2;
             // 
             // cboBloodTypingTest2
@@ -2390,7 +2390,7 @@
             "RH TYPE"});
             this.cboBloodTypingTest2.Location = new System.Drawing.Point(3, 96);
             this.cboBloodTypingTest2.Name = "cboBloodTypingTest2";
-            this.cboBloodTypingTest2.Size = new System.Drawing.Size(127, 21);
+            this.cboBloodTypingTest2.Size = new System.Drawing.Size(124, 21);
             this.cboBloodTypingTest2.TabIndex = 3;
             // 
             // cboBloodTypingResult2
@@ -2404,7 +2404,7 @@
             "\"B\"",
             "\"O\"",
             "\"AB\""});
-            this.cboBloodTypingResult2.Location = new System.Drawing.Point(157, 96);
+            this.cboBloodTypingResult2.Location = new System.Drawing.Point(154, 96);
             this.cboBloodTypingResult2.Name = "cboBloodTypingResult2";
             this.cboBloodTypingResult2.Size = new System.Drawing.Size(246, 21);
             this.cboBloodTypingResult2.TabIndex = 6;
@@ -2419,7 +2419,7 @@
             "WHOLE BLOOD"});
             this.cboBloodTypingSpecific2.Location = new System.Drawing.Point(3, 123);
             this.cboBloodTypingSpecific2.Name = "cboBloodTypingSpecific2";
-            this.cboBloodTypingSpecific2.Size = new System.Drawing.Size(127, 21);
+            this.cboBloodTypingSpecific2.Size = new System.Drawing.Size(124, 21);
             this.cboBloodTypingSpecific2.TabIndex = 4;
             // 
             // cboBloodTypingResult1
@@ -2433,7 +2433,7 @@
             "\"B\"",
             "\"O\"",
             "\"AB\""});
-            this.cboBloodTypingResult1.Location = new System.Drawing.Point(157, 33);
+            this.cboBloodTypingResult1.Location = new System.Drawing.Point(154, 33);
             this.cboBloodTypingResult1.Name = "cboBloodTypingResult1";
             this.cboBloodTypingResult1.Size = new System.Drawing.Size(246, 21);
             this.cboBloodTypingResult1.TabIndex = 5;

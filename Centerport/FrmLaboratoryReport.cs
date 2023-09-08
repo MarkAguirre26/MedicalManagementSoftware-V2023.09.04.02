@@ -485,9 +485,33 @@ namespace MedicalManagement
 
             PrintLaboratory print = new PrintLaboratory();
             print.urinalysisModel = prepareTheUrinalysisReportData();
+            print.serologyModel = prepareTheSerologyReportData();
+            print.hematologyModel = prepareTheHematologyReportData();
+            print.ShowDialog();
 
-            print.Show();
+        }
 
+        private HematologyModel prepareTheHematologyReportData()
+        {
+            HematologyModel h = new HematologyModel();
+            h.Name = txtName.Text;
+            h.Company = txtAgency.Text;
+            h.Date = dt_urinalysis.Text;
+            h.AgeSex = txtAgeSex.Text;
+            h.HeaderAddress = Address;
+            h.HeaderContact = Contact;
+            h.Redbloodcells = txtHemaRedBloodCells.Text;
+            h.Hemoglobin = txtHemoglobin.Text;
+            h.Hematocrit = txtHematocrit.Text;
+            h.Plateletcount = txtPlateletCount.Text;
+            h.Whitebloodcells = txtHemaWhiteBloodCells.Text;
+            h.Neutrophil = txtNuetrophil.Text;
+            h.Lymphocyte = txtLymphonyte.Text;
+            h.Monocyte = txtMonocyte.Text;
+            h.Eosinophil = txtEosinophil.Text;
+            h.Basophil = txtBasoPhil.Text;
+            h.Others = txtOtherHema.Text;
+            return h;
         }
 
         private UrinalysisModel prepareTheUrinalysisReportData()
@@ -517,6 +541,30 @@ namespace MedicalManagement
             u.Other = txtOthers.Text;
             return u;
         }
+
+
+        private SerologyModel prepareTheSerologyReportData()
+        {
+
+
+            SerologyModel s = new SerologyModel();
+            s.Name = txtName.Text;
+            s.Company = txtAgency.Text;
+            s.Date = dt_urinalysis.Text;
+            s.AgeSex = txtAgeSex.Text;
+            s.HeaderAddress = Address;
+            s.HeaderContact = Contact;
+            s.Test1 = cboTest1.Text;
+            s.Test2 = cboTest2.Text;
+            s.Test1_sub = cboSpecific1.Text;
+            s.Test2_sub = cboSpecific2.Text;
+            s.result1 = cboResult1.Text;
+            s.result3 = cboResult2.Text;
+
+            return s;
+        }
+
+
 
 
 
@@ -820,7 +868,7 @@ namespace MedicalManagement
             //FrmLapPrints f = new FrmLapPrints();
             //f.Name = txtName.Text;
             //f.Company = txtAgency.Text;
-            //f.AgeSex = gender.Text;
+            //f.AgeSex = txtAgeSex.Text;
             //f.ResultDate_Urinalysis = dt_urinalysis.Text;
             //f.ResultDate_Serology = dt_serology.Text;
             //f.ResultDate_Hematolgy = dt_hematology.Text;
@@ -832,7 +880,7 @@ namespace MedicalManagement
             //f.ShowDialog();
 
             PrintReportUsingCrystalReport();
-            
+
         }
 
         public void Search()
