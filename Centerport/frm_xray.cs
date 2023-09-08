@@ -1,7 +1,10 @@
-﻿using MedicalManagement.Class;
+﻿using Ini;
+using MedicalManagement.Class;
+using MedicalManagement.Print;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -17,6 +20,8 @@ namespace MedicalManagement
         DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
         public List<QueueSearchList_Model> xrayAdd_model = new List<QueueSearchList_Model>();
         public List<Xray_Model> Xray_model = new List<Xray_Model>();
+
+        private string Address, Contact;
         public frm_xray(Main mainn)
         {
             InitializeComponent();
@@ -170,7 +175,12 @@ namespace MedicalManagement
             {
                 NewXray = false;
                 Availability(true);
-                fmain.ts_edit_xray.Enabled = false; fmain.ts_save_xray.Enabled = true; fmain.ts_cancel_xray.Enabled = true; fmain.ts_search_xray.Enabled = false; fmain.ts_print_xray.Enabled = false; fmain.ts_printPreview_Xray.Enabled = false;
+                fmain.ts_edit_xray.Enabled = false; 
+                fmain.ts_save_xray.Enabled = true;
+                fmain.ts_cancel_xray.Enabled = true; 
+                fmain.ts_search_xray.Enabled = false; 
+                fmain.ts_print_xray.Enabled = false; 
+                fmain.ts_printPreview_Xray.Enabled = false;
 
             }
             else
@@ -190,22 +200,58 @@ namespace MedicalManagement
 
         public void Cancel()
         {
-           
+
             Availability(false);
 
-            fmain.ts_edit_xray.Enabled = false;
+            fmain.ts_edit_xray.Enabled = true;
             fmain.ts_save_xray.Enabled = false;
             fmain.ts_search_xray.Enabled = true;
-            fmain.ts_print_xray.Enabled = false;
+            fmain.ts_print_xray.Enabled = true;
             fmain.ts_printPreview_Xray.Enabled = false;
             fmain.ts_cancel_xray.Enabled = false;
 
-      
+
 
 
         }
         public void Print()
         {
+          
+
+            //Reporting.Write("RadiologyTEMPLATE",
+            //    new string[] { 
+            //        "F11",
+            //        "A15",
+            //        "B11",
+            //        "F10", 
+            //        "B12",
+            //        "F12",
+            //        "B10",                  
+            //        "B17", 
+            //        "B24", },
+            //    new string[] { 
+            //        txt_agency.Text,
+            //        title + " REPORT",
+            //        txt_name.Text,
+            //        dt_result_Date.Text,
+            //        txt_AgeSex.Text,
+            //        txtExamination.Text ,
+            //        txt_xrayNo.Text, 
+            //        txt_findings.Text, 
+            //        txt_impression.Text });
+
+
+            FrmRadiographicalReport r = new FrmRadiographicalReport();
+            r.radiographicalModel = prepareTheFrmRadiographicalReportDate();
+            r.ShowDialog();
+
+
+
+        }
+
+        private RadiographicalModel prepareTheFrmRadiographicalReportDate()
+        {
+
             string title = "";
             if (variables.RadiologyFormType == "UTZ")
             {
@@ -217,32 +263,25 @@ namespace MedicalManagement
             }
 
 
-            Reporting.Write("RadiologyTEMPLATE",
-                new string[] { 
-                    "F11",
-                    "A15",
-                    "B11",
-                    "F10", 
-                    "B12",
-                    "F12",
-                    "B10",                  
-                    "B17", 
-                    "B24", },
-                new string[] { 
-                    txt_agency.Text,
-                    title + " REPORT",
-                    txt_name.Text,
-                    dt_result_Date.Text,
-                    txt_AgeSex.Text,
-                    txtExamination.Text ,
-                    txt_xrayNo.Text, 
-                    txt_findings.Text, 
-                    txt_impression.Text });
 
 
+            RadiographicalModel radiographicalModel = new RadiographicalModel();
 
 
+            radiographicalModel.Name = txt_name.Text;
+            radiographicalModel.Company = txt_agency.Text;
+            radiographicalModel.HeaderAddress = Address;
+            radiographicalModel.Date = dt_result_Date.Text;
+            radiographicalModel.AgeSex = txt_AgeSex.Text;
+            radiographicalModel.HeaderContact = Contact;
+            radiographicalModel.result1 = txt_findings.Text;
+            radiographicalModel.result3 = txt_impression.Text;
+            radiographicalModel.CaseNo = txt_xrayNo.Text;
+            radiographicalModel.Examination = txtExamination.Text;
+            radiographicalModel.ReportTitle = title + " REPORT";
 
+
+            return radiographicalModel;
         }
         public void Search()
         {
@@ -335,7 +374,15 @@ namespace MedicalManagement
             //Load_Medical();
 
 
+            IniFile ini = new IniFile(ClassSql.MMS_Path);
+            Address = ini.IniReadValue("COMPANY", "Address");
+            Contact = ini.IniReadValue("COMPANY", "Contact");
 
+            int newWidth = this.Width;
+            int newHieght = this.Height;
+
+            overlayShadow1.MaximumSize = new Size(newWidth, newHieght);
+            overlayShadow1.Size = new Size(newWidth, overlayShadow1.Height);
 
         }
 
@@ -375,6 +422,8 @@ namespace MedicalManagement
                     txt_findings.Text = i.findings.ToString() ?? "-";
                     txt_impression.Text = i.impression.ToString() ?? "-";
                     txtExamination.Text = i.examination.ToString() ?? "-";
+
+
                     int remark = Convert.ToInt32(i.remark ?? 0);
                     if (remark == 1)
                     {
@@ -457,12 +506,7 @@ namespace MedicalManagement
 
         public void Availability(bool bl)
         {
-            //Tool.SetEnable(panel3, bl);
-            //Tool.SetEnable(groupBox2, bl);
-            //Tool.SetEnable(groupBox3, bl);
-            //Tool.SetEnable(groupBox4, bl);
-
-
+          
 
             if (bl == true)
             { overlayShadow1.Visible = false; overlayShadow1.SendToBack(); }
@@ -478,6 +522,8 @@ namespace MedicalManagement
             Tool.ClearFields(groupBox3);
             setDeafultValue();
 
+
+
         }
 
         public void setDeafultValue()
@@ -492,19 +538,7 @@ namespace MedicalManagement
         }
 
 
-        //public void setDefaultFiledsValue()
-        //{
-        //    txt_specimentNo.Text = "1012";
-        //    txt_radiologist_findings.Text = "THE LUNGS ARE CLEAR.\nHEART IS NOT ENLARGED.\n\nMEDIASTINUM, DIAPHRAGM, SULCI AND OSSEOUS STRUCTURES ARE INTACT.";
-        //    txt_impression.Text = "NORMAL CHEST XRAY.";
-        //    IniFile ini = new IniFile(ClassSql.MMS_Path);
-        //    txt_RadioLogist.Text = ini.IniReadValue("MEDICAL", "Xray_Radiologist");
-        //    txt_RadioLogist_Lic.Text = ini.IniReadValue("MEDICAL", "Xray Radiologist_license");
-        //    txt_XRAYtech.Text = ini.IniReadValue("MEDICAL", "XRAY_TECH");
-        //    txt_XRAYtech_lic.Text = ini.IniReadValue("MEDICAL", "XRAYTECH_LICENSE");
 
-
-        //}
 
 
 

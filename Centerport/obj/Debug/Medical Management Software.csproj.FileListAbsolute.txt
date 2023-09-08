@@ -2924,3 +2924,4 @@ D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\
 D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\SmartGuys Community Health Care Inc.exe.manifest
 D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\SmartGuys Community Health Care Inc.application
 D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.Print.PrintLaboratory.resources
+D:\Files\Devs\SGS\MedicalManagementSoftware-V2023.09.04.02\Centerport\obj\Debug\MedicalManagement.Print.FrmRadiographicalReport.resources

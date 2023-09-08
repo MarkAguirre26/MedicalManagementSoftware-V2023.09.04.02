@@ -424,6 +424,12 @@
       <DependentUpon>FecalysisReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Print\FrmRadiographicalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Print\FrmRadiographicalReport.Designer.cs">
+      <DependentUpon>FrmRadiographicalReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Print\HematologyModel.cs" />
     <Compile Include="Print\HematologyReport.cs">
       <AutoGen>True</AutoGen>
@@ -436,6 +442,13 @@
     </Compile>
     <Compile Include="Print\PrintLaboratory.Designer.cs">
       <DependentUpon>PrintLaboratory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Print\RadiographicalModel.cs" />
+    <Compile Include="Print\RadiographicalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RadiographicalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Print\Serology.cs">
       <AutoGen>True</AutoGen>
@@ -561,12 +574,19 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>FecalysisReport.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Print\FrmRadiographicalReport.resx">
+      <DependentUpon>FrmRadiographicalReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Print\HematologyReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>HematologyReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Print\PrintLaboratory.resx">
       <DependentUpon>PrintLaboratory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\RadiographicalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RadiographicalReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Print\Serology.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
