@@ -395,7 +395,35 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="MyInter.cs" />
+    <Compile Include="Print\BloodTypingModel.cs" />
+    <Compile Include="Print\BloodTypingReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BloodTypingReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Print\ChemistryModel.cs" />
+    <Compile Include="Print\ChemistryReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChemistryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Print\ClinicalChemistryModel.cs" />
+    <Compile Include="Print\ClinicalChemistryReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicalChemistryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\Extras.cs" />
+    <Compile Include="Print\FecalysisModel.cs" />
+    <Compile Include="Print\FecalysisReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FecalysisReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Print\HematologyModel.cs" />
     <Compile Include="Print\HematologyReport.cs">
       <AutoGen>True</AutoGen>
@@ -516,6 +544,22 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\BloodTypingReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BloodTypingReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\ChemistryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ChemistryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\ClinicalChemistryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ClinicalChemistryReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Print\FecalysisReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FecalysisReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Print\HematologyReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

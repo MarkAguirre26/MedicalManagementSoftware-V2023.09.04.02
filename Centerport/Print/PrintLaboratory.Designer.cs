@@ -70,7 +70,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(922, 435);
+            this.tabControl1.Size = new System.Drawing.Size(922, 551);
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
@@ -80,7 +80,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(914, 409);
+            this.tabPage1.Size = new System.Drawing.Size(914, 525);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Urinalysis";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -107,7 +107,7 @@
             this.ReportViewer1.ShowRefreshButton = false;
             this.ReportViewer1.ShowTextSearchButton = false;
             this.ReportViewer1.ShowZoomButton = false;
-            this.ReportViewer1.Size = new System.Drawing.Size(908, 403);
+            this.ReportViewer1.Size = new System.Drawing.Size(908, 519);
             this.ReportViewer1.TabIndex = 0;
             this.ReportViewer1.TabStop = false;
             this.ReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
@@ -226,7 +226,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(914, 409);
+            this.tabPage6.Size = new System.Drawing.Size(914, 525);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Blood Typing";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -243,7 +243,7 @@
             this.ReportViewer6.Name = "ReportViewer6";
             this.ReportViewer6.ShowCloseButton = false;
             this.ReportViewer6.ShowLogo = false;
-            this.ReportViewer6.Size = new System.Drawing.Size(908, 403);
+            this.ReportViewer6.Size = new System.Drawing.Size(908, 519);
             this.ReportViewer6.TabIndex = 1;
             this.ReportViewer6.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -253,7 +253,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(914, 409);
+            this.tabPage7.Size = new System.Drawing.Size(914, 525);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Chem 10";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -269,14 +269,14 @@
             this.ReportViewer7.Location = new System.Drawing.Point(3, 3);
             this.ReportViewer7.Name = "ReportViewer7";
             this.ReportViewer7.ShowLogo = false;
-            this.ReportViewer7.Size = new System.Drawing.Size(908, 403);
+            this.ReportViewer7.Size = new System.Drawing.Size(908, 519);
             this.ReportViewer7.TabIndex = 1;
             this.ReportViewer7.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // cmdPrint
             // 
             this.cmdPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmdPrint.Location = new System.Drawing.Point(695, 441);
+            this.cmdPrint.Location = new System.Drawing.Point(695, 557);
             this.cmdPrint.Name = "cmdPrint";
             this.cmdPrint.Size = new System.Drawing.Size(102, 32);
             this.cmdPrint.TabIndex = 1;
@@ -288,7 +288,7 @@
             // 
             this.cmdCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmdCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cmdCancel.Location = new System.Drawing.Point(813, 441);
+            this.cmdCancel.Location = new System.Drawing.Point(813, 557);
             this.cmdCancel.Name = "cmdCancel";
             this.cmdCancel.Size = new System.Drawing.Size(102, 32);
             this.cmdCancel.TabIndex = 2;
@@ -302,7 +302,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cmdCancel;
-            this.ClientSize = new System.Drawing.Size(922, 485);
+            this.ClientSize = new System.Drawing.Size(922, 601);
             this.Controls.Add(this.cmdCancel);
             this.Controls.Add(this.cmdPrint);
             this.Controls.Add(this.tabControl1);
