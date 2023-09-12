@@ -32,53 +32,7 @@ namespace MedicalManagement
             //load();
         }
 
-        //void load()
-        //{
-            
-        //    cbo_type.Text = "BNI";
-        //    txt_transdate.Text = DateTime.Today.ToShortDateString() + " " + DateTime.Now.ToLongTimeString();
-        //    txt_purpose.Select();
-        ////    txt_tracking.Text = ClassSql.CreateTrackingId();
-           
-        
-        //}
-
-        //private void cmd_ok_Click(object sender, EventArgs e)
-        //{
-           
-        //    InsertVisit();
-        //}
-
-
-
-        //void InsertVisit()
-        //{
-        //     try
-        //    {
-        //        DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
-        //        db.ExecuteCommand("INSERT INTO t_registration (trkid, papin, pxtype, trans_date, diagnosis,purpose) VALUES({0},{1},{2},{3},{4},{5})", txt_tracking.Text, this.Tag.ToString(), cbo_type.Text, DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss tt")," ",Tool.ReplaceString(txt_purpose.Text));
-        //        (Application.OpenForms["frm_visit"] as frm_visit).loadlist();
-
-        //        // ClassSql a = new ClassSql();               
-        //        // a.ExecuteQuery("INSERT INTO `t_registration` (`trkid`, `papin`, `pxtype`, `trans_date`, `diagnosis`,`purpose`) VALUES ('" + Tool.ReplaceString(txt_tracking.Text) + "', '" + Tool.ReplaceString(this.Tag.ToString()) + "', '" + Tool.ReplaceString(cbo_type.Text) + "', '" + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss tt") + "', '','" + Tool.ReplaceString(txt_purpose.Text) + "')");
-                               
-                
-        //        Search_q.Close();
-        //        this.Close();
-
-              
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //    }
-                       
-
-
-
-
-        //}
+       
 
 
         private void btnClose_Click(object sender, EventArgs e)

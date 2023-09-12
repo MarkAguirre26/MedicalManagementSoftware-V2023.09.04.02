@@ -169,6 +169,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Print Laboratory Results";
+            this.Load += new System.EventHandler(this.FrmLapPrints_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmLapPrints_KeyDown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

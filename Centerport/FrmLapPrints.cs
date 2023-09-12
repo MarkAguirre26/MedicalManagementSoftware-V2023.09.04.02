@@ -1,4 +1,5 @@
 ﻿using MedicalManagement.Class;
+using MedicalManagement.Print;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,7 +24,6 @@ namespace MedicalManagement
         public string ResultDate_BloodTyping;
         public string ResultDate_ClinicalChem;
         public string AgeSex;
-
 
 
 
@@ -111,6 +111,8 @@ namespace MedicalManagement
         public string Sgpt_Remark;
         public string Sgot_Remark;
 
+
+       
 
 
         public FrmLapPrints()
@@ -263,7 +265,7 @@ namespace MedicalManagement
 
             //
             db.sp_PrintUrinalysisUpdate(this.Tag.ToString());
-            db.sp_updateIsPrinted(1,this.Tag.ToString());
+            db.sp_updateIsPrinted(1, this.Tag.ToString());
 
         }
 
@@ -568,6 +570,11 @@ namespace MedicalManagement
             {
                 this.Close();
             }
+        }
+
+        private void FrmLapPrints_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

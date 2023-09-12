@@ -96,6 +96,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Enter email address";
+            this.Load += new System.EventHandler(this.frm_emailaddress_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

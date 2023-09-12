@@ -528,6 +528,13 @@ namespace MedicalManagement
 
             //Save();
 
+            //PrintLaboratory
+
+           
+
+            
+
+
 
 
         }
@@ -536,20 +543,42 @@ namespace MedicalManagement
         {
 
 
-            PrintLaboratory print = new PrintLaboratory();
-            print.urinalysisModel = prepareTheUrinalysisReportData();
-            print.serologyModel = prepareTheSerologyReportData();
-            print.hematologyModel = prepareTheHematologyReportData();
-            print.clinicalChemistryModel = prepareTheclinicalChemistryReportReportData();
-            print.fecalysisModel = prepareTheFecalysisReportData();
-            print.bloodTypingModel = prepareTheBloodTypingReportData();
-            print.chemistryModel = prepareTheChemistryReportData();
+            //FrmLapPrints f = new FrmLapPrints();
+            //f.Name = txtName.Text;
+            //f.Company = txtAgency.Text;
+            //f.AgeSex = txtAgeSex.Text;
+            //f.ResultDate_Urinalysis = dt_urinalysis.Text;
+            //f.ResultDate_Serology = dt_serology.Text;
+            //f.ResultDate_Hematolgy = dt_hematology.Text;
+            //f.ResultDate_hba1c = dt_hba.Text;
+            //f.ResultDate_Fecalysis = dt_fecalysis.Text;
+            //f.ResultDate_BloodTyping = dt_BloodTyping.Text;
+            //f.ResultDate_ClinicalChem = dt_BloodTyping.Text;
+            //f.Tag = Papin;
+            //f.ShowDialog();
+
+
+            // Get the primary screen's working area (excluding taskbar)
+            Rectangle screenBounds = Screen.PrimaryScreen.WorkingArea;
+
+            // Calculate the new X coordinate to move the form to the right edge
+            int newX = screenBounds.Right - this.Width;
+
+            // Set the new location of the form
+            //this.Location = new Point(newX, this.Location.Y);
+
+
+
+
+            PrintLaboratory print = new PrintLaboratory(this);
+            //print.Location = new Point(newX, this.Location.Y);           
+
             print.tabIndex = tabControl1.SelectedIndex;
             print.ShowDialog();
 
         }
 
-        private ChemistryModel prepareTheChemistryReportData()
+        public ChemistryModel prepareTheChemistryReportData()
         {
             ChemistryModel c = new ChemistryModel();
 
@@ -587,7 +616,7 @@ namespace MedicalManagement
             return c;
         }
 
-        private BloodTypingModel prepareTheBloodTypingReportData()
+        public BloodTypingModel prepareTheBloodTypingReportData()
         {
 
             BloodTypingModel b = new BloodTypingModel();
@@ -606,7 +635,7 @@ namespace MedicalManagement
             return b;
         }
 
-        private FecalysisModel prepareTheFecalysisReportData()
+        public FecalysisModel prepareTheFecalysisReportData()
         {
             FecalysisModel f = new FecalysisModel();
             f.Name = txtName.Text;
@@ -641,7 +670,7 @@ namespace MedicalManagement
             return f;
         }
 
-        private ClinicalChemistryModel prepareTheclinicalChemistryReportReportData()
+        public ClinicalChemistryModel prepareTheclinicalChemistryReportReportData()
         {
             ClinicalChemistryModel c = new ClinicalChemistryModel();
             c.Name = txtName.Text;
@@ -654,7 +683,7 @@ namespace MedicalManagement
             return c;
         }
 
-        private HematologyModel prepareTheHematologyReportData()
+        public HematologyModel prepareTheHematologyReportData()
         {
             HematologyModel h = new HematologyModel();
             h.Name = txtName.Text;
@@ -677,7 +706,7 @@ namespace MedicalManagement
             return h;
         }
 
-        private UrinalysisModel prepareTheUrinalysisReportData()
+        public UrinalysisModel prepareTheUrinalysisReportData()
         {
 
 
@@ -706,7 +735,7 @@ namespace MedicalManagement
         }
 
 
-        private SerologyModel prepareTheSerologyReportData()
+        public SerologyModel prepareTheSerologyReportData()
         {
 
 
@@ -1051,19 +1080,7 @@ namespace MedicalManagement
 
         public void Print()
         {
-            //FrmLapPrints f = new FrmLapPrints();
-            //f.Name = txtName.Text;
-            //f.Company = txtAgency.Text;
-            //f.AgeSex = txtAgeSex.Text;
-            //f.ResultDate_Urinalysis = dt_urinalysis.Text;
-            //f.ResultDate_Serology = dt_serology.Text;
-            //f.ResultDate_Hematolgy = dt_hematology.Text;
-            //f.ResultDate_hba1c = dt_hba.Text;
-            //f.ResultDate_Fecalysis = dt_fecalysis.Text;
-            //f.ResultDate_BloodTyping = dt_BloodTyping.Text;
-            //f.ResultDate_ClinicalChem = dt_BloodTyping.Text;
-            //f.Tag = Papin;
-            //f.ShowDialog();
+            
 
             PrintReportUsingCrystalReport();
 

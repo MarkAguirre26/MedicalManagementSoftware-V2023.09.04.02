@@ -30,13 +30,13 @@ namespace MedicalManagement
         //
         private void frm_login_Load(object sender, EventArgs e)
         {
-            Ini.IniFile ini = new Ini.IniFile(ClassSql.MMS_Path);
-            string ComputerName = ini.IniReadValue("COMPUTER", "Name");
-            string InstanceName = ini.IniReadValue("COMPUTER", "InstanceName");
-            if (System.Environment.MachineName == ComputerName)
-            {
-                ClassSql.ConnectSqlInstance(InstanceName);
-            }
+            //Ini.IniFile ini = new Ini.IniFile(ClassSql.MMS_Path);
+            //string ComputerName = ini.IniReadValue("COMPUTER", "Name");
+            //string InstanceName = ini.IniReadValue("COMPUTER", "InstanceName");
+            //if (System.Environment.MachineName == ComputerName)
+            //{
+            //    ClassSql.ConnectSqlInstance(InstanceName);
+            //}
         }
 
         private void frm_login_KeyDown(object sender, KeyEventArgs e)
@@ -61,6 +61,11 @@ namespace MedicalManagement
 
 
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new frm_server().ShowDialog();
         }
     }
 }

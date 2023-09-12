@@ -67,6 +67,8 @@ namespace MedicalManagement
 
                 Cursor.Current = Cursors.WaitCursor;
                 FrmLaboratoryReport lab = new FrmLaboratoryReport(this);
+                // Set the new location of the form
+                lab.Location = new Point(0, 0);
                 lab.MdiParent = this;
                 lab.Show();
             }

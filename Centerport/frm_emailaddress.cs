@@ -121,5 +121,10 @@ namespace MedicalManagement
 
 
         }
+
+        private void frm_emailaddress_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

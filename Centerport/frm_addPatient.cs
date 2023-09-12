@@ -70,7 +70,7 @@ namespace MedicalManagement
                         purpose +=  ", "+cb.Text;
                     }
                 }
-
+                //
 
                 foreach (CheckBox cb in flowLayoutPanel4.Controls.OfType<CheckBox>())
                 {
