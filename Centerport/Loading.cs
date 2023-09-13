@@ -34,26 +34,25 @@ namespace MedicalManagement
                     bw_login.RunWorkerAsync();
                 }
             }
-           
+
         }
 
 
-     
+
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
 
-           isSystemActivated = Get("https://raw.githubusercontent.com/MarkAguirre26/walalang/main/index.txt");
+            isSystemActivated = Get("https://raw.githubusercontent.com/MarkAguirre26/walalang/main/index.txt");
 
-           if (isSystemActivated.Contains("Activated"))
-           {
-               this.Invoke(new MethodInvoker(delegate { login(); }));
-           }
-           else
-           {
+            if (isSystemActivated.Contains("Activated"))
+            {
+                this.Invoke(new MethodInvoker(delegate { login(); }));
+            }
+            else
+            {
 
-           }
+            }
 
-           
         }
 
         private void login()
@@ -61,7 +60,7 @@ namespace MedicalManagement
             try
             {
 
-                
+
                 DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
                 string pwd = EncodeString.Encrypt((Application.OpenForms["frm_login"] as frm_login).txt_password.Text);
                 var list = db.sp_login((Application.OpenForms["frm_login"] as frm_login).txt_username.Text, pwd).ToList();
@@ -81,7 +80,7 @@ namespace MedicalManagement
             }
             catch (Exception ex)
             {
-                
+
                 MessageBox.Show(ex.Message, "Invalid Connection", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 new frm_server().ShowDialog();
             }
@@ -141,9 +140,6 @@ namespace MedicalManagement
                 }
                 else
                 {
-
-
-
                     (Application.OpenForms["frm_login"] as frm_login).txt_username.Clear();
                     (Application.OpenForms["frm_login"] as frm_login).txt_password.Clear();
                     MessageBox.Show("User does not exist", "Message", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -155,11 +151,11 @@ namespace MedicalManagement
                 MessageBox.Show("Please contact your system administrator", "Maintenance Mode", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Close();
             }
-                     
-            
-            
-           
-           
+
+
+
+
+
         }
     }
 }
