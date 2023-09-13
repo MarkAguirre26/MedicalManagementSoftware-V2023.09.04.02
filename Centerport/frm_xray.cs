@@ -106,7 +106,7 @@ namespace MedicalManagement
             {
 
 
-
+                txt_name.Focus();
 
                 int norma_xray;
                 if (cb_normal.Checked)
@@ -378,11 +378,8 @@ namespace MedicalManagement
             Address = ini.IniReadValue("COMPANY", "Address");
             Contact = ini.IniReadValue("COMPANY", "Contact");
 
-            int newWidth = this.Width;
-            int newHieght = this.Height;
 
-            overlayShadow1.MaximumSize = new Size(newWidth, newHieght);
-            overlayShadow1.Size = new Size(newWidth, overlayShadow1.Height);
+            Availability(false);
 
         }
 
@@ -506,12 +503,24 @@ namespace MedicalManagement
 
         public void Availability(bool bl)
         {
-          
+
+            int newWidth = this.Width;
+            int newHieght = this.Height;
+
+            overlayShadow1.MaximumSize = new Size(newWidth, newHieght);
+            overlayShadow1.Size = new Size(newWidth, overlayShadow1.Height);
+
+
 
             if (bl == true)
-            { overlayShadow1.Visible = false; overlayShadow1.SendToBack(); }
+            { 
+                overlayShadow1.Visible = false; 
+                overlayShadow1.SendToBack(); 
+            }
             else
-            { overlayShadow1.Visible = true; overlayShadow1.BringToFront(); }
+            {   overlayShadow1.Visible = true; 
+                overlayShadow1.BringToFront(); 
+            }
 
         }
 

@@ -38,8 +38,6 @@ namespace MedicalManagement
 
         public int PatientPageCount;
         public int PatientTotalCount;
-        //public static bool FormPrint = true;
-        //public string DefaultPass
         public static ToolStrip Strip_visit_;
         public static ToolStrip Strip_Profile_;
         public static ToolStrip Strip_Lab_;

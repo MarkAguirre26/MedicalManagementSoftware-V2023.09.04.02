@@ -126,14 +126,7 @@ namespace MedicalManagement
                 DataTable dt = new DataTable();
                 dt = MyClass.Table("exec sp_listOfPatientSummary '" + txt_employer.Text + "'");
 
-                //foreach (DataRow dr in dt.Rows)
-                //{
-                //    MessageBox.Show(dr["Name"].ToString());
-
-                //}
-
-
-                //var list = db.sp_listOfPatientSummary(txt_employer.Text).ToList();
+               
 
                 dataGridView1.DataSource = dt;
 
@@ -151,7 +144,7 @@ namespace MedicalManagement
                 }
 
 
-                //
+              
                 summaryList.Clear();
                 dataGridView1.DataSource = null;
 

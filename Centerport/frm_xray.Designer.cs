@@ -43,8 +43,8 @@
             this.txt_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.overlayShadow1 = new MedicalManagement.Class.OverlayShadow();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtExamination = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lbl_Xray_Result_Cn = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -55,9 +55,9 @@
             this.cb_normal = new System.Windows.Forms.CheckBox();
             this.txt_xrayNo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.overlayShadow1 = new MedicalManagement.Class.OverlayShadow();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtExamination = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -246,14 +246,6 @@
             this.label24.TabIndex = 245;
             this.label24.Text = "Name:";
             // 
-            // overlayShadow1
-            // 
-            this.overlayShadow1.Location = new System.Drawing.Point(0, 0);
-            this.overlayShadow1.Name = "overlayShadow1";
-            this.overlayShadow1.Size = new System.Drawing.Size(275, 27);
-            this.overlayShadow1.TabIndex = 297;
-            this.overlayShadow1.Click += new System.EventHandler(this.overlayShadow1_Click);
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtExamination);
@@ -271,6 +263,16 @@
             this.groupBox2.TabIndex = 298;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "X-RAY RESULT";
+            // 
+            // txtExamination
+            // 
+            this.txtExamination.BackColor = System.Drawing.Color.White;
+            this.txtExamination.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtExamination.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExamination.Location = new System.Drawing.Point(108, 19);
+            this.txtExamination.Name = "txtExamination";
+            this.txtExamination.Size = new System.Drawing.Size(120, 21);
+            this.txtExamination.TabIndex = 295;
             // 
             // label2
             // 
@@ -380,6 +382,14 @@
             this.label6.TabIndex = 256;
             this.label6.Text = "No.:";
             // 
+            // overlayShadow1
+            // 
+            this.overlayShadow1.Location = new System.Drawing.Point(0, 0);
+            this.overlayShadow1.Name = "overlayShadow1";
+            this.overlayShadow1.Size = new System.Drawing.Size(905, 465);
+            this.overlayShadow1.TabIndex = 297;
+            this.overlayShadow1.Click += new System.EventHandler(this.overlayShadow1_Click);
+            // 
             // backgroundWorker2
             // 
             this.backgroundWorker2.WorkerReportsProgress = true;
@@ -394,16 +404,6 @@
             this.label7.Size = new System.Drawing.Size(338, 13);
             this.label7.TabIndex = 17;
             this.label7.Text = "Note: You can\'t open the UTZ, XRAY and ECG form at the same time.";
-            // 
-            // txtExamination
-            // 
-            this.txtExamination.BackColor = System.Drawing.Color.White;
-            this.txtExamination.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtExamination.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExamination.Location = new System.Drawing.Point(108, 19);
-            this.txtExamination.Name = "txtExamination";
-            this.txtExamination.Size = new System.Drawing.Size(120, 21);
-            this.txtExamination.TabIndex = 295;
             // 
             // frm_xray
             // 
