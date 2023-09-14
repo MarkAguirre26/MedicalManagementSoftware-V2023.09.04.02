@@ -27,7 +27,7 @@ namespace MedicalManagement
         private static string EVENT_SAVE = "Save";
         private static string EVENT_UPDATE = "Update";
         public List<laboratory_search> labsearch = new List<laboratory_search>();
-        private string Address, Contact;
+        private string Address, Contact, Rmt_Name, Rmt_License, Address2;
 
         public static bool NewLabReport;
         public FrmLaboratoryReport(Main maiin)
@@ -39,10 +39,16 @@ namespace MedicalManagement
         private void FrmLaboratoryReport_Load(object sender, EventArgs e)
         {
 
-
+            //
             IniFile ini = new IniFile(ClassSql.MMS_Path);
             Address = ini.IniReadValue("COMPANY", "Address");
+            Address2 = ini.IniReadValue("COMPANY", "Address2");
             Contact = ini.IniReadValue("COMPANY", "Contact");
+            Rmt_Name = ini.IniReadValue("PERSONNEL", "RMT");
+            Rmt_License = ini.IniReadValue("PERSONNEL", "RMT_LIC");
+            
+            
+
 
 
             Availability(overlayUrinalysis, false);
@@ -543,19 +549,7 @@ namespace MedicalManagement
         {
 
 
-            //FrmLapPrints f = new FrmLapPrints();
-            //f.Name = txtName.Text;
-            //f.Company = txtAgency.Text;
-            //f.AgeSex = txtAgeSex.Text;
-            //f.ResultDate_Urinalysis = dt_urinalysis.Text;
-            //f.ResultDate_Serology = dt_serology.Text;
-            //f.ResultDate_Hematolgy = dt_hematology.Text;
-            //f.ResultDate_hba1c = dt_hba.Text;
-            //f.ResultDate_Fecalysis = dt_fecalysis.Text;
-            //f.ResultDate_BloodTyping = dt_BloodTyping.Text;
-            //f.ResultDate_ClinicalChem = dt_BloodTyping.Text;
-            //f.Tag = Papin;
-            //f.ShowDialog();
+         
 
 
             // Get the primary screen's working area (excluding taskbar)
@@ -567,8 +561,7 @@ namespace MedicalManagement
             // Set the new location of the form
             //this.Location = new Point(newX, this.Location.Y);
 
-
-
+            
 
             PrintLaboratory print = new PrintLaboratory(this);
             //print.Location = new Point(newX, this.Location.Y);           
@@ -589,7 +582,8 @@ namespace MedicalManagement
             c.AgeSex = txtAgeSex.Text;
             c.HeaderAddress = Address;
             c.HeaderContact = Contact;
-
+            c.Rmt_Name = Rmt_Name;
+            c.Rmt_License = Rmt_License;
 
             c.Fbs = txtFbs.Text;
             c.Bun = txtBun.Text;
@@ -613,6 +607,7 @@ namespace MedicalManagement
             c.VldlRemark = txtVldlRemark.Text;
             c.SgptaltRemark = txtSgptRemark.Text;
             c.SgotastRemark = txtSgotRemark.Text;
+            c.Address2 = Address2;
             return c;
         }
 
@@ -632,6 +627,10 @@ namespace MedicalManagement
             b.Test2_sub = cboBloodTypingSpecific2.Text;
             b.result1 = cboBloodTypingResult1.Text;
             b.result3 = cboBloodTypingResult2.Text;
+           b.Rmt_Name = Rmt_Name;
+           b.Rmt_License = Rmt_License;
+           b.Address2 = Address2;
+
             return b;
         }
 
@@ -651,8 +650,9 @@ namespace MedicalManagement
             f.Redbloodcell = txtRedBloodCellsFecalysis.Text;
             f.Fatglobules = txtFatFecalysis.Text;
             f.Bacteria = txtBacteriaFecalysis.Text;
-
-
+            f.Rmt_Name = Rmt_Name;
+            f.Rmt_License = Rmt_License;
+            f.Address2 = Address2;
             string OvaParasite = "";
             if (rbOvaParasite.Checked == true)
             {
@@ -680,6 +680,9 @@ namespace MedicalManagement
             c.HeaderAddress = Address;
             c.HeaderContact = Contact;
             c.Result1 = txtHbAcResult.Text;
+            c.Rmt_Name = Rmt_Name;
+            c.Rmt_License = Rmt_License;
+            c.Address2 = Address2;
             return c;
         }
 
@@ -703,6 +706,10 @@ namespace MedicalManagement
             h.Eosinophil = txtEosinophil.Text;
             h.Basophil = txtBasoPhil.Text;
             h.Others = txtOtherHema.Text;
+
+            h.Rmt_Name = Rmt_Name;
+            h.Rmt_License = Rmt_License;
+            h.Address2 = Address2;
             return h;
         }
 
@@ -731,6 +738,9 @@ namespace MedicalManagement
             u.AmorphousUrates = cboUrate.Text;
             u.AmorphousPhosphates = cboPhospate.Text;
             u.Other = txtOthers.Text;
+            u.Rmt_Name = Rmt_Name;
+            u.Rmt_License = Rmt_License;
+            u.Address2 = Address2;
             return u;
         }
 
@@ -752,12 +762,14 @@ namespace MedicalManagement
             s.Test2_sub = cboSpecific2.Text;
             s.result1 = cboResult1.Text;
             s.result3 = cboResult2.Text;
-
+            s.Rmt_Name = Rmt_Name;
+            s.Rmt_License = Rmt_License;
+            s.Address2 = Address2;
             return s;
         }
 
 
-
+        //
 
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

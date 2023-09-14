@@ -30,10 +30,12 @@ namespace MedicalManagement.Print
         public string Eosinophil { get; set; }
         public string Basophil { get; set; }
         public string Others { get; set; }
-  
 
 
+        public string Rmt_Name { get; set; }
 
+        public string Rmt_License { get; set; }
+        public string Address2 { get; set; }
 
     }
 }

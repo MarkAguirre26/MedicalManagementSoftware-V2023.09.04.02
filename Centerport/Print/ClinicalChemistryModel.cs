@@ -20,8 +20,10 @@ namespace MedicalManagement.Print
 
 
         public string Result1 { get; set; }
+        public string Rmt_Name { get; set; }
 
-
+        public string Rmt_License { get; set; }
+        public string Address2 { get; set; }
 
     }
 }

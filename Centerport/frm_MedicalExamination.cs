@@ -254,7 +254,7 @@ namespace MedicalManagement
             Tool.ClearFields(groupBox3);
             Tool.ClearFields(panel1);
             Tool.ClearFields(panel4);
-                    
+
 
 
 
@@ -391,7 +391,7 @@ namespace MedicalManagement
 
                 db.sp_MedicalExaminationProcess("-", txtPapin.Text, "EMC", txt_result_date.Text, "", "PENDING", txt_result_date.Text, "-", txt_remark.Text, txt_recomendation.Text, "", "-", "", txt_AttendingDentist.Text, "", "", "-", "", "", "", "", "", "", "", cbo_evaluation.Text,
                      rb_Allergies, rb_AnemiaBleeding, rb_Asthma, rb_BloodProblem, rb_CancerTumor, rb_Chickenpox, rb_Clotting, rb_Diabetes, rb_DiabetesMellitus, rb_Epilepsy, rb_EyeEarDisorders, rb_GastritisUlcer, rb_GeneticDisorders, rb_GermanMeasles, rb_HeadachesMigraine, rb_HeartDisease, rb_Hepatitis, rb_Hernia, rb_Hypertension, rb_KidneyDisease, rb_LiverDisease, rb_Measles, rb_MentalDisorders, rb_Musculoskeletal, rb_NoseThroatDisorders, rb_Pneumonia, rb_PsychologicalDisorder, rb_PTB, rb_SeizureDisorders, rb_SexuallyTransmitted, rb_SkinDisease, rb_ThyroidDisorders, rb_Tubercolosis, rb_TyphoidParatyphoid, rb_Ulcers, rb_Vertigo, txt_medhistory_other.Text, txt_PresentSymptoms.Text, txt_medication.Text, txt_OperationsandAccidents.Text, txt_allergies.Text, rb_Smoker, txt_noofpackday.Text, rb_AlcoholDrinker, txtdrinknoofyear.Text,
-                     txt_height.Text, txt_weight.Text, txt_bpsystolic.Text + "/" + txt_bp_diastolic.Text, txt_pulse.Text, txt_respiation.Text, txt_bmi_val.Text + "/" + txt_bodyBuilt.Text, txt_far_od.Text, txt_od_c.Text, txt_os_u.Text, txt_os_c.Text, txt_near_od.Text, txt_near_os.Text, "", "", ISHIHARA_UCRUD, "", "", "", "", txt_conversational.Text, "", "", "", "", "", "", "", "", "", "", "", txt_bp_diastolic.Text, "", "", "", "", "", xtxt_dentalUpperRight.Text, xtxt_dentalUpperLeft.Text, xtxt_dentalLowerRight.Text, xtxt_dentalLowerLeft.Text, txt_lmp.Text, txt_obScore.Text, txt_interval.Text, txt_duration.Text, txt_Dysmenorrhea.Text, txt_oral.Text, txt_filling.Text, txt_extraction.Text, txt_otherPhysicalExam.Text, txt_w_gras_ou.Text, txt_wo_glas_ou.Text, txt_near_ou.Text, txt_hematology_result.Text, txt_hematology_findings.Text, txt_urinalysis_result.Text, txt_urinalysis_finding.Text, txt_fecalysis_result.Text, txt_fecalysis_finding.Text, txt_xray_result.Text, txt_xray_finding.Text, txt_xray_ecg_result.Text, txt_xray_ecg_finding.Text, txt_psychology_result.Text, txt_psychology_finding.Text, txt_hbsag_result.Text, txt_hbsag_finding.Text, txt_pregnancy_result.Text, txt_pregnancy_finding.Text, txt_bloodType_result.Text, txt_bloodType_finding.Text, txt_drugtest_resut.Text, txt_drugtest_finding.Text, cb_skin_.ToString(), x_skin.Text, cb_neck_.ToString(), x_neck.Text, cb_eyes_.ToString(), x_eyes.Text, "", "", cb_ears_.ToString(), x_ears.Text, cb_nose_.ToString(), x_nose.Text, cb_mought_.ToString(), x_mouth.Text, "", "", cb_breast_.ToString(), x_breast.Text, cb_lungs_.ToString(), x_lungs.Text, cb_heart_.ToString(), x_heart.Text, cb_abdomen_.ToString(), x_abdomen.Text, cb_back_.ToString(), x_back.Text, cb_anus_.ToString(), x_anus.Text, "", "", cb_inguinals_.ToString(), x_inguinals.Text, "", "", cb_extremeties_.ToString(), x_extremeties.Text,txt_detalOthers.Text);
+                     txt_height.Text, txt_weight.Text, txt_bpsystolic.Text + "/" + txt_bp_diastolic.Text, txt_pulse.Text, txt_respiation.Text, txt_bmi_val.Text + "/" + txt_bodyBuilt.Text, txt_far_od.Text, txt_od_c.Text, txt_os_u.Text, txt_os_c.Text, txt_near_od.Text, txt_near_os.Text, "", "", ISHIHARA_UCRUD, "", "", "", "", txt_conversational.Text, "", "", "", "", "", "", "", "", "", "", "", txt_bp_diastolic.Text, "", "", "", "", "", xtxt_dentalUpperRight.Text, xtxt_dentalUpperLeft.Text, xtxt_dentalLowerRight.Text, xtxt_dentalLowerLeft.Text, txt_lmp.Text, txt_obScore.Text, txt_interval.Text, txt_duration.Text, txt_Dysmenorrhea.Text, txt_oral.Text, txt_filling.Text, txt_extraction.Text, txt_otherPhysicalExam.Text, txt_w_gras_ou.Text, txt_wo_glas_ou.Text, txt_near_ou.Text, txt_hematology_result.Text, txt_hematology_findings.Text, txt_urinalysis_result.Text, txt_urinalysis_finding.Text, txt_fecalysis_result.Text, txt_fecalysis_finding.Text, txt_xray_result.Text, txt_xray_finding.Text, txt_xray_ecg_result.Text, txt_xray_ecg_finding.Text, txt_psychology_result.Text, txt_psychology_finding.Text, txt_hbsag_result.Text, txt_hbsag_finding.Text, txt_pregnancy_result.Text, txt_pregnancy_finding.Text, txt_bloodType_result.Text, txt_bloodType_finding.Text, txt_drugtest_resut.Text, txt_drugtest_finding.Text, cb_skin_.ToString(), x_skin.Text, cb_neck_.ToString(), x_neck.Text, cb_eyes_.ToString(), x_eyes.Text, "", "", cb_ears_.ToString(), x_ears.Text, cb_nose_.ToString(), x_nose.Text, cb_mought_.ToString(), x_mouth.Text, "", "", cb_breast_.ToString(), x_breast.Text, cb_lungs_.ToString(), x_lungs.Text, cb_heart_.ToString(), x_heart.Text, cb_abdomen_.ToString(), x_abdomen.Text, cb_back_.ToString(), x_back.Text, cb_anus_.ToString(), x_anus.Text, "", "", cb_inguinals_.ToString(), x_inguinals.Text, "", "", cb_extremeties_.ToString(), x_extremeties.Text, txt_detalOthers.Text);
 
                 Availability(false);
 
@@ -773,7 +773,7 @@ namespace MedicalManagement
 
 
 
-        public void Search_Patient( )
+        public void Search_Patient()
         {
             try
             {
@@ -1088,7 +1088,7 @@ namespace MedicalManagement
 
                     txt_wo_glas_ou.Text = i.FarWoOU.ToString() ?? "-";
                     txt_w_gras_ou.Text = i.FarWgOU.ToString() ?? "-";
-                  
+
                     txt_otherPhysicalExam.Text = i.obOther.ToString() ?? "-";
 
                     txt_near_ou.Text = i.NearOu.ToString() ?? "-";
@@ -1169,7 +1169,7 @@ namespace MedicalManagement
                     {
                         Datas.WEIGHT_LBS = ConvertKgToLbs(Convert.ToDouble(i.WEIGHT)).ToString("n2");
                     }
-                   
+
 
 
                     Datas.BP = i.BP ?? "-";
@@ -1182,10 +1182,10 @@ namespace MedicalManagement
                     Datas.FVOS_w = i.FAROSC;
                     Datas.FVOS_wo = i.FAROSU;
 
-                    Datas.NEAR_VISUAL =  txt_near_od.Text + "/" + txt_near_os.Text+"/"+txt_near_ou.Text;
- 
+                    Datas.NEAR_VISUAL = txt_near_od.Text + "/" + txt_near_os.Text + "/" + txt_near_ou.Text;
 
-                   
+
+
 
 
 
@@ -1451,7 +1451,7 @@ namespace MedicalManagement
                 {
                     Datas.abo = item.Result1;
                 }
-                
+
                 Datas.rh = "-";
 
 
@@ -1477,7 +1477,7 @@ namespace MedicalManagement
             var item = db.searchSerology(txtPapin.Text).FirstOrDefault();
             if (item != null)
             {
-              
+
                 Datas.PregnancyTest = "-";
                 if (item.Test1.Equals("PREGNANCY TEST"))
                 {
@@ -1501,9 +1501,7 @@ namespace MedicalManagement
                 {
                     Datas.HEPA_A = item.Result1;
                 }
-
-               
-                if (item.Test2.Equals("HEPA B"))
+                else if (item.Test2.Equals("HEPA B"))
                 {
                     Datas.HEPA_B = item.Result2;
                 }
@@ -1511,17 +1509,17 @@ namespace MedicalManagement
                 {
                     Datas.HEPA_A = item.Result1;
                 }
-               
+
 
 
 
 
             }
-            
+
         }
 
 
-        
+
         public void Search_Hema()
         {
             try
@@ -1531,7 +1529,7 @@ namespace MedicalManagement
                 var i = db.searchHematology(txtPapin.Text).FirstOrDefault();
                 if (i != null)
                 {
-                    
+
                     Datas.Hemoglobin = i.Hemoglobin;
                     Datas.Hematocrit = i.Hematocrit;
                     Datas.RBCCount = i.Redbloodcells;
@@ -1543,7 +1541,7 @@ namespace MedicalManagement
                     Datas.Basophils = i.Basophil;
                     Datas.Platelet = i.Plateletcount;
 
-                   
+
 
 
                 }
@@ -1612,7 +1610,7 @@ namespace MedicalManagement
                     Datas.color_FECALYSIS = i.color ?? "-";
                     Datas.Consistency = i.Consistency ?? "-";
                     Datas.rbc = "-";
-                    Datas.ova = i.Findings == "OvaParasite" ? "Found":"None Found";
+                    Datas.ova = i.Findings == "OvaParasite" ? "Found" : "None Found";
 
                 }
 
@@ -2216,7 +2214,7 @@ namespace MedicalManagement
         {
             if (cbCurrentDate.Checked)
             {
-         
+
                 string d = DateTime.Now.ToString("MMddyyyy");
                 txt_result_date.Text = d;
                 Console.WriteLine(d);

@@ -40,8 +40,10 @@ namespace MedicalManagement.Print
         public string SgptaltRemark { get; set; }
         public string SgotastRemark { get; set; }
 
+        public string Rmt_Name { get; set; }
 
-
+        public string Rmt_License { get; set; }
+        public string Address2 { get; set; }
 
 
     }

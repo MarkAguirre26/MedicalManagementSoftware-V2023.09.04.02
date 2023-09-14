@@ -22,9 +22,11 @@ namespace MedicalManagement.Print
         public string ReportTitle { get; set; }
         public string Examination { get; set; }
 
-      
- 
 
+        public string Rmt_Name { get; set; }
+
+        public string Rmt_License { get; set; }
+        public string Address2 { get; set; }
 
     }
 }

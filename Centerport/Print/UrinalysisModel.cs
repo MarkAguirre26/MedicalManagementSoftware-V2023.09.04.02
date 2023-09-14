@@ -30,5 +30,10 @@ namespace MedicalManagement.Print
         public string AmorphousUrates { get; set; }
         public string AmorphousPhosphates { get; set; }
         public string Other { get; set; }
+
+        public string Rmt_Name { get; set; }
+
+        public string Address2 { get; set; }
+        public string Rmt_License { get; set; }
     }
 }

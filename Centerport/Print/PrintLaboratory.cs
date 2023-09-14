@@ -69,6 +69,10 @@ namespace MedicalManagement.Print
                 urinalysisReport.SetParameterValue("Amorphousurates", urinalysisModel.AmorphousUrates);
                 urinalysisReport.SetParameterValue("Amorphousphosphates", urinalysisModel.AmorphousPhosphates);
                 urinalysisReport.SetParameterValue("Other", urinalysisModel.Other);
+                urinalysisReport.SetParameterValue("Rmt_name", urinalysisModel.Rmt_Name);
+                urinalysisReport.SetParameterValue("RmtLicense", urinalysisModel.Rmt_License);
+                urinalysisReport.SetParameterValue("Address2", urinalysisModel.Address2);
+
                 ReportViewer1.ReportSource = urinalysisReport;
 
             }
@@ -149,6 +153,12 @@ namespace MedicalManagement.Print
                 serologyReport.SetParameterValue("Test2_sub", serologyModel.Test2_sub);
                 serologyReport.SetParameterValue("result1", serologyModel.result1);
                 serologyReport.SetParameterValue("result3", serologyModel.result3);
+
+                serologyReport.SetParameterValue("Rmt_name", serologyModel.Rmt_Name);
+                serologyReport.SetParameterValue("Rmt_license", serologyModel.Rmt_License);
+                serologyReport.SetParameterValue("Address2", serologyModel.Address2);
+
+
                 ReportViewer2.ReportSource = serologyReport;
             }
             else
@@ -200,6 +210,13 @@ namespace MedicalManagement.Print
                 bloodTypingReport.SetParameterValue("Test2_sub", bloodTypingModel.Test2_sub);
                 bloodTypingReport.SetParameterValue("result1", bloodTypingModel.result1);
                 bloodTypingReport.SetParameterValue("result3", bloodTypingModel.result3);
+
+
+                bloodTypingReport.SetParameterValue("Rmt_name", bloodTypingModel.Rmt_Name);
+                bloodTypingReport.SetParameterValue("Rmt_license", bloodTypingModel.Rmt_License);
+
+                bloodTypingReport.SetParameterValue("Address2", bloodTypingModel.Address2);
+
                 ReportViewer6.ReportSource = bloodTypingReport;
             }
             else
@@ -344,6 +361,13 @@ namespace MedicalManagement.Print
                 fecalysisReport.SetParameterValue("Bacteria", fecalysisModel.Bacteria);
                 string Ovaparasite = fecalysisModel.Ovaparasite == "OvaParasite" ? "OVA/PARASITE SEEN" : "NO OVA/PARASITE SEEN";
                 fecalysisReport.SetParameterValue("Ovaparasite", Ovaparasite);
+
+                fecalysisReport.SetParameterValue("Rmt_name", fecalysisModel.Rmt_Name);
+                fecalysisReport.SetParameterValue("Rmt_license", fecalysisModel.Rmt_License);
+                fecalysisReport.SetParameterValue("Address2", fecalysisModel.Address2);
+
+
+
                 ReportViewer5.ReportSource = fecalysisReport;
             }
             else
@@ -398,6 +422,12 @@ namespace MedicalManagement.Print
                 clinicalChemistryReport.SetParameterValue("Headeraddress", clinicalChemistryModel.HeaderAddress);
                 clinicalChemistryReport.SetParameterValue("Headercontact", clinicalChemistryModel.HeaderContact);
                 clinicalChemistryReport.SetParameterValue("Result1", clinicalChemistryModel.Result1);
+
+                clinicalChemistryReport.SetParameterValue("Rmt_name", clinicalChemistryModel.Rmt_Name);
+                clinicalChemistryReport.SetParameterValue("Rmt_license", clinicalChemistryModel.Rmt_License);
+
+                clinicalChemistryReport.SetParameterValue("Address2", clinicalChemistryModel.Address2);
+
                 ReportViewer4.ReportSource = clinicalChemistryReport;
             }
             else
@@ -447,6 +477,13 @@ namespace MedicalManagement.Print
                 hematologyReport.SetParameterValue("Eosinophil", hematologyModel.Eosinophil);
                 hematologyReport.SetParameterValue("Basophil", hematologyModel.Basophil);
                 hematologyReport.SetParameterValue("Others", hematologyModel.Others);
+
+
+                hematologyReport.SetParameterValue("Rmt_name", hematologyModel.Rmt_Name);
+                hematologyReport.SetParameterValue("Rmt_license", hematologyModel.Rmt_License);
+
+
+                hematologyReport.SetParameterValue("Address2", hematologyModel.Address2);
                 ReportViewer3.ReportSource = hematologyReport;
             }
             else
@@ -528,6 +565,14 @@ namespace MedicalManagement.Print
                 chemistryReport.SetParameterValue("VldlRemark", chemistryModel.VldlRemark);
                 chemistryReport.SetParameterValue("SgptaltRemark", chemistryModel.SgptaltRemark);
                 chemistryReport.SetParameterValue("SgotastRemark", chemistryModel.SgotastRemark);
+
+
+                chemistryReport.SetParameterValue("Rmt_name", chemistryModel.Rmt_Name);
+                chemistryReport.SetParameterValue("Rmt_license", chemistryModel.Rmt_License);
+
+                chemistryReport.SetParameterValue("Address2", chemistryModel.Address2);
+
+
                 ReportViewer7.ReportSource = chemistryReport;
             }
             else

@@ -50,6 +50,7 @@ namespace MedicalManagement.Print
             radiographicalReport.SetParameterValue("CaseNo", radiographicalModel.CaseNo);
             radiographicalReport.SetParameterValue("ReportTitle", radiographicalModel.ReportTitle);
             radiographicalReport.SetParameterValue("Examination", radiographicalModel.Examination);
+            radiographicalReport.SetParameterValue("Address2", radiographicalModel.Address2);
             ReportViewer1.ReportSource = radiographicalReport;
 
         }

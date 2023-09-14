@@ -21,7 +21,7 @@ namespace MedicalManagement
         public List<QueueSearchList_Model> xrayAdd_model = new List<QueueSearchList_Model>();
         public List<Xray_Model> Xray_model = new List<Xray_Model>();
 
-        private string Address, Contact;
+        private string Address, Contact, Address2;
         public frm_xray(Main mainn)
         {
             InitializeComponent();
@@ -53,52 +53,6 @@ namespace MedicalManagement
         }
 
 
-        //void Update_Medical()
-        //{
-        //    try
-        //    {
-
-
-        //        int norma_xray;
-        //        if (cb_normal.Checked)
-        //        {
-        //            norma_xray = 1;
-        //        }
-        //        else
-        //        {
-        //            norma_xray = 0;
-        //        }
-
-        //        string DateResult = "";
-        //        if (dt_result_Date.Text == "00/00/0000")
-        //        {
-        //            DateResult = DateTime.Today.ToShortDateString();
-        //        }
-        //        else
-        //        {
-        //            DateResult = dt_result_Date.Text;
-        //        }
-
-        //        db.ExecuteCommand("UPDATE t_result_main SET reference_no= {0},result_date= {1}  ,specimen_no= {2}   WHERE resultid=  {3}", txt_xrayNo.Text, DateResult, txt_speciment.Text, LabID.Text);
-        //        db.ExecuteCommand("UPDATE t_radiology SET result_date={0},reference_no= {1} ,findings=  {2},impression= {3} ,remark={4} WHERE resultid=  {5}", DateResult, txt_xrayNo.Text, txt_findings.Text, txt_impression.Text, norma_xray, LabID.Text);
-
-        //        txt_Papin.Select();
-        //        NewXray = true;
-        //        fmain.ts_printPreview_Xray.Enabled = true; fmain.ts_add_xray.Enabled = true; fmain.ts_edit_xray.Enabled = true; fmain.ts_delete_xray.Enabled = false; fmain.ts_save_xray.Enabled = false; fmain.ts_cancel_xray.Enabled = false; fmain.ts_search_xray.Enabled = true; fmain.ts_print_xray.Enabled = true;
-        //        Availability(false);
-
-
-
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(this, string.Format("An error occured {0}", ex.Message), Properties.Settings.Default.SystemName.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Exclamation); return;
-
-        //    }
-
-
-        //}
 
         void SaveRecord()
         {
@@ -279,7 +233,7 @@ namespace MedicalManagement
             radiographicalModel.CaseNo = txt_xrayNo.Text;
             radiographicalModel.Examination = txtExamination.Text;
             radiographicalModel.ReportTitle = title + " REPORT";
-
+            radiographicalModel.Address2 = Address2;
 
             return radiographicalModel;
         }
@@ -376,6 +330,7 @@ namespace MedicalManagement
 
             IniFile ini = new IniFile(ClassSql.MMS_Path);
             Address = ini.IniReadValue("COMPANY", "Address");
+                 Address2 = ini.IniReadValue("COMPANY", "Address2");
             Contact = ini.IniReadValue("COMPANY", "Contact");
 
 

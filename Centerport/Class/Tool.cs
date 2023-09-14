@@ -25,7 +25,7 @@ namespace MedicalManagement
         public static string version()
         {
             
-            return "2023.09.12.3";
+            return "2023.09.14";
         }
 
 

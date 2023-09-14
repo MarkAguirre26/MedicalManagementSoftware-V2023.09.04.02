@@ -36,7 +36,7 @@ namespace MedicalManagement
             }
 
         }
-
+        //
 
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
